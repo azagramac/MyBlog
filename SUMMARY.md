@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [🐧 Linux](<README (1).md>)
+* [🐧 Linux](README.md)
   * [Crear repo git desde el terminal](linux/crear-repo-git-desde-el-terminal.md)
   * [Añadir marca de agua al DNI](linux/anadir-marca-de-agua-al-dni.md)
   * [Eliminar un path con sed](linux/eliminar-un-path-con-sed.md)
