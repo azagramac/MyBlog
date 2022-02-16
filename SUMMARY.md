@@ -11,7 +11,7 @@
   * [Solucion al error amdgpu: powerplay](linux/solucion-al-error-amdgpu-powerplay.md)
   * [dmesg: Error al leer el búfer del kernel](linux/dmesg-error-al-leer-el-bufer-del-kernel.md)
   * [Activar TRIM con systemd](linux/activar-trim-con-systemd.md)
-  * [Page 1](linux/page-1.md)
+  * [CIDR, mascaras de subred](linux/cidr-mascaras-de-subred.md)
 * [💻 Macintosh](macintosh/README.md)
   * [Habilitar el "chime sound" en los nuevos Mac's](macintosh/habilitar-el-chime-sound-en-los-nuevos-macs.md)
   * [Reset NVRAM en un Macintosh](macintosh/reset-nvram-en-un-macintosh.md)
