@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [🐧 Linux](README.md)
+* [🐧 Linux](<README (1).md>)
   * [Crear repo git desde el terminal](linux/crear-repo-git-desde-el-terminal.md)
   * [Añadir marca de agua al DNI](linux/anadir-marca-de-agua-al-dni.md)
   * [Eliminar un path con sed](linux/eliminar-un-path-con-sed.md)
@@ -27,3 +27,5 @@
   * [Cambiar pasta termica en UniFi Switch 8 150W](unifi/cambiar-pasta-termica-en-unifi-switch-8-150w.md)
 * [🧪 Arduino](arduino/README.md)
   * [Minar DuinoCoin desde tu router OpenWRT](arduino/minar-duinocoin-desde-tu-router-openwrt.md)
+* [🐳 Docker](docker/README.md)
+  * [Acceder a un contenedor con permisos de superusuario](docker/acceder-a-un-contenedor-con-permisos-de-superusuario.md)
