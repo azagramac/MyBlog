@@ -17,7 +17,7 @@ Seleccionamos:
 * **Finalidad:** Corporativo
 * **Grupo de red:** LAN
 * **VLAN:** pondremos el valor numerico que deseemos, ejemplo "10"
-* **IP Puerta enlace:** rango de IP que queramos con el CIDR, ejemplo: "10.5.10.1/24"
+* **IP Puerta enlace:** rango de IP que queramos con el [CIDR](https://azagramac.gitbook.io/myblog/linux/cidr-mascaras-de-subred), ejemplo: "10.5.10.1/24"
 * **Nombre de dominio:** opcional
 * **Servidores de DNS:** ejemplo 1.1.1.1 y 1.0.0.1
 
