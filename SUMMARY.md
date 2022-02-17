@@ -27,6 +27,7 @@
   * [Restaurar firmware USG Security Gateway](unifi/restaurar-firmware-usg-security-gateway.md)
   * [Cambiar pasta termica en UniFi Switch 8 150W](unifi/cambiar-pasta-termica-en-unifi-switch-8-150w.md)
   * [Crear VLAN en UniFi Controller](unifi/crear-vlan-en-unifi-controller.md)
+  * [Cambiar IP local en USG antes de adoptarlo](unifi/cambiar-ip-local-en-usg-antes-de-adoptarlo.md)
 * [🧪 Arduino](arduino/README.md)
   * [Minar DuinoCoin desde tu router OpenWRT](arduino/minar-duinocoin-desde-tu-router-openwrt.md)
 * [🐳 Docker](docker/README.md)
