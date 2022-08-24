@@ -6,7 +6,7 @@ La solucion pasa por configurar la IP LAN del USG antes de la adopcion a UniFi C
 
 1. Conectar el USG, la LAN a tu ordenador, no conectes la WAN!!!
 2. Cambia la IP de tu ordenador a 192.168.1.100 con mascara /24
-3. Abre el terminal y conecta por SSH al USG, las credenciales antes de la adopcion son: \
+3. Abre el terminal y conecta por SSH al USG, las credenciales antes de la adopcion son:\
    user: `ubnt`\
    pass: `ubnt`
 
@@ -14,22 +14,37 @@ La solucion pasa por configurar la IP LAN del USG antes de la adopcion a UniFi C
 ssh ubnt@192.168.1.1
 ```
 
-Una vez dentro, habilitamos el modo configuración
+Usamos el usuario root
+
+```
+sudo su -
+```
+
+Lo primero es resetar los valores de fabrica si no lo hemos realizado.
+
+```
+set-default
+```
+
+Y reiniciara, cuando termine, volvemos acceder de nuevo y seguimos en el paso siguiente.\
+
+
+Una vez reiniciado, con usuario root, habilitamos el modo configuración
 
 ```
 configure
 ```
 
-Establecemos la nueva IP en el puerto LAN
-
-```
-set interfaces ethernet eth1 address 172.16.1.1/24
-```
-
-Eliminamos la configuracion anterior
+Eliminamos la IP actual en el puerto eth1
 
 ```
 delete interfaces ethernet eth1 address 192.168.1.1/24
+```
+
+Configuramos el puerto eht1 con la nueva IP
+
+```
+set interfaces ethernet eth1 address 172.16.1.1/24
 ```
 
 Aplicamos los cambios, una vez ejecutes este paso, perderas la conexion al USG
