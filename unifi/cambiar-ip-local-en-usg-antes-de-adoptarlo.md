@@ -55,4 +55,6 @@ commit
 
 Ahora cambia la IP de tu ordenador por una dentro del rango de red que has definido anteriormente, si esta todo correcto, ya puedes unirlo a tu red y adoptarlo con tu UniFi Controller.
 
-Si haces la conexion a internet lo haces por PPPoE, asegurate de haber configurado los parametros de la WAN en UniFi Controller.
+Si haces la conexion a internet lo haces por PPPoE, asegurate de haber configurado los parametros de la WAN en UniFi Controller.\
+\
+:warning: Para evitar problemas de adopcion, antes de resetearlo, estando conectado a internet y a nuestro UniFi Controller, lo eliminamos desde el menu de configuracion del UniFi Controller.
