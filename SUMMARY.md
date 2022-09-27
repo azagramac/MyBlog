@@ -39,3 +39,5 @@
   * [Acceder a un contenedor con permisos de superusuario](docker/acceder-a-un-contenedor-con-permisos-de-superusuario.md)
 * [🛠 Bricos](bricos/README.md)
   * [Rack IKEA HUTTEN](bricos/rack-ikea-hutten.md)
+* [Kubernetes](kubernetes/README.md)
+  * [Actualizar certificados K8S](kubernetes/actualizar-certificados-k8s.md)
