@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Home](README.md)
+* [🏠 Home](README.md)
 * [🐧 Linux](<README (1).md>)
   * [Como tener AirPrint con tu impresora](linux/como-tener-airprint-con-tu-impresora.md)
   * [Crear repo git desde el terminal](linux/crear-repo-git-desde-el-terminal.md)

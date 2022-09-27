@@ -1,11 +1,12 @@
 # Actualizar certificados K8S
 
-\
+
+
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
 Lo primero verificamos cuando expiran los certificados actuales con el comando
-
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ```
 kubeadm alpha certs check-expiration
