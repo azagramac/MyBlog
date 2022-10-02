@@ -2,6 +2,7 @@
 
 * [🏠 Home](README.md)
 * [🐧 Linux](<README (1).md>)
+  * [dmesg: Initramfs unpacking failed: Decoding failed](readme-1/dmesg-initramfs-unpacking-failed-decoding-failed.md)
   * [Como tener AirPrint con tu impresora](linux/como-tener-airprint-con-tu-impresora.md)
   * [Crear repo git desde el terminal](linux/crear-repo-git-desde-el-terminal.md)
   * [Añadir marca de agua al DNI](linux/anadir-marca-de-agua-al-dni.md)
