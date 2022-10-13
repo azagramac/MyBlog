@@ -15,11 +15,13 @@ En un momento de la instalación, nos pedirá que gestor usar, nos dará 2 opcio
 \
 Una vez reiniciado, pulsamos en configuración abajo a la derecha, y elegimos "GNOME"
 
-<figure><img src="../.gitbook/assets/imagen.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3).png" alt=""><figcaption></figcaption></figure>
 
 Y ya tenemos Gnome 42
 
-<figure><img src="../.gitbook/assets/imagen (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/imagen.png" alt=""><figcaption></figcaption></figure>
 
 En el momento de escribir este post, van por la version 42.4
 
