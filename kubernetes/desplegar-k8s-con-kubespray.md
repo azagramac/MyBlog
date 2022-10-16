@@ -3,7 +3,7 @@
 \
 Para desplegar un cluster de kubernetes y tambien para resetearlo en caso necesario, de forma automatizada usando Kubespray.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Lo primero sera obtener y configurar el entorno donde vamos a usar kubespray, para ello nos descargamos desde el repo oficial [https://github.com/kubernetes-sigs/kubespray/releases](https://github.com/kubernetes-sigs/kubespray/releases)
 

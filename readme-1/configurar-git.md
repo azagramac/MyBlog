@@ -43,7 +43,7 @@ Y lo pegamos en nuestro panel de configuracion en Github
 
 [https://github.com/settings/ssh/new](https://github.com/settings/ssh/new)
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Guardamos y probamos la conexion ssh
 

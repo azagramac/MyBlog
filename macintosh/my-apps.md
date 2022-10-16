@@ -29,7 +29,7 @@ ADB y Fastboot
 ****\
 **Gráficas**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * [AdguardHome](https://apps.apple.com/es/app/adguard-home-remote/id1543143740)
 * [Adobe Reader](https://get.adobe.com/es/reader/)
