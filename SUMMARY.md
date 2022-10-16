@@ -11,6 +11,7 @@
   * [Sacar el .crt y .key de un .pfx](linux/sacar-el-.crt-y-.key-de-un-.pfx.md)
   * [Instalar driver AMD GPU](linux/instalar-driver-amd-gpu.md)
   * [Problemas de Vsync con AMD GPU](linux/problemas-de-vsync-con-amd-gpu.md)
+  * [Configurar git](readme-1/configurar-git.md)
   * [Solucion al error amdgpu: powerplay](linux/solucion-al-error-amdgpu-powerplay.md)
   * [dmesg: Error al leer el búfer del kernel](linux/dmesg-error-al-leer-el-bufer-del-kernel.md)
   * [Activar TRIM con systemd](linux/activar-trim-con-systemd.md)
