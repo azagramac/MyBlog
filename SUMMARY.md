@@ -36,6 +36,7 @@
   * [Crear VLAN en UniFi Controller](unifi/crear-vlan-en-unifi-controller.md)
   * [Cambiar IP local en USG antes de adoptarlo](unifi/cambiar-ip-local-en-usg-antes-de-adoptarlo.md)
 * [🍇 RaspberryPi](raspberrypi/README.md)
+  * [Reducir tamaño imagen .img de un backup de la SD](raspberrypi/reducir-tamano-imagen-.img-de-un-backup-de-la-sd.md)
   * [Deshabilitar el ahorro de energia en WiFi](raspberrypi/deshabilitar-el-ahorro-de-energia-en-wifi.md)
 * [🧪 Arduino](arduino/README.md)
   * [Minar DuinoCoin desde tu router OpenWRT](arduino/minar-duinocoin-desde-tu-router-openwrt.md)
