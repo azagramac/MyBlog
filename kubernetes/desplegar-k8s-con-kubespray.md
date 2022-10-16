@@ -15,7 +15,7 @@ Con el kubespray ya instalado en la maquina desde donde desplegaremos el cluster
 
 Lo primero sera definir los nombres de los nodos e IPs que compondrán el cluster que queremos desplegar, aquí pondremos los nombres de los nodos y sus ips, tantos como vayamos a configurar en el cluster, en este ejemplo son 3 maquinas.
 
-```
+```shell
 declare -a IPS=(nodo1,192.168.1.1 nodo2,192.168.1.2 nodo3,192.168.1.3)
 ```
 
@@ -24,14 +24,14 @@ En el ejemplo, hemos definido 3 nodos, cada uno con su IP.\
 \
 Ahora entramos en el directorio de Kubespray, y dentro de el veremos un directorio de nombre “**inventory**”, entramos, veremos que hay 2 carpetas “**local**” y “**sample**”, hacemos una copia de “**sample**” y le ponemos el nombre que queramos, podremos tener tantos clusters configurados como queramos y organizados por entornos...&#x20;
 
-```
+```shell
 cp -rf sample NOMBRE_DE_TU_CLUSTER
 ```
 
 \
 Ahora vamos a configurar el inventario para poder despegarlo, sustituiremos el “NOMBRE\_DE\_TU\_CLUSTER” por el que corresponda que tengas definido.
 
-```
+```shell
 CONFIG_FILE=inventory/NOMBRE_DE_TU_CLUSTER/hosts.yaml python contrib/inventory_builder/inventory ${IPS[@]}
 ```
 
@@ -40,7 +40,7 @@ Editamos ahora el fichero .../kubespray/inventory/NOMBRE\_DE\_TU\_CLUSTER/hosts.
 
 Aquí debemos colocar los nodos, cuales serán los master y cuales los workers.
 
-```
+```yaml
 all:
   hosts:
     nodo1:
@@ -104,20 +104,26 @@ Si queremos establecerlo a otra fecha usaremos este parámetro, esta es configur
 
 Todas las maquinas que compongan el cluster, deben tener una mínima configuración.\
 \
-Instalamos los siguientes paquetes en TODOS los nodos.\
-`sudo apt install -y ntp ssh-server ssh-client wget curl ca-certificates vim`
+Instalamos los siguientes paquetes en TODOS los nodos.
+
+```shell
+sudo apt install -y ntp ssh-server ssh-client wget curl ca-certificates vim
+```
 
 Debemos editar los /etc/hosts y añadir el hostname e IP de cada nodo, en cada nodo.\
 Tambien deben tener acceso entre si, copiando la clave ssh de /root/.ssh/id\_rsa.pub de la maquina donde tenemos kubespray a /root/.ssh/authorized\_keysde cada nodo, asegúrate que todos los nodos tienen la misma hora, porque da problemas si alguno no esta en el mismo horario.\
 \
-Después de estos cambios, reiniciar los nodos normalmente.\
-`sudo reboot`
+Después de estos cambios, reiniciar los nodos normalmente.
+
+```shell
+sudo reboot
+```
 
 ### &#x20;Despliegue del Cluster
 
 Desde la maquina donde tenemos Kubespray, entramos en el directorio y ejecutamos
 
-```
+```shell
 ansible-playbook -i inventory/NOMBRE_DE_TU_CLUSTER/hosts.yml --become --become-user=root cluster.yml -u root
 ```
 
@@ -131,7 +137,7 @@ Cuando termine, si todo ha salido correctamente, veremos una salida como esta, e
 
 Si entramos en el nodo1 y ejecutamos el kubectl podemos ver que el cluster ya esta levantado
 
-```
+```shell
 [rooto@nodo1 ~]# kubectl get nodes
 NAME    STATUS   ROLES                  AGE   VERSION
 node1   Ready    control-plane,master   18m   v1.23.12
@@ -145,7 +151,7 @@ En este caso, debemos tener también los ficheros de configuración con las IPs 
 \
 El comando a usar para eliminar el cluster es
 
-```
+```shell
 ansible-playbook -i inventory/NOMBRE_DE_TU_CLUSTER/hosts.yaml  --become --become-user=root reset.yml -u root
 ```
 
