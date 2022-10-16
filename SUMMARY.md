@@ -16,6 +16,7 @@
   * [Activar TRIM con systemd](linux/activar-trim-con-systemd.md)
   * [CIDR, mascaras de subred](linux/cidr-mascaras-de-subred.md)
 * [💻 Macintosh](macintosh/README.md)
+  * [Habilitar Bash Completion](macintosh/habilitar-bash-completion.md)
   * [Habilitar el "chime sound" en los nuevos Mac's](macintosh/habilitar-el-chime-sound-en-los-nuevos-macs.md)
   * [Reset NVRAM en un Macintosh](macintosh/reset-nvram-en-un-macintosh.md)
   * [Reset PMU en un PowerBook G4](macintosh/reset-pmu-en-un-powerbook-g4.md)
