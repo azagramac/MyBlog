@@ -15,6 +15,7 @@ Instalamos el gestor de paquetes brew
 
 La instalacion durara unos minutos, despues reiniciar el Mac.\
 \
+\
 Instalar bash completion
 
 ```shell
@@ -31,7 +32,6 @@ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion"
 source ~/.bash_profile
 ```
 
-\
 \
 Testing
 
