@@ -8,14 +8,14 @@
 
 Lo primero verificamos cuando expiran los certificados actuales con el comando
 
-```
+```shell
 kubeadm alpha certs check-expiration
 ```
 
 \
 Nos devolverá una salida como esta
 
-```
+```shell
 # kubeadm alpha certs check-expiration
 [check-expiration] Reading configuration from the cluster...
 [check-expiration] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml'
@@ -42,11 +42,11 @@ Como vemos, tenemos los certificados a punto de caducar.\
 \
 Lo primero es revisar el estado del cluster con
 
-```
+```shell
 kubectl get nodes
 ```
 
-```
+```shell
 # kubectl get nodes
 NAME    STATUS   ROLES     AGE    VERSION
 nodo1   Ready    master    44d   v1.23.10
@@ -58,20 +58,20 @@ nodo4   Ready    worker3   44d   v1.23.10
 \
 Desde el nodo1 lanzamos
 
-```
+```shell
 kubeadm alpha certs renew all
 ```
 
 \
 Reiniciamos el servicio kubelet
 
-```
+```shell
 systemctl restart kubelet
 ```
 
 y verificamos su estado, que no reporte errores.
 
-```
+```shell
 # systemctl status kubelet
 ● kubelet.service - kubelet: The Kubernetes Node Agent
    Loaded: loaded (/usr/lib/systemd/system/kubelet.service; enabled; vendor preset: disabled)
@@ -94,53 +94,53 @@ sep 27 10:10:29 nodo3 kubelet[18001]: E0927 10:10:29.241301   18001 file.go:182]
 \
 Lanzamos el for, para parar los contenedores
 
-```
+```shell
 for i in $(docker ps | egrep 'admin|controller|scheduler|api|etcd' | rev | awk '{print $1}' | rev);do docker stop $i; done
 ```
 
 \
 Hacemos un backup de la configuración del kubeconfig
 
-```
+```shell
 mv $HOME/.kube/config $HOME/.kube/config.old
 ```
 
 \
 Copiamos el kubeconfig al home del usuario
 
-```
+```shell
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 ```
 
 \
 Definimos el propietario del kubeconfig
 
-```
+```shell
 chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 \
 Y asignamos permisos al kubeconfig
 
-```
+```shell
 chmod 600 $HOME/.kube/config
 ```
 
 \
 Sustituimos el nombre en el kubeconfig, si fuera necesario.
 
-```
+```shell
 sed -i 's/master1/loadbalancer/g' $HOME/.kube/config
 ```
 
 \
 Verificamos el estado de los pods del cluster con
 
-```
+```shell
 kubectl get pods -n kube-system
 ```
 
-```
+```shell
 # kubectl get pods -n kube-system
 NAME                              READY   STATUS    RESTARTS   AGE
 coredns-78dc678595-25nhc          1/1     Running   1          7d16h
@@ -161,11 +161,11 @@ metrics-server-56c45cf9ff-tcrms   1/1     Running   15         7d15h
 \
 Y verificamos la fecha del nuevo certificado
 
-```
+```shell
 kubeadm alpha certs check-expiration
 ```
 
-```
+```shell
 # kubeadm alpha certs check-expiration
 [check-expiration] Reading configuration from the cluster...
 [check-expiration] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml'
