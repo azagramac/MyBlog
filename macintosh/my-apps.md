@@ -22,6 +22,10 @@ Java JDK 11.0.15
 curl -L -b "oraclelicense=a" -O https://download.oracle.com/otn-pub/java/jdk/11.0.15%2B8/c4e1848573124815b77d6f1843afccb5/jdk-11.0.15_osx-x64_bin.dmg
 ```
 
+ADB y Fastboot
+
+* Link: [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
+
 ****\
 **Gráficas**
 
