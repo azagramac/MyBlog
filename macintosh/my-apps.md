@@ -44,6 +44,7 @@ ADB y Fastboot
 * [Ledger Live](https://www.ledger.com/es/ledger-live)
 * [MegaSync](https://mega.io/desktop)
 * [Meld](https://github.com/yousseb/meld/releases)
+* [OpenEmu](https://openemu.org/)
 * [RaspberryPi Imager](https://github.com/raspberrypi/rpi-imager/releases)
 * [Telegram](https://desktop.telegram.org)
 * [Transmission](https://transmissionbt.com/download)
