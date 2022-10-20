@@ -18,6 +18,8 @@ Nos descargamos la imagen base desde Ubiquiti para poder restaurar el firmware, 
 https://dl.ubnt-ut.com/cmb/USG-4_2_0-shipped.img.bz2
 ```
 
+[Link alternativo](https://mega.nz/file/ccRWTZ5T#1eUI\_fasXVwfyFlWv2MvM4wlJgQLAUimOygTcrBjmok)
+
 La descomprimes, y tienes un fichero .img, el MD5 del .img es
 
 ```
