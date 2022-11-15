@@ -1,7 +1,8 @@
 # Table of contents
 
 * [🏠 Home](README.md)
-* [🤖 Android](android.md)
+* [🤖 Android](android/README.md)
+  * [Instalar Termux](android/instalar-termux.md)
 * [🐧 Linux](linux/README.md)
   * [Gnome 42, en Linux Mint 21](readme-1/gnome-42-en-linux-mint-21.md)
   * [dmesg: Initramfs unpacking failed: Decoding failed](readme-1/dmesg-initramfs-unpacking-failed-decoding-failed.md)
