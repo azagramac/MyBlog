@@ -1,3 +1,14 @@
 {
-  "plugins": ["google-adsense"]
+    "plugins": ["adsense"],
+    "pluginsConfig": {
+        "ads": [
+            {
+                "client": "pub-9316883020594839",
+                "slot": "9577372033",
+                "format": "auto",
+                "location": ".page-inner section",
+                "style": "width: 100px;"
+            }
+        ]
+    }
 }
