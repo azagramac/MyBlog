@@ -2,6 +2,7 @@
 
 * [🏠 Home](README.md)
 * [🤖 Android](android/README.md)
+  * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [Instalar Termux](android/instalar-termux.md)
 * [🐧 Linux](linux/README.md)
   * [Gnome 42, en Linux Mint 21](readme-1/gnome-42-en-linux-mint-21.md)
