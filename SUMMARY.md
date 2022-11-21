@@ -5,6 +5,7 @@
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [🖥 Instalar Termux](android/instalar-termux.md)
 * [🐧 Linux](linux/README.md)
+  * [📀 Solucion al error AACS en VLC al reproducir un BR](linux/solucion-al-error-aacs-en-vlc-al-reproducir-un-br.md)
   * [Gnome 42, en Linux Mint 21](readme-1/gnome-42-en-linux-mint-21.md)
   * [dmesg: Initramfs unpacking failed: Decoding failed](readme-1/dmesg-initramfs-unpacking-failed-decoding-failed.md)
   * [Como tener AirPrint con tu impresora](linux/como-tener-airprint-con-tu-impresora.md)
