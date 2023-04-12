@@ -26,7 +26,7 @@ ADB y Fastboot
 
 * Link: [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
 
-****\
+\
 **Gráficas**
 
 <figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
