@@ -4,7 +4,7 @@
 
 Necesitamos grabar el código .hex en el chip 12c508a (_importante no confundir con el 12c508_), podemos grabar la versión normal "_modchip\_12c508a.hex_" o el modo stealth "_stealth\_12c508a.hex_" para juegos japoneses.
 
-![](../.gitbook/assets/imagen.png)
+![](<../.gitbook/assets/imagen (5).png>)
 
 Desmontamos la consola, retirando los 6 tornillos de la carcasa.
 
@@ -22,7 +22,7 @@ Instalación para el [modchip\_12c508a.hex](https://raw.githubusercontent.com/Az
 
 Instalación para [stealth\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/stealth\_12c508a.hex)
 
-![](<../.gitbook/assets/imagen (3).png>)
+![](<../.gitbook/assets/imagen (3) (1).png>)
 
 _**Notas**_
 

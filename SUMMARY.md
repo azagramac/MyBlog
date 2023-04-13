@@ -53,4 +53,5 @@
   * [Desplegar K8S con Kubespray](kubernetes/desplegar-k8s-con-kubespray.md)
   * [Actualizar certificados K8S](kubernetes/actualizar-certificados-k8s.md)
 * [🎮 PlayStation](playstation/README.md)
+  * [FreeMCBoot](playstation/freemcboot.md)
   * [Instalación chip PSX](playstation/instalacion-chip-psx.md)

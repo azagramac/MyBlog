@@ -25,9 +25,9 @@ Una vez reiniciado, pulsamos en configuración abajo a la derecha, y elegimos "G
 
 Y ya tenemos Gnome 42
 
-<figure><img src="../.gitbook/assets/imagen (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/imagen (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 En el momento de escribir este post, van por la version 42.4
 
