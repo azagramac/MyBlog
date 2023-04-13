@@ -22,7 +22,8 @@ Lista de versiones del FMCB incluidas en el .7z:
 Es posible añadir mas opciones al menú, para ello debemos editar el fichero \
 `SYS-CONF/FREEMCB.CNF` y nos encontraremos con esto.&#x20;
 
-<pre class="language-shell"><code class="lang-shell"># ----------------------------------------
+```shell
+# ----------------------------------------
 # Free MCBoot Config File
 # must be in mc?:/SYS-CONF/FREEMCB.CNF or mass:/FREEMCB.CNF
 # ----------------------------------------
@@ -83,13 +84,13 @@ OSDSYS_menu_bottom_delimiter =
 OSDSYS_num_displayed_items = 5
 OSDSYS_Skip_MC = 1
 OSDSYS_Skip_HDD = 1
-<strong>name_OSDSYS_ITEM_1 = Explorador de archivos
-</strong>path1_OSDSYS_ITEM_1 = mc?:/BOOT/BOOT.ELF
+name_OSDSYS_ITEM_1 = Explorador de archivos
+path1_OSDSYS_ITEM_1 = mc?:/BOOT/BOOT.ELF
 path2_OSDSYS_ITEM_1 = mass:/PS2/BOOT/BOOT.ELF
 name_OSDSYS_ITEM_2 = Juegos
 path1_OSDSYS_ITEM_2 = mc?:/APPS/OPNPS2LD.ELF
 path2_OSDSYS_ITEM_2 = mass:/PS2/BOOT/OPNPS2LD.ELF
-</code></pre>
+```
 
 Hay varias opciones que cambian el comportamiento de la consola al iniciarla o al iniciar un juego.
 
