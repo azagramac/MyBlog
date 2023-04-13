@@ -4,7 +4,7 @@
 
 
 
-Free McBoot es un exploit que reemplaza el menú principal de tu PS2 sin tener que modificarla físicamente y permite usar homebrews
+Free McBoot es un exploit que reemplaza el menú principal de tu PS2 sin tener que modificarla físicamente y permite usar homebrews, se instala en la Memory Card (oficial a ser posible)
 
 
 
