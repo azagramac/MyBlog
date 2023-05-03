@@ -26,7 +26,7 @@ Cabeceras del kernel y el modulo dkms
 sudo dnf install kernel-headers kernel-devel dkms coreutils
 ```
 
-J**ava OpenJDK**
+**Java OpenJDK**
 
 ```sh
 sudo dnf install java-11-openjdk.x86_64
