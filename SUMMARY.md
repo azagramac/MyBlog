@@ -7,6 +7,7 @@
 * [🐧 Linux](linux/README.md)
   * [📀 Solucion al error AACS en VLC al reproducir un BR](linux/solucion-al-error-aacs-en-vlc-al-reproducir-un-br.md)
   * [Error ata9 en dispositivo SATA](linux/error-ata9-en-dispositivo-sata.md)
+  * [Dash to dock para Gnome](linux/dash-to-dock-para-gnome.md)
   * [Gnome 42, en Linux Mint 21](readme-1/gnome-42-en-linux-mint-21.md)
   * [dmesg: Initramfs unpacking failed: Decoding failed](readme-1/dmesg-initramfs-unpacking-failed-decoding-failed.md)
   * [Como tener AirPrint con tu impresora](linux/como-tener-airprint-con-tu-impresora.md)
