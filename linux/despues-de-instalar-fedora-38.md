@@ -134,3 +134,15 @@ finalmente, instalamos el paquete
 ```sh
 sudo dnf install kubectl
 ```
+
+
+
+Limpiar la cache&#x20;
+
+```sh
+sudo dnf clean dbcache
+```
+
+```sh
+sudo dnf clean all
+```
