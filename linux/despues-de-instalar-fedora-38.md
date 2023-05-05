@@ -35,19 +35,31 @@ sudo dnf install java-11-openjdk.x86_64
 Si tu GPU es AMD, después de esto, reiniciamos.
 
 ```sh
-sudo dnf install xorg-x11-drv-amdgpu mesa-va-drivers mesa-vdpau-drivers
+sudo dnf install xorg-x11-drv-amdgpu mesa-va-drivers mesa-vdpau-drivers vulkan-tools
 ```
 
 **Multimedia**
 
 ```sh
-sudo dnf install vlc python-vlc libaacs libbluray lame flac libdvdread transmission
+sudo dnf install h264enc vlc python-vlc libaacs libbluray lame flac libdvdread transmission
 ```
 
 **Utilidades**
 
 ```sh
-sudo dnf install neovim git gparted vim meld cifs-utils bash-completion util-linux nmap wget curl sed tar unzip yad
+sudo dnf install neovim git gparted vim meld cifs-utils bash-completion util-linux nmap wget curl sed tar unzip yad bzip2-devel gcc-c++ glib2 libpng libxml2 freetype ncurses-devel bison flex elfutils-libelf-devel openssl-devel
+```
+
+**LM Sensors**
+
+```sh
+sudo dnf install lm_sensors
+```
+
+Luego lo configuramos
+
+```sh
+yes "" | sudo sensors-detect
 ```
 
 **Gestor de contraseñas KeePass**
@@ -96,6 +108,7 @@ y finalmente damos permisos a nuestro usuario
 
 ```sh
 sudo usermod -a -G vboxusers $USER
+sudo usermod -a -G dialout $USER
 ```
 
 **Python 3**
