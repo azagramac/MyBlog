@@ -27,6 +27,7 @@
   * [My Apps](macintosh/my-apps.md)
   * [Configurar shell bash por defecto](macintosh/configurar-shell-bash-por-defecto.md)
   * [Habilitar Bash Completion](macintosh/habilitar-bash-completion.md)
+  * [Instalar Pyenv](macintosh/instalar-pyenv.md)
   * [Habilitar el "chime sound" en los nuevos Mac's](macintosh/habilitar-el-chime-sound-en-los-nuevos-macs.md)
   * [Reset NVRAM en un Macintosh](macintosh/reset-nvram-en-un-macintosh.md)
   * [Reset PMU en un PowerBook G4](macintosh/reset-pmu-en-un-powerbook-g4.md)
