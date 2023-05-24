@@ -20,6 +20,19 @@ Nos mostrara el valor numerico en celsius
 51.531
 ```
 
+
+
+Para ver la temp de la red 2.4/5Ghz, podemos consultar en la NVRAM el dispositivo.&#x20;
+
+```sh
+nvram get wl0_ifname
+nvram get wl1_ifname
+```
+
+y nos mostrara el nombre del dispositivo correspondiente.&#x20;
+
+
+
 Temperatura red 2.4Ghz
 
 ```sh
