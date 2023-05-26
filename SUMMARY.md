@@ -49,6 +49,7 @@
   * [Mostrar temperaturas](asus-router/mostrar-temperaturas.md)
 * [🍇 RaspberryPi](raspberrypi/README.md)
   * [Reducir tamaño imagen .img de un backup de la SD](raspberrypi/reducir-tamano-imagen-.img-de-un-backup-de-la-sd.md)
+  * [Servidor RSYSLOG](raspberrypi/servidor-rsyslog.md)
   * [Deshabilitar el ahorro de energia en WiFi](raspberrypi/deshabilitar-el-ahorro-de-energia-en-wifi.md)
 * [🧪 Arduino](arduino/README.md)
   * [Minar DuinoCoin desde tu router OpenWRT](arduino/minar-duinocoin-desde-tu-router-openwrt.md)
