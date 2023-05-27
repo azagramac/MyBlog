@@ -69,7 +69,7 @@ user@RT-AX88U_Pro:/root#
 Ejecutamos el comando para borrar la NVRAM
 
 ```sh
-mtd-erase -d nvram
+nvram erase
 ```
 
 Y reiniciamos
