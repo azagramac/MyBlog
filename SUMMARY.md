@@ -58,6 +58,7 @@
   * [HomeBridge en Docker](docker/homebridge-en-docker.md)
   * [Acceder a un contenedor con permisos de superusuario](docker/acceder-a-un-contenedor-con-permisos-de-superusuario.md)
 * [🛠 Bricos](bricos/README.md)
+  * [Unboxing Switch POE TP-Link TL-SG1008P](bricos/unboxing-switch-poe-tp-link-tl-sg1008p.md)
   * [Rack IKEA HUTTEN](bricos/rack-ikea-hutten.md)
 * [🧊 Kubernetes](kubernetes/README.md)
   * [Desplegar K8S con Kubespray](kubernetes/desplegar-k8s-con-kubespray.md)
