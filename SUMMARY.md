@@ -46,6 +46,7 @@
   * [Cambiar IP local en USG antes de adoptarlo](unifi/cambiar-ip-local-en-usg-antes-de-adoptarlo.md)
 * [📶 Asus Router](asus-router/README.md)
   * [Borrar NVRAM](asus-router/borrar-nvram.md)
+  * [Enviar logs a un servidor RSYSLOG](asus-router/enviar-logs-a-un-servidor-rsyslog.md)
   * [Mostrar temperaturas](asus-router/mostrar-temperaturas.md)
 * [🍇 RaspberryPi](raspberrypi/README.md)
   * [Reducir tamaño imagen .img de un backup de la SD](raspberrypi/reducir-tamano-imagen-.img-de-un-backup-de-la-sd.md)
