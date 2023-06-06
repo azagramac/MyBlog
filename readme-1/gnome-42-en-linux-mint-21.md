@@ -1,4 +1,6 @@
-# Gnome 42, en Linux Mint 21
+# Gnome 42.5, en Linux Mint 21.1
+
+Usando como base Linux Mint (Vera) con escritorio Cinnamon, procederemos a instalar entorno GNOME 42
 
 <figure><img src="../.gitbook/assets/imagen (2) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -13,8 +15,16 @@ Si esta el sistema actualizado continuamos, si no, reinicia primero.&#x20;
 
 Instalamos Gnome
 
-```shell
-sudo apt install gnome-core gnome-desktop-testing -y
+Version minima
+
+```sh
+sudo apt install vanilla-gnome-desktop -y
+```
+
+O version completa, podemos instalar ambas
+
+```sh
+sudo apt install gnome -y
 ```
 
 En un momento de la instalación, nos pedirá que gestor usar, nos dará 2 opciones, elegimos "**gdm3**", cuando termine reiniciamos el sistema. \
@@ -31,8 +41,6 @@ Y ya tenemos Gnome 42
 
 En el momento de escribir este post, van por la version 42.4
 
-<figure><img src="../.gitbook/assets/imagen (1).png" alt=""><figcaption></figcaption></figure>
-
 Instalar Tweaks e iconos Papirus
 
 ```shell
@@ -40,3 +48,5 @@ sudo apt install gnome-tweaks papirus-icon-theme -y
 ```
 
 Después de todos los cambios, reiniciar y a disfrutar!
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>

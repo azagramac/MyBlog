@@ -9,7 +9,7 @@
   * [Error ata9 en dispositivo SATA](linux/error-ata9-en-dispositivo-sata.md)
   * [Dash to dock para Gnome](linux/dash-to-dock-para-gnome.md)
   * [Después de instalar Fedora 38](linux/despues-de-instalar-fedora-38.md)
-  * [Gnome 42, en Linux Mint 21](readme-1/gnome-42-en-linux-mint-21.md)
+  * [Gnome 42.5, en Linux Mint 21.1](readme-1/gnome-42-en-linux-mint-21.md)
   * [dmesg: Initramfs unpacking failed: Decoding failed](readme-1/dmesg-initramfs-unpacking-failed-decoding-failed.md)
   * [Como tener AirPrint con tu impresora](linux/como-tener-airprint-con-tu-impresora.md)
   * [Crear repo git desde el terminal](linux/crear-repo-git-desde-el-terminal.md)
