@@ -45,7 +45,7 @@ Y reiniciamos el router.
 
 Despues del reinicio, podemos comprobar su estado desde la WebUI del router.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Link skynet: [https://github.com/Adamm00/IPSet\_ASUS](https://github.com/Adamm00/IPSet\_ASUS)
 
