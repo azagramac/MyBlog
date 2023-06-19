@@ -45,6 +45,7 @@
   * [Crear VLAN en UniFi Controller](unifi/crear-vlan-en-unifi-controller.md)
   * [Cambiar IP local en USG antes de adoptarlo](unifi/cambiar-ip-local-en-usg-antes-de-adoptarlo.md)
 * [📶 Asus Router](asus-router/README.md)
+  * [Instalar Skynet](asus-router/instalar-skynet.md)
   * [Borrar NVRAM](asus-router/borrar-nvram.md)
   * [Enviar logs a un servidor RSYSLOG](asus-router/enviar-logs-a-un-servidor-rsyslog.md)
   * [Mostrar temperaturas](asus-router/mostrar-temperaturas.md)
