@@ -35,7 +35,7 @@ root@RT-AX88U_Pro:/#
 
 También podemos ver su estado desde la WebUI, en Tools / SysInfo
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 
 

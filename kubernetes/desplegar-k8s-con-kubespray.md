@@ -158,7 +158,7 @@ ansible-playbook -i inventory/NOMBRE_DE_TU_CLUSTER/hosts.yaml  --become --become
 \
 Y lo lanzamos, nada mas lanzarlo y hacer una comprobaciones, nos pedirá confirmación de si estamos seguro de que lo queremos eliminar.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 Si le decimos que si “yes”, empezara la eliminación, el tiempo aprox es de unos 6 minutos, dependiendo de cuantas maquinas compongan el cluster, cuando termine debemos reiniciar manualmente cada nodo del cluster.
 

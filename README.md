@@ -11,7 +11,7 @@ My name is Jose, I'm from Spain.
 
 ## Contact
 
-* You can contact with me on [<img src=".gitbook/assets/image (3).png" alt="" data-size="line">](mailto:josel.azagra@pm.me?Subject=from%20github) or with [![Linkedin](https://img.shields.io/badge/-Jose-blue?style=flat-square\&logo=Linkedin\&logoColor=white\&link=https://www.linkedin.com/in/joselazagra/)](https://www.linkedin.com/in/joselazagra/)
+* You can contact with me on [<img src=".gitbook/assets/image (7).png" alt="" data-size="line">](mailto:josel.azagra@pm.me?Subject=from%20github) or with [![Linkedin](https://img.shields.io/badge/-Jose-blue?style=flat-square\&logo=Linkedin\&logoColor=white\&link=https://www.linkedin.com/in/joselazagra/)](https://www.linkedin.com/in/joselazagra/)
 
 &#x20;![](https://github-readme-stats.vercel.app/api?username=AzagraMac\&show\_icons=true)
 

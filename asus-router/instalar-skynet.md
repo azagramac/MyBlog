@@ -1,6 +1,6 @@
 # Instalar Skynet
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **Requisitos**
 
@@ -8,6 +8,8 @@
 * USB conectado con al menos 4Gb libres en formato Ext4 (recomendable 8Gb, 2Gb para swap)
 * [Swap habilitada](habilitar-swap.md)\
 
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Instalación**
 
@@ -30,22 +32,22 @@ Habilitamos el registro
 
 Añadimos las listas a la blacklist, gracias [Juan](https://github.com/JuanRodenas) 😊
 
-<pre class="language-sh"><code class="lang-sh"><strong>/jffs/scripts/firewall import blacklist https://raw.githubusercontent.com/JuanRodenas/Ubiquiti/main/list/ruzone.raw
+<pre class="language-sh"><code class="lang-sh"><strong>/jffs/scripts/firewall import blacklist https://raw.githubusercontent.com/JuanRodenas/Ubiquiti/main/list/ruzone.raw "Lista Rusia"
 </strong></code></pre>
 
 ```sh
-/jffs/scripts/firewall import blacklist https://raw.githubusercontent.com/JuanRodenas/Ubiquiti/main/list/cnzone.raw
+/jffs/scripts/firewall import blacklist https://raw.githubusercontent.com/JuanRodenas/Ubiquiti/main/list/cnzone.raw "Lista China"
 ```
 
 ```sh
-/jffs/scripts/firewall import blacklist https://raw.githubusercontent.com/JuanRodenas/Ubiquiti/main/list/secureip.raw
+/jffs/scripts/firewall import blacklist https://raw.githubusercontent.com/JuanRodenas/Ubiquiti/main/list/secureip.raw "Lista IPs Seguras"
 ```
 
 Y reiniciamos el router.
 
 Despues del reinicio, podemos comprobar su estado desde la WebUI del router.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Link skynet: [https://github.com/Adamm00/IPSet\_ASUS](https://github.com/Adamm00/IPSet\_ASUS)
 

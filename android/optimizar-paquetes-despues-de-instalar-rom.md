@@ -17,7 +17,7 @@ su -c "cmd package bg-dexopt-job"
 
 En función del móvil y los paquetes instalados que tengamos, tardará más o menos en responder, cuando finalice nos devolver un "`Success`"
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (2).png>)
 
 Despues, usar normalmente. \
 Ejecutar este comando despues de instalar todos los paquetes y Apps.&#x20;
