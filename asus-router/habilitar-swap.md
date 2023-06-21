@@ -4,9 +4,19 @@ Necesitamos tener el firmware merlin en el router, ya que nos permite habilitar 
 \
 Creamos el fichero swap del tamaño deseado, en este ejemplo el tamaño es de 2Gb, si queremos asignar otro valor lo indicaríamos en Kilobytes
 
+```sh
+dd if=/dev/zero of=/tmp/mnt/sda1/file.swp bs=1024 count=2097152
 ```
-dd if=/dev/zero of=/tmp/mnt/sda1/swap.swp bs=1k count=2048000
-```
+
+<pre class="language-sh"><code class="lang-sh">## 512Mb
+dd if=/dev/zero of=/tmp/mnt/sda1/file.swp bs=1024 count=524288
+## 1Gb
+dd if=/dev/zero of=/tmp/mnt/sda1/file.swp bs=1024 count=1048576
+## 2Gb
+<strong>dd if=/dev/zero of=/tmp/mnt/sda1/file.swp bs=1024 count=2097152
+</strong>## 4Gb
+dd if=/dev/zero of=/tmp/mnt/sda1/file.swp bs=1024 count=4194304
+</code></pre>
 
 Con el fichero ya creado, ahora vamos a configurar para que haga uso de el.&#x20;
 
@@ -35,7 +45,7 @@ root@RT-AX88U_Pro:/#
 
 También podemos ver su estado desde la WebUI, en Tools / SysInfo
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -49,4 +59,4 @@ swapon /tmp/mnt/sda1/swap.swp
 
 y en la WebUI, habilitamos el uso de scripts.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
