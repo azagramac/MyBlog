@@ -23,4 +23,4 @@ Send mail [✉️](mailto:josel.azagra@pm.me?Subject=from%20github) or with [![L
 <img src="https://user-images.githubusercontent.com/571796/234834948-f111b72f-d0c4-458c-bcc2-83a436edfdf5.png" alt="" data-size="line"> DJfiHJGmJK6iCB8iugG879a4L6ixNHtYg1\
 <img src="https://cdn3.emoji.gg/emojis/5455-litecoin.png" alt="" data-size="line"> LgWSf87Vfcz5yejVjZJWvSbi5WwBRaRsZg
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=azagramac&label=Home%20views&color=0e75b6&style=flat" alt="azagramac" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=azagramac&label=Home%20views&color=0e75b6&style=flat" /> </p>
