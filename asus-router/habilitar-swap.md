@@ -21,13 +21,13 @@ dd if=/dev/zero of=/tmp/mnt/sda1/file.swp bs=1024 count=4194304
 Con el fichero ya creado, ahora vamos a configurar para que haga uso de el.&#x20;
 
 ```sh
-mkswap /tmp/mnt/sda1/swap.swp
+mkswap /tmp/mnt/sda1/file.swp
 ```
 
 y la activamos
 
 ```sh
-swapon /tmp/mnt/sda1/swap.swp
+swapon /tmp/mnt/sda1/file.swp
 ```
 
 
@@ -54,9 +54,9 @@ Pero si reiniciamos, no tendremos la swap habilitada, para evitar esto, creamos 
 ```sh
 #!/bin/sh
 
-swapon /tmp/mnt/sda1/swap.swp
+swapon /tmp/mnt/sda1/file.swp
 ```
 
 y en la WebUI, habilitamos el uso de scripts.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
