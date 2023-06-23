@@ -30,12 +30,18 @@ r00t@RT-AX88U_Pro:/#
 
 Si queremos que sea persistente, ya que en cada reinicio se borran, debemos crear un script y guárdalo con permisos de ejecución en `/jffs/scripts`
 
+
+
+Mi script en `/jffs/scripts/post-mount.sh`
+
 ```sh
 #!/bin/sh
+echo "Mount file swap..."
+swapon /tmp/mnt/sda1/file.swp
 
-## Libera ram cada 12h
+echo "Add Free RAM to cron..."
 cru a freeram "0 */12 * * * /bin/sync && /bin/echo 3 > /proc/sys/vm/drop_caches"
 
-## Envia mensaje de telegram cada 2h
-cru a telegram "0 */2 * * * /jffs/scripts/status.sh"
+echo "Add Telegram to cron..."
+cru a telegram "0 */2 * * * sh /jffs/scripts/status.sh"
 ```
