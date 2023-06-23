@@ -49,6 +49,7 @@
   * [Habilitar swap](asus-router/habilitar-swap.md)
   * [Ejecutar tareas crontab](asus-router/ejecutar-tareas-crontab.md)
   * [Borrar NVRAM](asus-router/borrar-nvram.md)
+  * [Notificación Telegram al inicio](asus-router/notificacion-telegram-al-inicio.md)
   * [Enviar logs a un servidor RSYSLOG](asus-router/enviar-logs-a-un-servidor-rsyslog.md)
   * [Mostrar temperaturas](asus-router/mostrar-temperaturas.md)
 * [🍇 RaspberryPi](raspberrypi/README.md)
