@@ -8,17 +8,17 @@ En el caso de que nuestra impresora no tenga soporte oficial a AirPrint, necesit
 
 Instalaremos una serie de paquetes, por supuesto la impresora debe estar encendida, si es por wifi, conectada a la red de casa, si es cable, conectada a la placa raspberry o similar.
 
-```
-sudo apt install cups cups-core-drivers libcups2-dev python3-dev python3-cups libxml-dev
+```sh
+sudo apt install cups cups-core-drivers printer-driver-brlaser avahi-daemon libcups2-dev python3-dev python3-cups libxml-dev -y
 ```
 
-Es una instalacion sencilla de cups, un servidor de impresion.\
+Es una instalación sencilla de cups, un servidor de impresión.\
 Para entrar en el dashboard web de cups:
 
 ```
 http://IP_DEL_SERVIDOR_CUPS:631
 ```
 
-![](<../.gitbook/assets/Captura de pantalla 2022-04-07 a las 17.41.46.png>)
-
 Continuara...
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

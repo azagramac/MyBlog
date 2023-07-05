@@ -59,4 +59,4 @@ swapon /tmp/mnt/sda1/file.swp
 
 y en la WebUI, habilitamos el uso de scripts.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
