@@ -14,10 +14,21 @@ Ver temperatura CPU
 cat /sys/class/thermal/thermal_zone0/temp | awk '{print $1 / 1000}'
 ```
 
-Nos mostrara el valor numerico en celsius
+Nos mostrara el valor numérico en celsius
 
-```bash
-51.531
+<pre class="language-bash"><code class="lang-bash">$ cat /sys/class/thermal/thermal_zone0/temp | awk '{print $1 / 1000}'
+<strong>51.531
+</strong></code></pre>
+
+Si lo queremos con 1 decimal
+
+```sh
+cat /sys/class/thermal/thermal_zone0/temp | awk '{printf("%.1f\n", $1 / 1000) }'
+```
+
+```sh
+$ cat /sys/class/thermal/thermal_zone0/temp | awk '{printf("%.1f\n", $1 / 1000) }'
+51.5
 ```
 
 
@@ -35,9 +46,8 @@ y nos mostrara el nombre del dispositivo correspondiente.&#x20;
 
 Temperatura red 2.4Ghz
 
-```sh
-wl -i eth6 phy_tempsense | awk '{print $1 / 2 + 20}'
-```
+<pre class="language-sh"><code class="lang-sh"><strong>wl -i eth6 phy_tempsense | awk '{print $1 / 2 + 20}'
+</strong></code></pre>
 
 Temperatura red 5Ghz
 
