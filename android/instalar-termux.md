@@ -62,4 +62,4 @@ Conectarse desde un terminal a Android&#x20;
 ssh user@ip -p 8022
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
