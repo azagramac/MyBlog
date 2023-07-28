@@ -10,7 +10,7 @@ chmod +x snyk
 mv snyk /usr/local/bin/
 ```
 
-Cmabiamos la URL por la plataforma que vamos a usar
+Cambiamos la URL por la plataforma que vamos a usar
 
 * **Linux**: [https://static.snyk.io/cli/latest/snyk-linux](https://static.snyk.io/cli/latest/snyk-linux)
 * **Linux/arm64**: [https://static.snyk.io/cli/latest/snyk-linux-arm64](https://static.snyk.io/cli/latest/snyk-linux-arm64)
