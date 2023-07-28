@@ -40,7 +40,7 @@ sudo apt install xdg-utils -y
 
 
 
-Nos registramos en snyk.io y despues de configurar nuestra cuenta, podremos hacer login
+Nos registramos en [snyk.io](https://snyk.io) y despues de configurar nuestra cuenta, podremos hacer login
 
 ```sh
 snyk auth
