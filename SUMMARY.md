@@ -61,6 +61,7 @@
   * [Minar DuinoCoin desde tu router OpenWRT](arduino/minar-duinocoin-desde-tu-router-openwrt.md)
 * [🐳 Docker](docker/README.md)
   * [HomeBridge en Docker](docker/homebridge-en-docker.md)
+  * [Docker image signing](docker/docker-image-signing.md)
   * [Acceder a un contenedor con permisos de superusuario](docker/acceder-a-un-contenedor-con-permisos-de-superusuario.md)
 * [🛠 Bricos](bricos/README.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](bricos/unboxing-switch-poe-tp-link-tl-sg1008p.md)
