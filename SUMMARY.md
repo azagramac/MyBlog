@@ -74,3 +74,4 @@
 * [🎮 PlayStation](playstation/README.md)
   * [FreeMCBoot](playstation/freemcboot.md)
   * [Instalación chip PSX](playstation/instalacion-chip-psx.md)
+* [Amazon](amazon.md)
