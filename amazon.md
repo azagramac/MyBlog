@@ -1,10 +1,10 @@
 ---
 description: Ofertas Amazon
 cover: .gitbook/assets/1093638.jpg
-coverY: 28
+coverY: 62.07058823529412
 ---
 
-# Amazon
+# 🛍 Amazon
 
 
 
