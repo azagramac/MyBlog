@@ -2,7 +2,7 @@
 
 <figure><img src="../.gitbook/assets/pngwing.com.png" alt="" width="375"><figcaption></figcaption></figure>
 
-Nos bajamos la ISO de la web oficial de debian, podéis elegir la versión stable o testing. Personalmente me quedo con la stable y luego le añado los repositorios. \
+Nos bajamos la ISO de la web oficial de debian podéis elegir la versión stable o testing. Personalmente me quedo con la stable y luego le añado los repositorios. \
 \
 Grabamos la ISO y comenzamos la instalación.
 
@@ -205,3 +205,7 @@ sudo systemctl start fstrim.timer
 
 \
 Me faltarían algunas aplicacion que se instalan por .deb, como rpi-imager, cambiar firefox ESR por la version actual disponible, thunderbird (estas 2 ultimas, las instalo desde .tar.gz y luego creo un .desktop para añadir al `/home/$USER/.local/share/applications` para que se muestren en el menu de las aplicaciones, ya tengo tema para otra entrada! :smile:)
+
+
+
+<figure><img src="../.gitbook/assets/Captura desde 2023-08-23 21-24-06.png" alt=""><figcaption></figcaption></figure>
