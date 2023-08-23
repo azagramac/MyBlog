@@ -6,6 +6,7 @@
   * [🖥 Instalar Termux](android/instalar-termux.md)
 * [🐧 Linux](linux/README.md)
   * [Información del /etc/fstab](linux/informacion-del-etc-fstab.md)
+  * [Clonar disco a NAS con CloneZilla](linux/clonar-disco-a-nas-con-clonezilla.md)
   * [Solución al error AACS en VLC al reproducir un BluRay](linux/solucion-al-error-aacs-en-vlc-al-reproducir-un-br.md)
   * [Error ata9 en dispositivo SATA](linux/error-ata9-en-dispositivo-sata.md)
   * [Dash to dock para Gnome](linux/dash-to-dock-para-gnome.md)

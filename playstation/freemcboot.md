@@ -1,6 +1,6 @@
 # FreeMCBoot
 
-<figure><img src="../.gitbook/assets/imagen (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -132,7 +132,7 @@ Estas lineas, que no contienen valor algunos, son las que añaden la versión en
 Así seria por defecto. \
 Vemos el titulo de "Free MCBoot", la versión \[Version xxxxxx], vemos unas flechas que parpadean en ambos lados de las opciones, ademas de los botones en cada extremo de la pantalla.
 
-<figure><img src="../.gitbook/assets/imagen (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 OSDSYS_menu_top_delimiter = y-99FreeMcBoot              c0[r0.80Version %VER%r0.00]y-00
@@ -141,7 +141,7 @@ OSDSYS_menu_bottom_delimiter = c0r0.60y+99Use o006/o007 to browse listy-00
 
 y así un menú limpio, como es la consola originalmente pero añadiendo nuevas opciones sin romper la estética original.&#x20;
 
-<figure><img src="../.gitbook/assets/imagen (8).png" alt=""><figcaption><p>OSD</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (8) (1).png" alt=""><figcaption><p>OSD</p></figcaption></figure>
 
 ```sh
 OSDSYS_menu_top_delimiter =

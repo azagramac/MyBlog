@@ -2,7 +2,7 @@
 
 Usando como base Linux Mint ([Vera](https://ftp.cixug.es/mint/stable/21.1/linuxmint-21.1-cinnamon-64bit.iso)) con escritorio Cinnamon, procederemos a instalar entorno GNOME 42
 
-<figure><img src="../.gitbook/assets/imagen (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Lo primero de todo es tener actualizado el sistema
 
