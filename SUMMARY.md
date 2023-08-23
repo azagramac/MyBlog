@@ -6,7 +6,7 @@
   * [🖥 Instalar Termux](android/instalar-termux.md)
 * [🐧 Linux](linux/README.md)
   * [Información del /etc/fstab](linux/informacion-del-etc-fstab.md)
-  * [📀 Solucion al error AACS en VLC al reproducir un BR](linux/solucion-al-error-aacs-en-vlc-al-reproducir-un-br.md)
+  * [Solución al error AACS en VLC al reproducir un BluRay](linux/solucion-al-error-aacs-en-vlc-al-reproducir-un-br.md)
   * [Error ata9 en dispositivo SATA](linux/error-ata9-en-dispositivo-sata.md)
   * [Dash to dock para Gnome](linux/dash-to-dock-para-gnome.md)
   * [Después de instalar Fedora 38](linux/despues-de-instalar-fedora-38.md)
