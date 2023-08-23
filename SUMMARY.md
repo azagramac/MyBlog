@@ -5,6 +5,7 @@
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [🖥 Instalar Termux](android/instalar-termux.md)
 * [🐧 Linux](linux/README.md)
+  * [Información del /etc/fstab](linux/informacion-del-etc-fstab.md)
   * [📀 Solucion al error AACS en VLC al reproducir un BR](linux/solucion-al-error-aacs-en-vlc-al-reproducir-un-br.md)
   * [Error ata9 en dispositivo SATA](linux/error-ata9-en-dispositivo-sata.md)
   * [Dash to dock para Gnome](linux/dash-to-dock-para-gnome.md)
