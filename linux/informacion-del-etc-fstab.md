@@ -30,7 +30,7 @@ UUID=4325-9d14					/boot/efi	vfat	umask=0077	0	1
 /dev/sr0					/media/cdrom0	udf,iso9660 user,noauto	0	0
 
 ## NAS
-//nas/home/$user				/home/$user/NAS	cifs	user=$user,password="MUs3YlU4M0x3MUx4ek4yZEtXckxyV2pBNTFIRHBmeXpXbSA=",uid=1000,gid=1000,iocharset=utf8,vers=3.0,forceuid,forcegid,noauto,x-systemd.automount,_netdev	0	0
+//nas/home/$user				/home/$user/NAS	cifs	user=$user,password="4oK/IDFLN2JVODNMdzFMeHpOMmRLV3JMcldqQTUxSERwZnl6V20=",uid=1000,gid=1000,iocharset=utf8,vers=3.0,forceuid,forcegid,noauto,x-systemd.automount,_netdev	0	0
 
 ## Mount temporary folders to RAM
 tmpfs						/tmp		tmpfs	noatime,nodiratime,nodev,nosuid,mode=1777,defaults	0	0
