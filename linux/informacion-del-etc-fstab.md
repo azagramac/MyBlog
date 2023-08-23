@@ -15,26 +15,32 @@ Como cada fichero en linux, tiene su sintaxis
 Ejemplo de mi `/etc/fstab` en Debian 12
 
 ```sh
-## Root
-/dev/mapper/debian-root				/		ext4	noatime,nodiratime,errors=remount-ro	0	1
-/swapfile					none		swap	sw		0	0
+## Root & swap
+/dev/mapper/debian-root				/		ext4	noatime,nodiratime,discard,errors=remount-ro	0	1
+/swapfile					none		swap	sw		                0	0
 
 # /boot was on /dev/nvme0n1p1 during installation
-UUID=26d0f059-6334-4db8-835f-9c54b9955524	/boot		ext4    noatime,nodiratime	0	2
-UUID=4325-9d14					/boot/efi	vfat	umask=0077	0	1
+UUID=26d0f059-6334-4db8-835f-9c54b9955524	/boot		ext4    noatime,nodiratime,discard	0	2
+UUID=4325-9d14					/boot/efi	vfat	umask=0077	                0	1
 
 ## Home
-/dev/mapper/debian-home				/home		ext4	noatime,nodiratime	0	2
+/dev/mapper/debian-home				/home		ext4	noatime,nodiratime,discard	0	2
 
 ## Optical Drive
-/dev/sr0					/media/cdrom0	udf,iso9660 user,noauto	0	0
+/dev/sr0					/media/cdrom0	udf,iso9660 user,noauto	                0	0
 
-## NAS
+## Synology
 //nas/home/$user				/home/$user/NAS	cifs	user=$user,password="4oK/IDFLN2JVODNMdzFMeHpOMmRLV3JMcldqQTUxSERwZnl6V20=",uid=1000,gid=1000,iocharset=utf8,vers=3.0,forceuid,forcegid,noauto,x-systemd.automount,_netdev	0	0
 
-## Mount temporary folders to RAM
+## Folders temp in RAM
 tmpfs						/tmp		tmpfs	noatime,nodiratime,nodev,nosuid,mode=1777,defaults	0	0
 tmpfs						/var/tmp	tmpfs	noatime,nodiratime,nodev,nosuid,mode=1777,defaults	0	0
+
+## No automount
+UUID=df43cc4e-e6eb-8fab-878a-508a61665fcf	/media/$user	ext4	defaults,noauto	0	0
+UUID=3ECA-AFFA					/media/$user	vfat	defaults,noauto	0	0
+UUID=508a6166-0d9c-4a63-9972-4b46df43cc4e	/media/$user	ext4	defaults,noauto	0	0
+UUID=FE4A-F2E1					/media/$user	auto	defaults,noauto	0	0
 ```
 
 \
