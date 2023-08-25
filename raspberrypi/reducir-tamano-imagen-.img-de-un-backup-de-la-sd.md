@@ -22,5 +22,5 @@ Y lanzamos el script, pasando como parametro el fichero de la imgen .img
 
 Finalmente nos dejara el .img con menos peso, para restaurar ese .img a la SD podemos usar el [RaspberryPi Imager](https://www.raspberrypi.com/software/)
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 

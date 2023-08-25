@@ -129,11 +129,11 @@ ansible-playbook -i inventory/NOMBRE_DE_TU_CLUSTER/hosts.yml --become --become-u
 
 Y empezara el despliegue, el tiempo aprox es de unos 30 minutos, a veces se puede extender en función de la versión del Kubernetes a desplegar, numero de nodos, ancho de banda, etc…
 
-<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cuando termine, si todo ha salido correctamente, veremos una salida como esta, en este ejemplo, la duración ha sido de 25 minutos
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Si entramos en el nodo1 y ejecutamos el kubectl podemos ver que el cluster ya esta levantado
 

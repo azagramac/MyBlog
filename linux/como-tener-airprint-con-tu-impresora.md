@@ -2,7 +2,7 @@
 
 Podríamos definir a **AirPrint** como el **servicio de impresión inalámbrica de Apple**. Gracias a él, es posible enviar aquello que deseamos imprimir de forma total y completamente inalámbrica desde un iPhone o un iPad, fácilmente a cualquier impresora compatible que se encuentre conectada a nuestra red Wi-Fi, siempre que la impresora lo soporte... y muchos fabricantes tienen modelos que no lo soportan.
 
-![](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png>)
 
 En el caso de que nuestra impresora no tenga soporte oficial a AirPrint, necesitaremos un equipo o una placa raspberry o parecida con linux.
 
