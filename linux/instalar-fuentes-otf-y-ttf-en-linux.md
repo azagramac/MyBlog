@@ -6,6 +6,12 @@ Instalacion de las fuentes San Francisco de Apple, el formato de las fuentes es 
 
 
 
+{% hint style="info" %}
+Este tutoria es valido para otras fuentes .otf y .ttf
+{% endhint %}
+
+
+
 Descargamos el pack de fuentes
 
 ```sh
@@ -33,6 +39,13 @@ Y ahora las fuentes .ttf
 ```sh
 sudo cp -rf *.ttf /usr/share/fonts/truetype/apple/
 ```
+
+\
+Cambiamos los permisos a las fuentes
+
+<pre class="language-sh"><code class="lang-sh"><strong>sudo chmod 644 /usr/share/fonts/opentype/apple/*.otf
+</strong><strong>sudo chmod 644 /usr/share/fonts/truetype/apple/*.ttf
+</strong></code></pre>
 
 \
 Ahora tenemos que actualizar la cache del sistema
