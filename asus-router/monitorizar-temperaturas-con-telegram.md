@@ -12,7 +12,7 @@ Lo primero, habilitar el acceso SSH en el router, para ello entramos en nuestro 
 
 Entramos en Administration / System, y nos vamos al final de la pagina, en Service, aqui habilitamos el SSH, LAN Only, (ya que accederemos desde local, si vas hacerlo desde fuera, mejor por VPN), definimos un puerto, y copiamos nuestra clave ssh del servidor que vamos a usar, y guardamos los cambios.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -9,6 +9,7 @@
   * [Instalar Debian cifrado](linux/instalar-debian-cifrado.md)
   * [Después de Instalar Debian 12](linux/despues-de-instalar-debian-12.md)
   * [Después de instalar Fedora 38](linux/despues-de-instalar-fedora-38.md)
+  * [Instalar fuentes OTF y TTF en Linux](linux/instalar-fuentes-otf-y-ttf-en-linux.md)
   * [Clonar disco a NAS con CloneZilla](linux/clonar-disco-a-nas-con-clonezilla.md)
   * [Activar TRIM con systemd](linux/activar-trim-con-systemd.md)
   * [Error ata9 en dispositivo SATA](linux/error-ata9-en-dispositivo-sata.md)
