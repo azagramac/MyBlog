@@ -7,7 +7,7 @@ Instalacion de las fuentes San Francisco de Apple, el formato de las fuentes es 
 
 
 {% hint style="info" %}
-Este tutoria es valido para otras fuentes .otf y .ttf
+Este tutorial es valido para otras fuentes .otf y .ttf
 {% endhint %}
 
 
