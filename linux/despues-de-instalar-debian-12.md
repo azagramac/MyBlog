@@ -204,6 +204,13 @@ sudo systemctl start fstrim.timer
 ```
 
 \
+Habilitar la escala del monitor en los ajustes de Gnome, si tienes un monitor 4K lo vas agradecer.
+
+```sh
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+```
+
+\
 Me faltarían algunas aplicacion que se instalan por .deb, como rpi-imager, cambiar firefox ESR por la version actual disponible, thunderbird (estas 2 ultimas, las instalo desde .tar.gz y luego creo un .desktop para añadir al `/home/$USER/.local/share/applications` para que se muestren en el menu de las aplicaciones, ya tengo tema para otra entrada! :smile:)
 
 
