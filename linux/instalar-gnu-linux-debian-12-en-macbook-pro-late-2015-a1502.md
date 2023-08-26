@@ -6,11 +6,11 @@ La ultima version disponilbe para este equipo es MacOS Monterey, con lo que aun 
 Antes de formatear, asegurate de tener una copia MacOS por si decides volver
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="525"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="525"><figcaption></figcaption></figure>
 
 La instalacion se hace normalmente, lo unico que debes pulsar la tecla "Alt" antes de que aparezca la manzana, para que te muestre el menu de arranque, asi puedes elegir el USB/CD/DVD donde tengas grabada la ISO de Debian.
 
