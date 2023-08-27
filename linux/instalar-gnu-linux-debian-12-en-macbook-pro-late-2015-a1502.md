@@ -145,12 +145,18 @@ sudo chmod a+x /lib/systemd/system-sleep/network_hack_hibernation
 
 y reiniciamos
 
+\
+😁
+
+<figure><img src="../.gitbook/assets/Captura desde 2023-08-27 09-49-05.png" alt=""><figcaption></figcaption></figure>
+
+\
 
 
 camara iSight
 
 {% hint style="danger" %}
-No he conseguido que funcione, si lo consigues... avisa!
+No he conseguido que funcione normalmente y menos con Cheese, si lo consigues... avisa!
 {% endhint %}
 
 ```sh
