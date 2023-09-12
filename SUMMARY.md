@@ -68,7 +68,7 @@
 * [🐳 Docker](docker/README.md)
   * [HomeBridge en Docker](docker/homebridge-en-docker.md)
   * [Comprobar vulnerabilidades de imagenes docker](docker/comprobar-vulnerabilidades-de-imagenes-docker.md)
-  * [Docker image signing](docker/docker-image-signing.md)
+  * [Sign docker images with Cosign](docker/sign-docker-images-with-cosign.md)
   * [Acceder a un contenedor con permisos de superusuario](docker/acceder-a-un-contenedor-con-permisos-de-superusuario.md)
 * [🛠 Bricos](bricos/README.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](bricos/unboxing-switch-poe-tp-link-tl-sg1008p.md)
