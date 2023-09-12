@@ -94,7 +94,7 @@ docker push repository/my-image:tag
 Install cosign
 
 [https://github.com/sigstore/cosign/releases](https://github.com/sigstore/cosign/releases)\
-v2.0.0 latest
+v2.2.0 latest
 
 **Generate public/private keys**
 
