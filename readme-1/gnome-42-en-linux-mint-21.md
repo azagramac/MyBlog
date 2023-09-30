@@ -49,4 +49,4 @@ sudo apt install gnome-tweaks papirus-icon-theme -y
 
 Después de todos los cambios, reiniciar y a disfrutar!
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -5,6 +5,7 @@
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [🖥 Instalar Termux](android/instalar-termux.md)
 * [🐧 Linux](linux/README.md)
+  * [Habilitar FSR en los juegos en Steam](linux/habilitar-fsr-en-los-juegos-en-steam.md)
   * [Información del /etc/fstab](linux/informacion-del-etc-fstab.md)
   * [Instalar Debian cifrado](linux/instalar-debian-cifrado.md)
   * [Después de Instalar Debian 12](linux/despues-de-instalar-debian-12.md)

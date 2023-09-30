@@ -206,7 +206,7 @@ sudo systemctl start fstrim.timer
 \
 Habilitar la escala fraccionada del monitor en los ajustes de Gnome, si tienes un monitor 4K lo vas agradecer.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ```sh
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"

@@ -24,4 +24,4 @@ set-inform IP_UNIFI_CONTROLLLER
 
 Como ultimo caso, deberas restaurarlo desde 0 por medio del boton reset (2) presionandolo durante 10s.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -6,15 +6,15 @@ La ultima version disponilbe para este equipo es MacOS Monterey, con lo que aun 
 Antes de formatear, asegurate de tener una copia MacOS por si decides volver
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="525"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="525"><figcaption></figcaption></figure>
 
 La instalacion se hace normalmente, lo unico que debes pulsar la tecla "Alt" antes de que aparezca la manzana, para que te muestre el menu de arranque, asi puedes elegir el USB/CD/DVD donde tengas grabada la ISO de Debian.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="335"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="335"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Este tutorial es para Debian 12.1.0, pero puedes instalar cualquier otra distribución
@@ -26,13 +26,13 @@ y realizamos la instalacion normalmente, aunque el trackpad NO FUNCIONA en la in
 
 Se ve todo muy pequeño, debido a la resolucion de la pantalla retina, no te preocupes que cuando termine se ve bien, de lujo ademas!
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 
 
 Cuando termine de instalar, aun nos queda un poco de trabajo que hacer, para tenerlo listo.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Bien, con Debian instalado, lo priemero es habilitar el sudo para nuestro usuario.
 

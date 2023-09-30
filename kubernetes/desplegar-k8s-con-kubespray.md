@@ -133,7 +133,7 @@ Y empezara el despliegue, el tiempo aprox es de unos 30 minutos, a veces se pued
 
 Cuando termine, si todo ha salido correctamente, veremos una salida como esta, en este ejemplo, la duración ha sido de 25 minutos
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Si entramos en el nodo1 y ejecutamos el kubectl podemos ver que el cluster ya esta levantado
 
