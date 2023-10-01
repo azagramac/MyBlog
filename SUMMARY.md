@@ -39,6 +39,7 @@
   * [Reset NVRAM en un Macintosh](macintosh/reset-nvram-en-un-macintosh.md)
   * [Reset PMU en un PowerBook G4](macintosh/reset-pmu-en-un-powerbook-g4.md)
   * [Solucionar el parpadeo de Netflix en Safari a pantalla completa](macintosh/solucionar-el-parpadeo-de-netflix-en-safari-a-pantalla-completa.md)
+* [🪟 Windows](windows.md)
 * [📡 UniFi](unifi/README.md)
   * [Unboxing Cloud key Gen 2 Plus](unifi/unboxing-cloud-key-gen-2-plus.md)
   * [UniFi Controller en Docker](unifi/unifi-controller-en-docker.md)
