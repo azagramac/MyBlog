@@ -1,5 +1,8 @@
 # AMD Ryzen 9 5950X
 
+Motherboard: Aorus X570 Elite\
+Version bios: F37\
+\
 **Tweaker**
 
 | key                       | value            |
