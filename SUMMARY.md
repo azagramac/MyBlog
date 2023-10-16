@@ -4,6 +4,8 @@
 * [🤖 Android](android/README.md)
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [🖥 Instalar Termux](android/instalar-termux.md)
+* [🖥 Hardware](hardware/README.md)
+  * [AMD Ryzen 9 5950X](hardware/amd-ryzen-9-5950x.md)
 * [🐧 Linux](linux/README.md)
   * [Habilitar FSR en los juegos en Steam](linux/habilitar-fsr-en-los-juegos-en-steam.md)
   * [Información del /etc/fstab](linux/informacion-del-etc-fstab.md)
@@ -82,4 +84,3 @@
 * [🎮 PlayStation](playstation/README.md)
   * [FreeMCBoot](playstation/freemcboot.md)
   * [Instalación chip PSX](playstation/instalacion-chip-psx.md)
-* [🛍 Amazon](amazon.md)
