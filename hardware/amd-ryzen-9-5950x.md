@@ -1,7 +1,15 @@
 # AMD Ryzen 9 5950X
 
-Motherboard: Aorus X570 Elite\
-Version bios: F37\
+\
+\
+
+
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+**Motherboard:** Aorus X570 Elite\
+**Version bios:** [F37](https://www.gigabyte.com/latam/Motherboard/X570-AORUS-ELITE-rev-10/support#support-dl-bios)\
 \
 **Tweaker**
 
