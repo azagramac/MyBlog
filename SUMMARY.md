@@ -5,7 +5,7 @@
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [🖥 Instalar Termux](android/instalar-termux.md)
 * [🖥 Hardware](hardware/README.md)
-  * [AMD Ryzen 9 5950X](hardware/amd-ryzen-9-5950x.md)
+  * [Overclocking AMD Ryzen 9 5950X](hardware/overclocking-amd-ryzen-9-5950x.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](hardware/unboxing-switch-poe-tp-link-tl-sg1008p.md)
 * [🐧 Linux](linux/README.md)
   * [Habilitar FSR en los juegos en Steam](linux/habilitar-fsr-en-los-juegos-en-steam.md)
