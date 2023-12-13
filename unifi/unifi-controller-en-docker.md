@@ -37,7 +37,7 @@ Tendremos un fichero docker-compose.yaml, si editamos el fichero...
 version: "2.1"
 services:
   unifi-controller:
-    image: linuxserver/unifi-controller:6.5.55
+    image: linuxserver/unifi-controller:latest
     container_name: unifi-controller
     network_mode: host
     environment:
@@ -46,7 +46,7 @@ services:
       - MEM_LIMIT=1024
       - MEM_STARTUP=1024
     volumes:
-      - /root/docker/unifi:/config
+      - $HOME/docker/unifi:/config
     ports:
       - 3478:3478/udp
       - 10001:10001/udp
