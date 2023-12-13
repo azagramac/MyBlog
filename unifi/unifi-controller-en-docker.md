@@ -83,4 +83,4 @@ Y listo.
 
 ![](../.gitbook/assets/img\_unifiDashboard.png)
 
-Version actual: [6.5.55](https://www.ui.com/download/?q=6.5.55)
+Versión actual: [![unifi](https://badgen.net/badge/UniFi/8.0.7-ls218?list=%7C\&icon=https://docs.golift.io/svg/ubiquiti\_color.svg\&color=0099ee)](https://www.ui.com/download/unifi/)
