@@ -20,8 +20,8 @@ Ahora vamos a descargar el repo con nuestro docker-compose para desplegar UniFi 
 \
 Entramos por ssh en nustra RaspberryPi y ejecutamos:
 
-```
-git clone https://github.com/AzagraMac/UnifiDocker.git
+```bash
+git clone https://github.com/AzagraMac/unificontroller-docker
 ```
 
 Entramos en el repo
@@ -32,7 +32,7 @@ cd UnifiDocker
 
 Tendremos un fichero docker-compose.yaml, si editamos el fichero...
 
-```
+```yaml
 ---
 version: "2.1"
 services:
@@ -68,14 +68,14 @@ Podemos editar por ejemplo, el volumen donde queremos que se almacene de forma p
 
 y para lanzarlo
 
-```
+```bash
 docker-compose up -d
 ```
 
 La primera vez que lo ejecutas, tiene que descargar la imagen de Unifi, actualmente la v6.5.55 (la ultima disponible a fecha del post)... tardar unos minutos.\
 Podremos ver que funciona abriendo el navegador web y poniendo la ip de la raspberrypi
 
-```
+```bash
 https://IP_Raspberry:8443
 ```
 
