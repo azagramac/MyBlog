@@ -77,13 +77,13 @@ Si hemos tenido muchas actualizaciones, sobre todo alguna del kernel, recomendab
 Instalación de paquetes, esta es mi selección de paquetes que tengo instalados, incluye desde librerías, programas variados, herramientas de desarrollo...
 
 ```sh
-sudo apt install build-essential dkms make cmake linux-headers-$(uname -r) amd64-microcode firmware-linux-nonfree util-linux cifs-utils libfuse2 sysfsutils zlib1g-dev libbz2-dev libreadline-dev iperf3 libiperf0 apt-transport-https ca-certificates software-properties-common dirmngr gnupg openssl libssl-dev sshfs libgbm1 libgjs0g libsqlite3-dev jq libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev -y
+sudo apt install build-essential dkms make cmake linux-headers-$(uname -r) bc bison flex rsync amd64-microcode firmware-amd-graphics firmware-linux firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree util-linux cifs-utils libfuse2 sysfsutils zlib1g-dev libbz2-dev libreadline-dev iperf3 libiperf0 apt-transport-https ca-certificates software-properties-common dirmngr gnupg openssl libssl-dev sshfs libgbm1 libgjs0g libsqlite3-dev jq libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libelf-dev pkg-config -y
 ```
 
 y esta es mi selección que se instala desde el repositorio backports
 
 ```sh
-sudo apt install -t bookworm-backports vulkan-tools mesa-utils mesa-utils-extra mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers mesa-opencl-icd libgl1-mesa-dri libglapi-mesa libglx-mesa0 libegl-mesa0 duf vim git curl wget nmap nvme-cli dexdump lm-sensors htop vlc libaacs0 libaacs-dev lame libbluray2 ffmpeg neofetch flac gparted meld filezilla solaar keepassxc gimp gimp-help-es gimp-data-extras v4l-utils libdvd-pkg libdvdread8 libavcodec59 papirus-icon-theme arc-theme python3 python3-pip python3-pil python3-pil.imagetk bpytop python3-psutil libglib2.0-dev-bin gir1.2-gtk-4.0 gjs libgtk-4-1 libgtk-4-bin libgtk-4-common libxatracker2 ttf-mscorefonts-installer gir1.2-gtop-2.0 p7zip-full rar unrar zip unzip bzip2 gnome-shell-extension-manager gnome-maps gnome-weather -y
+sudo apt install -t bookworm-backports h264enc vulkan-tools vulkan-validationlayers mesa-utils mesa-utils-bin mesa-utils-extra mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers mesa-opencl-icd libgl1-mesa-dri libglapi-mesa libglx-mesa0 libegl-mesa0 duf vim git curl wget nmap nvme-cli dexdump lm-sensors htop vlc libaacs0 libaacs-dev lame libbluray2 ffmpeg neofetch flac gparted meld filezilla solaar keepassxc gimp gimp-help-es gimp-data-extras v4l-utils libdvd-pkg libdvdread8 libavcodec59 papirus-icon-theme arc-theme python3 python3-pip python3-pil python3-pil.imagetk bpytop python3-psutil libglib2.0-dev-bin gir1.2-gtk-4.0 gjs libgtk-4-1 libgtk-4-bin libgtk-4-common libxatracker2 ttf-mscorefonts-installer gir1.2-gtop-2.0 p7zip-full rar unrar zip unzip bzip2 gnome-shell-extension-manager gnome-maps gnome-weather h264enc -y
 ```
 
 {% hint style="info" %}
@@ -104,6 +104,21 @@ Configuración de `lm-sensors`
 
 ```sh
 yes "" | sudo sensors-detect
+```
+
+
+
+Herramientas de red
+
+```bash
+sudo apt install ethtool iperf3 nmap -y
+```
+
+\
+TPM2.0 Tools
+
+```bash
+sudo apt install tpm2-abrmd tpm2-tools -y
 ```
 
 \
@@ -179,6 +194,13 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw status verbose
 sudo apt install gufw
+```
+
+\
+Wireguard
+
+```bash
+sudo apt install wireguard -y
 ```
 
 \
