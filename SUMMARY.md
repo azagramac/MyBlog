@@ -1,8 +1,6 @@
 # Table of contents
 
-* [🕹 Nintendo NES](README.md)
-  * [Región Free, sin cortar el CIC](nintendo-nes/region-free-sin-cortar-el-cic.md)
-* [🏠 Home](<README (1).md>)
+* [🏠 Home](README.md)
 * [🤖 Android](android/README.md)
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [🖥 Instalar Termux](android/instalar-termux.md)
@@ -45,6 +43,8 @@
   * [Reset PMU en un PowerBook G4](macintosh/reset-pmu-en-un-powerbook-g4.md)
   * [Solucionar el parpadeo de Netflix en Safari a pantalla completa](macintosh/solucionar-el-parpadeo-de-netflix-en-safari-a-pantalla-completa.md)
 * [🪟 Windows](windows.md)
+* [🕹 Nintendo NES](<README (1).md>)
+  * [Región Free, sin cortar el CIC](nintendo-nes/region-free-sin-cortar-el-cic.md)
 * [🎮 PlayStation](playstation/README.md)
   * [FreeMCBoot](playstation/freemcboot.md)
   * [Instalación chip PSX](playstation/instalacion-chip-psx.md)
