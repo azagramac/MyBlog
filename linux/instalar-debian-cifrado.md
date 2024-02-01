@@ -362,4 +362,4 @@ detalle de como quedan las particiones creadas.
 
 Y esto es todo, ya tienes tu Debian con la particion raiz y /home cifradas con LUKS, muy recomendable en cualquier equipo que se use hoy en dia, pero mas aun si es un equipo portatil.&#x20;
 
-<figure><img src="../.gitbook/assets/image (15).png" alt="" width="51"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt="" width="51"><figcaption></figcaption></figure>

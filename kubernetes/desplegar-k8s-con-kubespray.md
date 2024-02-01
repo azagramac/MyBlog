@@ -133,7 +133,7 @@ Y empezara el despliegue, el tiempo aprox es de unos 30 minutos, a veces se pued
 
 Cuando termine, si todo ha salido correctamente, veremos una salida como esta, en este ejemplo, la duración ha sido de 25 minutos
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Si entramos en el nodo1 y ejecutamos el kubectl podemos ver que el cluster ya esta levantado
 
@@ -162,4 +162,4 @@ Y lo lanzamos, nada mas lanzarlo y hacer una comprobaciones, nos pedirá confirm
 
 Si le decimos que si “yes”, empezara la eliminación, el tiempo aprox es de unos 6 minutos, dependiendo de cuantas maquinas compongan el cluster, cuando termine debemos reiniciar manualmente cada nodo del cluster.
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -2,7 +2,7 @@
 
 Después de instalar una ROM la bateria esta algo perdida y necesitamos unos dias para que se "asiente" y las lecturas sean más correcta, aunque podremos hacer algún calibrado de bateria despues de una carga completa con alguna App como "[Battery Calibrator](https://f-droid.org/packages/eu.roggstar.luigithehunter.batterycalibrate/)", necesitamos optimizar los paquetes instalados. \
 \
-<img src="../.gitbook/assets/image (8).png" alt="" data-size="line">Informacion [https://developer.android.com/training/wearables/compose/performance?hl=es-419](https://developer.android.com/training/wearables/compose/performance?hl=es-419)\
+<img src="../.gitbook/assets/image (8) (1).png" alt="" data-size="line">Informacion [https://developer.android.com/training/wearables/compose/performance?hl=es-419](https://developer.android.com/training/wearables/compose/performance?hl=es-419)\
 \
 Necesitaremos:\
 \- Custom ROM\

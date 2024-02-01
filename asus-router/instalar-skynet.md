@@ -1,6 +1,6 @@
 # Instalar Skynet
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Requisitos**
 
@@ -9,7 +9,7 @@
 * [Swap habilitada](habilitar-swap.md)\
 
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Instalación**
 
@@ -47,7 +47,7 @@ Y reiniciamos el router.
 
 Despues del reinicio, podemos comprobar su estado desde la WebUI del router.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 Link skynet: [https://github.com/Adamm00/IPSet\_ASUS](https://github.com/Adamm00/IPSet\_ASUS)
 

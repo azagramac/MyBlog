@@ -2,13 +2,13 @@
 
 Sistema de autentificación de Nintendo, llamado [10NES](https://es.wikipedia.org/wiki/10NES), desarrollado para verificar los juegos y los periféricos originales.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 Hay varias formas de anular el chip, la mas común y mas bestia, cortar la patilla 4 del chip, bien dejándolo al aire o soldando un cable GND.&#x20;
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption><p>Identificación de la patilla 4</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>Identificación de la patilla 4</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Dejando al aire la patilla</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Dejando al aire la patilla</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (28).png" alt="" width="375"><figcaption><p>Soldando cable a GND, de la patilla 4 a 13</p></figcaption></figure>
 

@@ -1,6 +1,6 @@
 # Sign docker images with Cosign
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Prepare environment
 
@@ -36,7 +36,7 @@ sudo systemctl enable docker.service
 sync && sudo reboot
 ```
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Dockerfile (sample)
 
@@ -89,7 +89,7 @@ docker push repository/my-image:tag
 
 ### Sign image docker
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 Install cosign
 
@@ -176,11 +176,11 @@ Enter verification code:
 \
 It generates a URL, to log in with our credentials
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 and returns a verification token that must be copied to the terminal
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 and it will sign the image, it generates a new tag in the image that we have in the repository.
 
