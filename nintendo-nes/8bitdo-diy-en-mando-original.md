@@ -2,7 +2,13 @@
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-🛍️ [Link shop 8bitdo](https://shop.8bitdo.com/products/8bitdo-mod-kit-for-original-nes-controller-old-edition?variant=42000475717809)
+{% embed url="https://shop.8bitdo.com/products/8bitdo-mod-kit-for-original-nes-controller-old-edition?variant=42000475717809" %}
+Para los mandos de la Nintendo NES original
+{% endembed %}
+
+{% embed url="https://shop.8bitdo.com/products/8bitdo-mod-kit-for-nes-classic-edition-controller-new-edition" %}
+Para los mandos de la Nintendo NES Mini
+{% endembed %}
 
 <figure><img src="../.gitbook/assets/DSC00605.JPG" alt=""><figcaption><p>Caja simple, junto al receptor de la NES</p></figcaption></figure>
 
