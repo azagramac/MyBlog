@@ -12,13 +12,13 @@ Despues grabar la ISO en un soporte, sea DVD o USB, arrancamos con ella
 
 
 
-<figure><img src="../.gitbook/assets/01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/01 (1).png" alt=""><figcaption></figcaption></figure>
 
 Configuramos idioma, mapa de teclado...
 
 <div>
 
-<figure><img src="../.gitbook/assets/02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02 (1).png" alt=""><figcaption></figcaption></figure>
 
  
 
@@ -26,7 +26,7 @@ Configuramos idioma, mapa de teclado...
 
  
 
-<figure><img src="../.gitbook/assets/04.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/04 (1).png" alt=""><figcaption></figcaption></figure>
 
  
 

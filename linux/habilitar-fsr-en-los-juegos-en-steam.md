@@ -52,7 +52,7 @@ Solo es posible habilitar el FSR en juegos que usen Vulkan (incluidos DXVK y VKD
 
 Seleccionamos un juego y le damos a propiedades.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 En la ventana que se nos abre, en "Compatiblidad" seleccionamos el "GE-Proton" en mi caso es la version 8.16\
 
