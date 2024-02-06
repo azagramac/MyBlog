@@ -58,4 +58,4 @@ sudo fc-cache -f -v
 
 Ya podemos tenemos disponible las fuentes para cambiarlas, y reiniciar el sistema.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
