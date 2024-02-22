@@ -1,28 +1,31 @@
-# Instalación chip PSX
+# Instalación chip PSX, PU-20
 
-**Diagrama de instalación del chip 12C508A para la Playstation SCPH-7002, PAL**
+**Diagrama de instalación del chip 12C508A para la Playstation SCPH-7002 con placa PU-20**
 
-Necesitamos grabar el código .hex en el chip 12c508a (_importante no confundir con el 12c508_), podemos grabar la versión normal "_modchip\_12c508a.hex_" o el modo stealth "_stealth\_12c508a.hex_" para juegos japoneses.
+Necesitamos grabar el código .hex en el chip 12c508a, podemos grabar la versión normal "_modchip\_12c508a.hex_" o el modo stealth "_stealth\_12c508a.hex_" para juegos japoneses.
 
 ![](<../.gitbook/assets/imagen (5) (2).png>)
 
 Desmontamos la consola, retirando los 6 tornillos de la carcasa.
 
-![](<../.gitbook/assets/imagen (6) (1).png>)
+<figure><img src="../.gitbook/assets/imagen (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Localizamos el área de la placa donde vamos a colocar el chip
 
-![](<../.gitbook/assets/imagen (2) (1).png>)
+<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
-Puntos a soldar, se recomienda soldador de no mas de 14W con estaño de 1mm y flux.
+**Puntos a soldar**\
 
-Instalación para el [modchip\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/modchip\_12c508a.hex)
 
-![](<../.gitbook/assets/imagen (4) (1).png>)
+* Instalación\
+  [modchip\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/modchip\_12c508a.hex)
 
-Instalación para [stealth\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/stealth\_12c508a.hex)
+<figure><img src="../.gitbook/assets/imagen (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/imagen (3) (1).png>)
+* Instalación\
+  [stealth\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/stealth\_12c508a.hex)
+
+<figure><img src="../.gitbook/assets/imagen (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 _**Notas**_
 

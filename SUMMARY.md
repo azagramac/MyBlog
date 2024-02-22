@@ -49,7 +49,7 @@
   * [Región Free, sin cortar el CIC](nintendo-nes/region-free-sin-cortar-el-cic.md)
 * [🎮 PlayStation](playstation/README.md)
   * [FreeMCBoot](playstation/freemcboot.md)
-  * [Instalación chip PSX](playstation/instalacion-chip-psx.md)
+  * [Instalación chip PSX, PU-20](playstation/instalacion-chip-psx.md)
 * [📡 UniFi](unifi/README.md)
   * [Unboxing Cloud key Gen 2 Plus](unifi/unboxing-cloud-key-gen-2-plus.md)
   * [UniFi Controller en Docker](unifi/unifi-controller-en-docker.md)
