@@ -13,7 +13,7 @@ Material necesario:
 
 [8bitdo](https://www.8bitdo.com/retro-receiver-nes/) tiene un receptor para conectar y listo a la consola NES a uno de sus puertos.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Esta bien, pero... y porque no integrarlo dentro de la consola y dejamos el puerto libre?
 
@@ -21,13 +21,13 @@ Esta bien, pero... y porque no integrarlo dentro de la consola y dejamos el puer
 
 Lo primero de todo, necesitamos el receptor de 8bitdo, y desmontarlo.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Para abrirlo necesitaremos mucha paciencia si no queremos romper la carcasa, tiene 4 muescas que debemos meter un pincho e ir sacándolo lentamente.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cuesta, pero sale. Lo importante es tirar recto, no doblarlo, porque nos podemos cargar la pequeña PCB que tiene.&#x20;
 

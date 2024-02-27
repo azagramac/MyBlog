@@ -1,6 +1,6 @@
 # 8bitdo DIY en mando original
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://shop.8bitdo.com/products/8bitdo-mod-kit-for-original-nes-controller-old-edition?variant=42000475717809" %}
 Para los mandos de la Nintendo NES original
