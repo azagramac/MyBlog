@@ -80,6 +80,7 @@
   * [Desplegar K8S con Kubespray](kubernetes/desplegar-k8s-con-kubespray.md)
   * [Flux en AKS](kubernetes/flux-en-aks.md)
   * [Actualizar certificados K8S](kubernetes/actualizar-certificados-k8s.md)
+  * [Instalación de Openshift](kubernetes/instalacion-de-openshift.md)
 * [🐳 Docker](docker/README.md)
   * [HomeBridge en Docker](docker/homebridge-en-docker.md)
   * [Comprobar vulnerabilidades de imagenes docker](docker/comprobar-vulnerabilidades-de-imagenes-docker.md)
