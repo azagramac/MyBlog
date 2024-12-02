@@ -204,4 +204,8 @@ Despues de reiniciar la VM al finalizar la instalación, podremos acceder al end
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+
+Bye bye&#x20;
