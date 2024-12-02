@@ -1,6 +1,6 @@
 # FreeMCBoot
 
-<figure><img src="../.gitbook/assets/imagen (3) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (38).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -17,7 +17,7 @@ Lista de versiones del FMCB incluidas en el .7z:
 * Open PS2 Loader v1.1.0
 * PS2-Reality 1.5 Pro
 
-📦[Descargar FMCB v1.966](https://mega.nz/file/1BoHnDRZ#xWOI2RTTzgJTYDQB96gapxA1G-aX\_3ooN-MIo5Nllug)
+📦[Descargar FMCB v1.966](https://mega.nz/file/1BoHnDRZ#xWOI2RTTzgJTYDQB96gapxA1G-aX_3ooN-MIo5Nllug)
 
 Es posible añadir mas opciones al menú, para ello debemos editar el fichero \
 `SYS-CONF/FREEMCB.CNF` y nos encontraremos con esto.&#x20;
@@ -132,7 +132,7 @@ Estas lineas, que no contienen valor algunos, son las que añaden la versión en
 Así seria por defecto. \
 Vemos el titulo de "Free MCBoot", la versión \[Version xxxxxx], vemos unas flechas que parpadean en ambos lados de las opciones, ademas de los botones en cada extremo de la pantalla.
 
-<figure><img src="../.gitbook/assets/imagen (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (29).png" alt=""><figcaption></figcaption></figure>
 
 ```
 OSDSYS_menu_top_delimiter = y-99FreeMcBoot              c0[r0.80Version %VER%r0.00]y-00
@@ -141,7 +141,7 @@ OSDSYS_menu_bottom_delimiter = c0r0.60y+99Use o006/o007 to browse listy-00
 
 y así un menú limpio, como es la consola originalmente pero añadiendo nuevas opciones sin romper la estética original.&#x20;
 
-<figure><img src="../.gitbook/assets/imagen (8) (1).png" alt=""><figcaption><p>OSD</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (34).png" alt=""><figcaption><p>OSD</p></figcaption></figure>
 
 ```sh
 OSDSYS_menu_top_delimiter =
@@ -163,6 +163,6 @@ path2_OSDSYS_ITEM_2 = mass:/PS2/BOOT/OPNPS2LD.ELF
 \
 **mass**, es el almacenamiento externo por USB conectado a la consola, el formato de archivos por defecto debe ser FAT32, aunque hay un uLauncheELF modificado que aceptar ExtFAT.
 
-Tenemos otras variables como **hdd0:**partición , ejemplo **hdd0:\_\_sysconf**, en este caso le decimos que busque en el HDD instalado si lo tenemos en la partición \_\_sysconf el .elf a cargar.&#x20;
+Tenemos otras variables como **hdd0:**&#x70;artición , ejemplo **hdd0:\_\_sysconf**, en este caso le decimos que busque en el HDD instalado si lo tenemos en la partición \_\_sysconf el .elf a cargar.&#x20;
 
 También **cdfs**, que seria la unidad DVD de la consola y **host** seria buscar en la red

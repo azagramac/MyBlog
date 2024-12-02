@@ -4,28 +4,28 @@
 
 Necesitamos grabar el código .hex en el chip 12c508a, podemos grabar la versión normal "_modchip\_12c508a.hex_" o el modo stealth "_stealth\_12c508a.hex_" para juegos japoneses.
 
-![](<../.gitbook/assets/imagen (5) (2).png>)
+![](<../.gitbook/assets/imagen (36).png>)
 
 Desmontamos la consola, retirando los 6 tornillos de la carcasa.
 
-<figure><img src="../.gitbook/assets/imagen (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (33).png" alt=""><figcaption></figcaption></figure>
 
 Localizamos el área de la placa donde vamos a colocar el chip
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 **Puntos a soldar**\
 
 
 * Instalación\
-  [modchip\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/modchip\_12c508a.hex)
+  [modchip\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/modchip_12c508a.hex)
 
-<figure><img src="../.gitbook/assets/imagen (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (28).png" alt=""><figcaption></figcaption></figure>
 
 * Instalación\
-  [stealth\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/stealth\_12c508a.hex)
+  [stealth\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/stealth_12c508a.hex)
 
-<figure><img src="../.gitbook/assets/imagen (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (30).png" alt=""><figcaption></figcaption></figure>
 
 _**Notas**_
 

@@ -4,9 +4,9 @@ description: ⚠️ Usalo bajo tu propia responsabilidad ⚠️
 
 # Overclocking AMD Ryzen 9 5950X
 
-<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 **Motherboard:** Aorus X570 Elite\
 **Version bios:** [F37](https://www.gigabyte.com/latam/Motherboard/X570-AORUS-ELITE-rev-10/support#support-dl-bios)

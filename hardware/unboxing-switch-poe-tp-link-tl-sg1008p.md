@@ -4,9 +4,9 @@ description: Rev. 6.0
 
 # Unboxing Switch POE TP-Link TL-SG1008P
 
-[Link de compra en Amazon](https://amzn.to/3IXdJnE) ![](<../.gitbook/assets/image (1) (1) (2).png>)
+[Link de compra en Amazon](https://amzn.to/3IXdJnE) ![](<../.gitbook/assets/image (61).png>)
 
-![](../.gitbook/assets/IMG\_20230604\_134620.jpg) ![](../.gitbook/assets/IMG\_20230604\_134656.jpg) ![](../.gitbook/assets/IMG\_20230604\_134710.jpg) ![](../.gitbook/assets/IMG\_20230604\_134840.jpg) ![](../.gitbook/assets/IMG\_20230604\_134848.jpg) ![](../.gitbook/assets/IMG\_20230604\_134938.jpg) ![](../.gitbook/assets/IMG\_20230604\_135029.jpg) ![](../.gitbook/assets/IMG\_20230604\_135039.jpg) ![](../.gitbook/assets/IMG\_20230604\_140653.jpg) ![](../.gitbook/assets/IMG\_20230604\_135227.jpg) ![](../.gitbook/assets/IMG\_20230604\_135418.jpg)
+![](../.gitbook/assets/IMG_20230604_134620.jpg) ![](../.gitbook/assets/IMG_20230604_134656.jpg) ![](../.gitbook/assets/IMG_20230604_134710.jpg) ![](../.gitbook/assets/IMG_20230604_134840.jpg) ![](../.gitbook/assets/IMG_20230604_134848.jpg) ![](../.gitbook/assets/IMG_20230604_134938.jpg) ![](../.gitbook/assets/IMG_20230604_135029.jpg) ![](../.gitbook/assets/IMG_20230604_135039.jpg) ![](../.gitbook/assets/IMG_20230604_140653.jpg) ![](<../.gitbook/assets/IMG_20230604_135227 (1).jpg>) ![](../.gitbook/assets/IMG_20230604_135418.jpg)
 
 | **CARACTERÍSTICAS DE HARDWARE**  |                                                                                                                                                                                                                                                                                                                  |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -48,7 +48,7 @@ Ahora ya puedes encenderlo normalmente, e instalar el firmware merlin o configur
 \
 Por SSH, debemos previamente habilitar el ssh en el router, entramos en los ajustes del router y en "Administración / Sistema"
 
-![](<../.gitbook/assets/image (2) (1) (1) (1) (2) (1).png>)
+![](<../.gitbook/assets/image (68).png>)
 
 Luego ya podremos entrar en el router por SSH.&#x20;
 

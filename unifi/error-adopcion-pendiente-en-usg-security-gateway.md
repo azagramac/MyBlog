@@ -10,11 +10,11 @@ Tenemos que irnos al primer UniFi Controller (por tu bien que tengas acceso al s
 
 Entramos en el primer UniFi Controller, y nos vamos a "Settings" y bajamos al final, en el apartado "Application Configuration"
 
-![](../.gitbook/assets/img\_UnifiErrorAdoption.png)
+![](../.gitbook/assets/img_UnifiErrorAdoption.png)
 
 Si nos vamos al final de la nueva pantalla, veremos al final la opcion "Device SSH Authentication", desplegamos y veremos un nombre de usuario y una password, esas credenciales son las que debemos meter en la parte de Adopcion Avanzada, y esperar, ojo!! No tengas a la vez los 2 UniFi Controller iniciados en tu red.
 
-![](../.gitbook/assets/img\_UnifiErrorAdoption2.png)
+![](../.gitbook/assets/img_UnifiErrorAdoption2.png)
 
 Si seguimos con problemas de adopcion, debemos entrar por ssh en el USG con las credenciales y ejecutar este comando
 
@@ -24,4 +24,4 @@ set-inform IP_UNIFI_CONTROLLLER
 
 Como ultimo caso, deberas restaurarlo desde 0 por medio del boton reset (2) presionandolo durante 10s.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>

@@ -29,7 +29,7 @@ ADB y Fastboot
 \
 **Gráficas**
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 * [AdguardHome](https://apps.apple.com/es/app/adguard-home-remote/id1543143740)
 * [Adobe Reader](https://get.adobe.com/es/reader/)
@@ -39,7 +39,7 @@ ADB y Fastboot
 * [CoconutBattery](https://www.coconut-flavour.com/coconutbattery/)
 * [Cyberduck](https://cyberduck.io/download)
 * [Firefox](https://www.mozilla.org/es-ES/firefox/all/#product-desktop-release)
-* [Java JDK](https://download.oracle.com/java/17/latest/jdk-17\_macos-x64\_bin.dmg)
+* [Java JDK](https://download.oracle.com/java/17/latest/jdk-17_macos-x64_bin.dmg)
 * [KeePassXC](https://keepassxc.org/download/)
 * [Ledger Live](https://www.ledger.com/es/ledger-live)
 * [MegaSync](https://mega.io/desktop)

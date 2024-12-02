@@ -1,6 +1,6 @@
 # Monitorizar temperaturas con Telegram
 
-Con este sencillo script, no necesitamos tener firmware Merlin en el Asus, basta con habilitar el acceso SSH (recomiendo cambiar el puerto, por defecto es el 22), y un equipo con Linux 🐧 que tengamos 24/7, basta con una raspberryPi 🍓 o similar, en mi caso uso una [NanoPi Neo3](https://wiki.friendlyelec.com/wiki/index.php/NanoPi\_NEO3) 🐍 que tengo como servidor docker/rsyslog
+Con este sencillo script, no necesitamos tener firmware Merlin en el Asus, basta con habilitar el acceso SSH (recomiendo cambiar el puerto, por defecto es el 22), y un equipo con Linux 🐧 que tengamos 24/7, basta con una raspberryPi 🍓 o similar, en mi caso uso una [NanoPi Neo3](https://wiki.friendlyelec.com/wiki/index.php/NanoPi_NEO3) 🐍 que tengo como servidor docker/rsyslog
 
 
 
@@ -12,7 +12,7 @@ Lo primero, habilitar el acceso SSH en el router, para ello entramos en nuestro 
 
 Entramos en Administration / System, y nos vamos al final de la pagina, en Service, aqui habilitamos el SSH, LAN Only, (ya que accederemos desde local, si vas hacerlo desde fuera, mejor por VPN), definimos un puerto, y copiamos nuestra clave ssh del servidor que vamos a usar, y guardamos los cambios.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 
 

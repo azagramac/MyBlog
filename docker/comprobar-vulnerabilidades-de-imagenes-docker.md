@@ -1,6 +1,6 @@
 # Comprobar vulnerabilidades de imagenes docker
 
-<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 ## Instalacion del ejecutable
 

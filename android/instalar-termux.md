@@ -1,14 +1,14 @@
 # 🖥️ Instalar Termux
 
-<img src="../.gitbook/assets/image (2) (1) (1) (1) (2) (1) (1).png" alt="" data-size="line">Tenemos varias posibilidades de instalar Termux en nuestro Android, pero la mas completa es directamente desde <img src="../.gitbook/assets/image (4) (2) (1).png" alt="" data-size="line">F-Droid ([https://f-droid.org/en/packages/com.termux/](https://f-droid.org/en/packages/com.termux/))\
+<img src="../.gitbook/assets/image (72).png" alt="" data-size="line">Tenemos varias posibilidades de instalar Termux en nuestro Android, pero la mas completa es directamente desde <img src="../.gitbook/assets/image (69).png" alt="" data-size="line">F-Droid ([https://f-droid.org/en/packages/com.termux/](https://f-droid.org/en/packages/com.termux/))\
 \
 Abrimos la App F-Droid si la tenemos instalada
 
-![](../.gitbook/assets/Screenshot\_20221115-152239\_F-Droid.png)
+![](../.gitbook/assets/Screenshot_20221115-152239_F-Droid.png)
 
 Pinchamos donde la lupa, abajo a la derecha y buscamos Termux
 
-![](../.gitbook/assets/Screenshot\_20221115-152251\_F-Droid.png)
+![](../.gitbook/assets/Screenshot_20221115-152251_F-Droid.png)
 
 Después de instalarse, instalaremos unos paquetes
 
@@ -62,4 +62,4 @@ Conectarse desde un terminal a Android&#x20;
 ssh user@ip -p 8022
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>

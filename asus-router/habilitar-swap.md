@@ -45,7 +45,7 @@ root@RT-AX88U_Pro:/#
 
 También podemos ver su estado desde la WebUI, en Tools / SysInfo
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -59,4 +59,4 @@ swapon /tmp/mnt/sda1/file.swp
 
 y en la WebUI, habilitamos el uso de scripts.
 
-<figure><img src="../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
