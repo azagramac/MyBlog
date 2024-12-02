@@ -1,6 +1,6 @@
 ---
-description: Creación de un cluster de Openshift en nuestra VM local en modo single node.
 icon: redhat
+description: Creación de un cluster de Openshift en nuestra VM local en modo single node.
 ---
 
 # Instalación de Openshift
@@ -199,4 +199,9 @@ Tendremos disponible para descargar el fichero KUBECONFIG para poder conectarnos
 
 <figure><img src="../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
 
-to be continued...
+Despues de reiniciar la VM al finalizar la instalación, podremos acceder al endopoint. \
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
