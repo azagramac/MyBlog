@@ -1,6 +1,14 @@
 # OpenShift en modo Datacenter en una VM local
 
 La instalación de un cluster de openshift, no es compleja, pero si entretenida, tendremos que tener recursos de hardware suficientes para poder montarlo en nuestro equipo en una VM que vamos a crear. Mencionar que solo tienes 60 días de uso desde que la creas, la uses o no, 60 dias maximo. \
+
+
+**Requisitos:**\
+\- CPU: minimo 9 cores, recomendable 10 o superior.\
+\- RAM: 16Gb, aunque dependiendo lo que tengas corriendo, subir a 32/64Gb\
+\- Discos: 2 discos, principal para OS de minimo 120Gb, secundario para storage, 400Gb o superior.\
+\- La VM tiene que salir a internet, necesitas tener abierto los puertos 443 y 6443 TCP.&#x20;
+
 \
 Iniciar sesión en [https://console.redhat.com/](https://console.redhat.com/)
 
@@ -98,12 +106,7 @@ Ejemplo con wget
 
 Ya tenemos nuestra ISO de OpenShift. ahora tenemos que montar la máquina donde lo vamos a desplegar.&#x20;
 
-Requisitos minimos:
 
-* CPU: minimo 8 cores (recomendable 10)
-* RAM: minimo 16Gb
-* Disco: 2 discos, uno de 100Gb para el OS, y otro mínimo de 100Gb para el cluster.&#x20;
-* Red: al menos un interface de red
 
 **Creamos nuestra VM, para el ejemplo usamos VirtualBox**
 
