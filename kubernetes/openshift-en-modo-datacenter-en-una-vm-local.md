@@ -3,12 +3,13 @@
 La instalación de un cluster de openshift, no es compleja, pero si entretenida, tendremos que tener recursos de hardware suficientes para poder montarlo en nuestro equipo en una VM que vamos a crear. Mencionar que solo tienes 60 días de uso desde que la creas, la uses o no, 60 dias maximo. \
 
 
-**Requisitos:**\
+**Requisitos de dev o pre con cargas de trabajo:**\
 \- CPU: minimo 9 cores, recomendable 10 o superior.\
 \- RAM: 16Gb, aunque dependiendo lo que tengas corriendo, subir a 32/64Gb\
-\- Discos: 2 discos, principal para OS de minimo 120Gb, secundario para storage, 400Gb o superior.\
+\- Discos: 2 discos, principal para OS de mínimo 120Gb, secundario para storage, 400Gb o superior.\
 \- La VM tiene que salir a internet, necesitas tener abierto los puertos 443 y 6443 TCP.&#x20;
 
+Para esta prueba es una VM mas sencilla, pero no va ejecutar cargas de trabajo. \
 \
 Iniciar sesión en [https://console.redhat.com/](https://console.redhat.com/)
 
