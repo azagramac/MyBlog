@@ -1,9 +1,10 @@
 ---
 icon: redhat
 description: Creación de un cluster de Openshift en nuestra VM local en modo single node.
+hidden: true
 ---
 
-# Instalación de Openshift
+# OpenShift en VM
 
 La instalación de un cluster de openshift, no es compleja, pero si entretenida, tendremos que tener recursos de hardware suficientes para poder montarlo en nuestro equipo en una VM que vamos a crear. Mencionar que solo tienes 60 días de uso desde que la creas, la uses o no, 60 dias maximo. \
 \
