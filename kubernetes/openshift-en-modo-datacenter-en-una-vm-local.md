@@ -202,7 +202,7 @@ Tendremos disponible para descargar el fichero KUBECONFIG para poder conectarnos
 
 Despues de reiniciar la VM al finalizar la instalación, podremos acceder al endopoint.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
 

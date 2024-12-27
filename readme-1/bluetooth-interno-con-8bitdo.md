@@ -13,7 +13,7 @@ Material necesario:
 
 [8bitdo](https://www.8bitdo.com/retro-receiver-nes/) tiene un receptor para conectar y listo a la consola NES a uno de sus puertos.&#x20;
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Esta bien, pero... y porque no integrarlo dentro de la consola y dejamos el puerto libre?
 
@@ -21,25 +21,25 @@ Esta bien, pero... y porque no integrarlo dentro de la consola y dejamos el puer
 
 Lo primero de todo, necesitamos el receptor de 8bitdo, y desmontarlo.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Para abrirlo necesitaremos mucha paciencia si no queremos romper la carcasa, tiene 4 muescas que debemos meter un pincho e ir sacándolo lentamente.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cuesta, pero sale. Lo importante es tirar recto, no doblarlo, porque nos podemos cargar la pequeña PCB que tiene.&#x20;
 
 Una vez sin la carcasa, abrirmos los laterales.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Vistas de la placa de cerca.&#x20;
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ya tenemos la PCB del receptor bluetooth, seria recomendable antes de instalarlo en la NES, actualizar el firmware desde la web de 8bitdo podemos descargarnos el software para actualizar el firmware.&#x20;
 
@@ -47,11 +47,11 @@ Ya tenemos la PCB del receptor bluetooth, seria recomendable antes de instalarlo
 
 Desmontaje de la consola.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Retiramos los 6 tornillos</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Retiramos los 6 tornillos</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Vista del chasis metalico, tiene 7 tornillos a su alrededor </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Vista del chasis metalico, tiene 7 tornillos a su alrededor </p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Vista de la bandeja del cartucho</p></figcaption></figure>
 
@@ -77,7 +77,7 @@ Ahora nos ponemos con la parte baja de la carcasa.&#x20;
 
 Ahora debemos identificar los pines de la NES.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 Puntos donde debemos soldar la PCB de 8bitdo
 
