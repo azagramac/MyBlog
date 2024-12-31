@@ -18,6 +18,6 @@ El chip LM1881 toma una "sincronización sobre sincronización de video compuest
 
 La salida de este LM1881 tiene una resistencia de 470 Ω para que la señal CSYNC sea adecuada para un funcionamiento de 75 ohmios.\
 \
-![](<../.gitbook/assets/image (1) (1).png>) ![](<../.gitbook/assets/image (1) (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1).png>) ![](<../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 [Datasheet LM1881](https://www.ti.com/lit/ds/symlink/lm1881.pdf)
