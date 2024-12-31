@@ -182,16 +182,16 @@ Creamos un fihcero de texto que guardaremos como `peer.conf`
 ```yaml
 [Interface]
 Address = {IPv4 del rango definido en "Configurar interface"}
-DNS = 1.1.1.1,1.0.0.1 
+DNS = 1.1.1.1,1.0.0.1 (o la IP del host donde tengamos AdGuardHome / PiHole)
 ListenPort = {Puerto definido en "Configurar interface"}
-PrivateKey = Pegar contenido de /home/ubnt/wireguard/peer.key
+PrivateKey = {Pegar contenido de /home/ubnt/wireguard/peer.key}
 
 [Peer]
 AllowedIPs = 192.168.1.0/24
 Endpoint = {domain.com}:{port}
 PersistentKeepalive = 15
-PreSharedKey = Pegar contenido de /config/auth/wireguard.psk
-PublicKey = Pegar contenido de /config/auth/wireguard.pub
+PreSharedKey = {Pegar contenido de /config/auth/wireguard.psk}
+PublicKey = {Pegar contenido de /config/auth/wireguard.pub}
 ```
 
 ### Configurar cliente App WireGuard
