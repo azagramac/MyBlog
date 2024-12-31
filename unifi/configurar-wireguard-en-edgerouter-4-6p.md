@@ -236,6 +236,12 @@ En esta captura, vemos como conectado en la red móvil, con la VPN, filtramos la
 
 <figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
 
+
+
+A disfrutar! 😊
+
+₿`1K7BU83LW1LXZN2DKWRLRWJA51HDPFYZWM`
+
 [^1]: DNS sobre TLS, o DoT, es un estándar para encriptar las consultas de DNS y mantenerlas seguras y privadas. DoT utiliza el mismo protocolo de seguridad, TLS, que usan los sitios web HTTPS para encriptar y autenticar las comunicaciones. (TLS también se conoce como "[ SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/).") DoT añade la encriptación TLS sobre el protocolo de datagrama de usuarios (UDP), que se utiliza para las consultas de DNS. Además, garantiza que las solicitudes y respuestas de DNS no sean manipuladas o falsificadas mediante [ataques en ruta](https://www.cloudflare.com/learning/security/threats/on-path-attack/).
 
 [^2]: El DNS sobre HTTPS, o DoH, es una alternativa a DoT. Con DoH, las consultas y respuestas de DNS están encriptadas, pero se envían a través de los protocolos [HTTP](https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/) o [HTTP/2](https://www.cloudflare.com/learning/performance/http2-vs-http1.1/), en lugar de hacerlo directamente por UDP. Al igual que DoT, DoH garantiza que los atacantes no puedan falsificar o alterar el tráfico de DNS. El tráfico DoH se parece al resto del tráfico HTTPS (por ejemplo, las interacciones normales de los usuarios con sitios y aplicaciones web) desde la perspectiva de un administrador de red.
