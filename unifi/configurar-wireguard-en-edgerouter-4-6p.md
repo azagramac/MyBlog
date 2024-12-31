@@ -1,6 +1,6 @@
 # Configurar WireGuard en EdgeRouter 4 / 6P
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Vamos a configurar la VPN de WireGuard en el EdgeRouter 4 (válido para el 6P).
 
@@ -173,6 +173,27 @@ Entramos en el interfaz web del router, y veremos nuestro nuevo interfaz.&#x20;
 
 <figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
+### Configuración para MacOS / Linux y Win
+
+
+
+Creamos un fihcero de texto que guardaremos como `peer.conf`
+
+```yaml
+[Interface]
+Address = {IPv4 del rango definido en "Configurar interface"}
+DNS = 1.1.1.1,1.0.0.1 
+ListenPort = {Puerto definido en "Configurar interface"}
+PrivateKey = Pegar contenido de /home/ubnt/wireguard/peer.key
+
+[Peer]
+AllowedIPs = 192.168.1.0/24
+Endpoint = {domain.com}:{port}
+PersistentKeepalive = 15
+PreSharedKey = Pegar contenido de /config/auth/wireguard.psk
+PublicKey = Pegar contenido de /config/auth/wireguard.pub
+```
+
 ### Configurar cliente App WireGuard
 
 Nos descargamos la App para nuestro dispositivo. [Google Play](https://play.google.com/store/apps/details?id=com.wireguard.android) o  [App Store](https://apps.apple.com/es/app/wireguard/id1441195209)
@@ -207,7 +228,13 @@ En esta captura, vemos como conectado en la red móvil, con la VPN, filtramos la
 
 <figure><img src="../.gitbook/assets/image (158).png" alt="" width="563"><figcaption></figcaption></figure>
 
+### Test de velocidad.
 
+* **Red movil:** 4G
+* **Operador:** Simyo
+* **VPN:** Conectado
+
+<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
 
 [^1]: DNS sobre TLS, o DoT, es un estándar para encriptar las consultas de DNS y mantenerlas seguras y privadas. DoT utiliza el mismo protocolo de seguridad, TLS, que usan los sitios web HTTPS para encriptar y autenticar las comunicaciones. (TLS también se conoce como "[ SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/).") DoT añade la encriptación TLS sobre el protocolo de datagrama de usuarios (UDP), que se utiliza para las consultas de DNS. Además, garantiza que las solicitudes y respuestas de DNS no sean manipuladas o falsificadas mediante [ataques en ruta](https://www.cloudflare.com/learning/security/threats/on-path-attack/).
 
