@@ -4,8 +4,6 @@
 
 Vamos a configurar la VPN de WireGuard en el EdgeRouter 4 (válido para el 6P).
 
-
-
 Primero de todo, nos conectamos por terminal al router
 
 <pre class="language-sh"><code class="lang-sh">$ ssh ubnt@ip_router
@@ -127,7 +125,7 @@ Te habrás fijado que la opción `route-allowed-ips` está en false, es porque v
 
 
 
-### Configurar peers
+### Configuración de peers
 
 Ya tenemos la parte de la red configurada, ahora toca generar los clientes.&#x20;
 
@@ -148,8 +146,6 @@ cat /home/ubnt/wireguard/peer.pub
 ```
 
 y copiamos nuestra clave.&#x20;
-
-
 
 Ahora configuraremos nuestro peer, adaptarlo a vuestra configuración.&#x20;
 
@@ -173,6 +169,46 @@ Realizaremos este paso tantas veces como peers tengamos que generar.&#x20;
 
 
 
-Ya quedaría configurar nuestra app.&#x20;
+Entramos en el interfaz web del router, y veremos nuestro nuevo interfaz.&#x20;
 
 <figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
+
+### Configurar cliente App WireGuard
+
+Nos descargamos la App para nuestro dispositivo. [Google Play](https://play.google.com/store/apps/details?id=com.wireguard.android) o  [App Store](https://apps.apple.com/es/app/wireguard/id1441195209)
+
+Creamos una nueva configuración desde 0.&#x20;
+
+* **Nombre:** El que queramos.&#x20;
+* **Clave privada:** Pegamos el contenido de `/home/ubnt/wireguard/peer.key`
+* **Clave pública:** Se rellena automáticamente al poner la privada. (Que coincidirá con el `peer.pub`)
+* **Direcciones:** Una IPv4 del rango que definimos "[Configurar interface](configurar-wireguard-en-edgerouter-4-6p.md#configurar-interface)", en este tutorial `10.1.1.1/24`, pero no la `10.1.1.1,` que esa es reservada del wireguard, elige otra dentro del rango.
+* **Puerto:** El que hemos definimos anteriormente.&#x20;
+* **Servidor DNS:** podemos usar uno público, ejemplo `1.1.1.1,1.0.0.1` de Cloudflare, de Google `8.8.8.8,8.8.4.4` o mejor... si tenemos montado un [AdGuardHome](https://github.com/azagramac/adguardhome-docker) o un PiHole, podemos poner la IP del host donde lo tenemos, así evitamos tener publicidad también por la VPN 😎
+* **MTU:** lo dejamos en auto
+
+<figure><img src="../.gitbook/assets/image (154).png" alt="" width="375"><figcaption></figcaption></figure>
+
+Le añadimos un Par.&#x20;
+
+* **Clave pública:** Pegamos el contenido de `/config/auth/wireguard.pub`
+* **Clave precompartida:** Pegamos el contenido de `/config/auth/wireguard.psk`
+* **Keepalive:** El tiempo que definimos anteriormente en "[Configuración de Peers](configurar-wireguard-en-edgerouter-4-6p.md#configuracion-de-peers)"
+* **EndPoint:** EL dominio y puerto, el puerto es el definido en "[Definir reglas](configurar-wireguard-en-edgerouter-4-6p.md#definir-reglas)", `{domain}:{port}` que tengamos configurado para poder acceder al el, si tenemos un DDNS, lo pondremos en este campo.&#x20;
+* **IPs permitidas:** Aqui pondremos los rangos separados por "`,`" que queramos tener acceso, en lugar de poner el comodin `0.0.0.0/0`, podemos poner el rango de nuestra LAN, por ejemplo `192.16.1.0/24`, la que definimos en "[Configuración de peers](configurar-wireguard-en-edgerouter-4-6p.md#configuracion-de-peers)"
+
+<figure><img src="../.gitbook/assets/image (155).png" alt="" width="375"><figcaption></figcaption></figure>
+
+### Resultados
+
+<figure><img src="../.gitbook/assets/image (156).png" alt="" width="375"><figcaption></figcaption></figure>
+
+En esta captura, vemos como conectado en la red móvil, con la VPN, filtramos la publicidad y además tenemos habilitado DoT[^1] y DoH[^2]. 😎
+
+<figure><img src="../.gitbook/assets/image (158).png" alt="" width="563"><figcaption></figcaption></figure>
+
+
+
+[^1]: DNS sobre TLS, o DoT, es un estándar para encriptar las consultas de DNS y mantenerlas seguras y privadas. DoT utiliza el mismo protocolo de seguridad, TLS, que usan los sitios web HTTPS para encriptar y autenticar las comunicaciones. (TLS también se conoce como "[ SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/).") DoT añade la encriptación TLS sobre el protocolo de datagrama de usuarios (UDP), que se utiliza para las consultas de DNS. Además, garantiza que las solicitudes y respuestas de DNS no sean manipuladas o falsificadas mediante [ataques en ruta](https://www.cloudflare.com/learning/security/threats/on-path-attack/).
+
+[^2]: El DNS sobre HTTPS, o DoH, es una alternativa a DoT. Con DoH, las consultas y respuestas de DNS están encriptadas, pero se envían a través de los protocolos [HTTP](https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/) o [HTTP/2](https://www.cloudflare.com/learning/performance/http2-vs-http1.1/), en lugar de hacerlo directamente por UDP. Al igual que DoT, DoH garantiza que los atacantes no puedan falsificar o alterar el tráfico de DNS. El tráfico DoH se parece al resto del tráfico HTTPS (por ejemplo, las interacciones normales de los usuarios con sitios y aplicaciones web) desde la perspectiva de un administrador de red.
