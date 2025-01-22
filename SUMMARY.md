@@ -64,6 +64,7 @@
   * [Crear VLAN en UniFi Controller](unifi/crear-vlan-en-unifi-controller.md)
   * [Cambiar IP local en USG antes de adoptarlo](unifi/cambiar-ip-local-en-usg-antes-de-adoptarlo.md)
   * [Configurar DDNS Cloudflare en EdgeRouter 4](unifi/configurar-ddns-cloudflare-en-edgerouter-4.md)
+  * [Configuración vía terminal, red Home](unifi/configuracion-via-terminal-red-home.md)
   * [Configurar WireGuard en EdgeRouter 4 / 6P](unifi/configurar-wireguard-en-edgerouter-4-6p.md)
 * [📶 Asus Router](asus-router/README.md)
   * [Instalar Skynet](asus-router/instalar-skynet.md)
