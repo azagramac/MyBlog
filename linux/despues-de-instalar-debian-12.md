@@ -77,13 +77,13 @@ Si hemos tenido muchas actualizaciones, sobre todo alguna del kernel, recomendab
 Instalación de paquetes, esta es mi selección de paquetes que tengo instalados, incluye desde librerías, programas variados, herramientas de desarrollo...
 
 ```sh
-sudo apt install build-essential dkms make cmake linux-headers-$(uname -r) bc bison flex rsync amd64-microcode firmware-amd-graphics firmware-linux firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree util-linux cifs-utils libfuse2 sysfsutils zlib1g-dev libbz2-dev libreadline-dev iperf3 libiperf0 apt-transport-https ca-certificates software-properties-common dirmngr gnupg openssl libssl-dev sshfs libgbm1 libgjs0g libsqlite3-dev jq libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libelf-dev pkg-config -y
+sudo apt install build-essential dkms make cmake linux-headers-$(uname -r) bc bison flex rsync amd64-microcode firmware-amd-graphics firmware-linux firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree util-linux cifs-utils libfuse2 sysfsutils zlib1g-dev libbz2-dev libreadline-dev iperf3 libiperf0 apt-transport-https ca-certificates software-properties-common dirmngr gnupg openssl libssl-dev sshfs libgbm1 libgjs0g libsqlite3-dev jq libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libelf-dev pkg-config brasero cdrdao dvdauthor -y
 ```
 
 y esta es mi selección que se instala desde el repositorio backports
 
 ```sh
-sudo apt install -t bookworm-backports h264enc vulkan-tools vulkan-validationlayers mesa-utils mesa-utils-bin mesa-utils-extra mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers mesa-opencl-icd libgl1-mesa-dri libglapi-mesa libglx-mesa0 libegl-mesa0 duf vim git curl wget nmap nvme-cli dexdump lm-sensors htop vlc libaacs0 libaacs-dev lame libbluray2 ffmpeg neofetch flac gparted meld filezilla solaar keepassxc gimp gimp-help-es gimp-data-extras v4l-utils libdvd-pkg libdvdread8 libavcodec59 papirus-icon-theme arc-theme python3 python3-pip python3-pil python3-pil.imagetk bpytop python3-psutil libglib2.0-dev-bin gir1.2-gtk-4.0 gjs libgtk-4-1 libgtk-4-bin libgtk-4-common libxatracker2 ttf-mscorefonts-installer gir1.2-gtop-2.0 p7zip-full rar unrar zip unzip bzip2 gnome-shell-extension-manager gnome-maps gnome-weather h264enc -y
+sudo apt install -t bookworm-backports h264enc vulkan-tools vulkan-validationlayers mesa-utils mesa-utils-bin mesa-utils-extra mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers mesa-opencl-icd libva2 vainfo libgl1-mesa-dri libglapi-mesa libglx-mesa0 libegl-mesa0 duf vim git curl wget nmap nvme-cli dexdump lm-sensors htop vlc libaacs0 libaacs-dev lame libbluray2 ffmpeg neofetch flac gparted meld filezilla keepassxc gimp gimp-help-es gimp-data-extras v4l-utils libdvd-pkg libdvdread8 libavcodec59 papirus-icon-theme arc-theme python3 python3-pip python3-pil python3-pil.imagetk bpytop python3-psutil libglib2.0-dev-bin gir1.2-gtk-4.0 gjs libgtk-4-1 libgtk-4-bin libgtk-4-common libxatracker2 ttf-mscorefonts-installer gir1.2-gtop-2.0 p7zip-full rar unrar zip unzip bzip2 gnome-shell-extension-manager gnome-maps gnome-weather h264enc -y
 ```
 
 {% hint style="info" %}
@@ -97,6 +97,7 @@ Claves para películas en DVD
 
 ```sh
 sudo dpkg-reconfigure libdvd-pkg
+sudo apt install libdvdcss-dev libdvdcss2 -y
 ```
 
 \
@@ -125,9 +126,21 @@ sudo apt install tpm2-abrmd tpm2-tools -y
 Oracle Java JDK
 
 ```sh
-wget -c https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-x64_bin.deb
-echo 'export export JAVA_HOME="/usr/lib/jvm/jdk-17-oracle-x64"' >> ~/.bashrc
-echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
+wget -c https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz
+tar -zxvf jdk-21_linux-x64_bin.tar.gz
+cd jdk-21_linux-x64_bin
+sudo mv jdk-21.0.6 /usr/lib/jvm/
+sudo ln -s /usr/lib/jvm/jdk-21.0.6 /usr/lib/jvm/default-java
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/default-java/bin/javac" 1
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/default-java/bin/java" 1
+
+echo "export JAVA_HOME=/usr/lib/jvm/default-java" >> ~/.bashrc
+source ~/.bashrc
+
+$ java -version
+"21.0.6" 2025-01-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.6+8-LTS-188)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
 ```
 
 \
@@ -140,13 +153,13 @@ sudo apt update && sudo apt install -y google-chrome-stable
 ```
 
 \
-VirtualBox 7.0
+VirtualBox 7.1
 
 ```sh
 echo deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bookworm contrib | sudo tee /etc/apt/sources.list.d/virtualbox.list
 wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo apt-key add -
 apt-key export 2980AECF | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/virtualbox.gpg
-sudo apt update && sudo apt install -y virtualbox-7.0
+sudo apt update && sudo apt install -y virtualbox-7.1
 sudo usermod -a -G vboxusers $USER
 ```
 
@@ -166,6 +179,20 @@ Kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod a+x kubectl
 sudo mv kubectl /usr/bin/
+```
+
+\
+Thunderbird, cliente de correo
+
+```sh
+sudo apt install thunderbird thunderbird-l10n-es-es -y
+```
+
+\
+Eliminar juegos Gnome
+
+```sh
+sudo apt purge --autoremove gnome-games gpac zutty -y
 ```
 
 \
@@ -232,6 +259,7 @@ Habilitar la escala fraccionada del monitor en los ajustes de Gnome, si tienes u
 
 ```sh
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+gsettings set org.gnome.mutter center-new-windows true
 ```
 
 \
