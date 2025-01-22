@@ -13,6 +13,10 @@ Hardware:
 
 <figure><img src="../.gitbook/assets/imagen (39).png" alt=""><figcaption></figcaption></figure>
 
+![](<../.gitbook/assets/imagen (43).png>)  ![](<../.gitbook/assets/imagen (44).png>)
+
+
+
 Parámetros vía consola en **EdgeRouter**:
 
 \
