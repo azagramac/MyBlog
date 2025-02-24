@@ -50,3 +50,13 @@ sudo apt install gnome-tweaks papirus-icon-theme -y
 Después de todos los cambios, reiniciar y a disfrutar!
 
 <figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+
+Instalamos estas extensiones\
+\
+Esta es para tener una barra de tareas y que las aplicaciones que tengan su servicio en segundo plano podamos acceder a ellas, vease por ejemplo telegram.&#x20;
+
+{% embed url="https://extensions.gnome.org/extension/615/appindicator-support/" %}
+
+Y esta es para monitorizar el hardware en la barra superior de gnome.&#x20;
+
+{% embed url="https://extensions.gnome.org/extension/841/freon/" %}
