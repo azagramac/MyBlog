@@ -1,5 +1,4 @@
 ---
-icon: redhat
 description: Creación de un cluster de Openshift en nuestra VM local en modo single node.
 hidden: true
 ---

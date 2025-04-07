@@ -4,6 +4,7 @@
 * [🤖 Android](android/README.md)
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
   * [🖥️ Instalar Termux](android/instalar-termux.md)
+  * [LineageOS, Instalar magisk con modulos PlayIntegrityFix y](android/lineageos-instalar-magisk-con-modulos-playintegrityfix-y.md)
 * [🖥️ Hardware](hardware/README.md)
   * [Overclocking AMD Ryzen 9 5950X](hardware/overclocking-amd-ryzen-9-5950x.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](hardware/unboxing-switch-poe-tp-link-tl-sg1008p.md)

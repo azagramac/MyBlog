@@ -4,56 +4,52 @@ description: Como clonar un disco duro/ssd/nvme a un NAS por medio de samba
 
 # Clonar disco a NAS con CloneZilla
 
-<figure><img src="../.gitbook/assets/imagen.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (10).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Lo primero, tenemos que crear un USB o CD, con CloneZilla, nos descargamos la ISO\
 [https://clonezilla.org/downloads/download.php?branch=alternative](https://clonezilla.org/downloads/download.php?branch=alternative) ( ⚠️ elegir ISO)
 
 Ya teniendo el USB/CD creado con CloneZilla, arrancamos el equipo con el.
 
-<figure><img src="../.gitbook/assets/imagen (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Configuramos el idioma y el idioma del teclado
 
-![](../.gitbook/assets/PXL\_20230820\_012533450.jpg)![](../.gitbook/assets/PXL\_20230820\_012544007.jpg)![](<../.gitbook/assets/PXL\_20230820\_012606327 (1).jpg>)![](<../.gitbook/assets/PXL\_20230820\_012617152 (1).jpg>)
+![](../.gitbook/assets/PXL_20230820_012533450.jpg)![](../.gitbook/assets/PXL_20230820_012544007.jpg)![](<../.gitbook/assets/PXL_20230820_012606327 (1).jpg>)![](<../.gitbook/assets/PXL_20230820_012617152 (1).jpg>)
 
 
 
 Comenzamos
 
-<figure><img src="../.gitbook/assets/imagen (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Elegiremos la primera opción "**device-image**", ya que vamos a clonar nuestro disco a una imagen
 
-<figure><img src="../.gitbook/assets/imagen (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Aquí, como vamos a clonar el disco a nuestro NAS, elegiremos el tipo de conexion, en mi caso "**samba\_server**", si prefieres hacerlo a un disco externo por USB, elije la primera opción.&#x20;
 
-<figure><img src="../.gitbook/assets/imagen (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (4) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Configuramos el metodo de conexion de red de la maquina donde tenemos el disco que queremos clonar.
 
-<figure><img src="../.gitbook/assets/imagen (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Y aquí, configuramos la IP de nuestro NAS, la ruta donde vamos a guardar la imagen y el protocolo samba que vamos a usar. (si no lo conoces, déjalo en auto)
 
-![](<../.gitbook/assets/imagen (6).png>)![](<../.gitbook/assets/imagen (7).png>)![](<../.gitbook/assets/imagen (8).png>)
+![](<../.gitbook/assets/imagen (6) (1).png>)![](<../.gitbook/assets/imagen (7) (1).png>)![](<../.gitbook/assets/imagen (8) (1).png>)
 
 
 
 La parte de seguridad por defecto en auto. Después nos pedirá nuestra password del NAS para montar el volumen.&#x20;
 
-![](<../.gitbook/assets/imagen (9).png>) ![](<../.gitbook/assets/imagen (10).png>)
+![](<../.gitbook/assets/imagen (9) (1).png>) ![](<../.gitbook/assets/imagen (10) (1).png>)
 
 
 
 La siguiente opción, déjalo por defecto.&#x20;
 
-<div align="center">
-
-<figure><img src="../.gitbook/assets/imagen (11).png" alt="" width="375"><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../.gitbook/assets/imagen (11).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 
 
