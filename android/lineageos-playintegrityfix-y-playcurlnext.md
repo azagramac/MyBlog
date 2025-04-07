@@ -2,7 +2,7 @@
 icon: android
 ---
 
-# LineageOS, Instalar magisk con modulos PlayIntegrityFix y
+# LineageOS, PlayIntegrityFix y playcurlNEXT
 
 <figure><img src="../.gitbook/assets/imagen.png" alt="" width="375"><figcaption></figcaption></figure>
 
