@@ -9,6 +9,7 @@
   * [Overclocking AMD Ryzen 9 5950X](hardware/overclocking-amd-ryzen-9-5950x.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](hardware/unboxing-switch-poe-tp-link-tl-sg1008p.md)
 * [🐧 Linux](linux/README.md)
+  * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
   * [Cifrar con LUKS](linux/cifrar-con-luks.md)
   * [Habilitar FSR en los juegos en Steam](linux/habilitar-fsr-en-los-juegos-en-steam.md)
   * [Información del /etc/fstab](linux/informacion-del-etc-fstab.md)
