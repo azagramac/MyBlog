@@ -22,7 +22,7 @@ Si pinchaos en "Ver detalles" podemos ver la lista de nuevas versiones
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Importante, asegurate de que las pilas AA tengan carga suficiente
+Importante, asegurate de que las pilas AA tengan carga suficiente y no retires las pilas durante el proceso.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
@@ -35,7 +35,7 @@ Le damos a continuar... y esperamos porque es LENTO!!!&#x20;
 
 Cuando termine, nos mostrara este mensaje
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 Desconectamos el GPS, y le quitamos las pilas, el proximo arranque del GPS es muy lento, ya que tiene que generar la BBDD.
 
