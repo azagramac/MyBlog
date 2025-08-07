@@ -17,7 +17,7 @@ Nos reconocera el GPS, y nos mostrara si tenemos una version de software nueva.&
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Si pinchaos en "Ver detalles" podemos ver la lista de nuevas versiones
+Si pinchamos en "**Ver detalles**" podemos ver la lista de nuevas versiones
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
