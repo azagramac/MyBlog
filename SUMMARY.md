@@ -1,6 +1,7 @@
 # Table of contents
 
-* [🏠 Home](README.md)
+* [🛰️ Garmin](README.md)
+* [🏠 Home](<README (1).md>)
 * [🤖 Android](android/README.md)
   * [LineageOS, PlayIntegrityFix y playcurlNEXT](android/lineageos-playintegrityfix-y-playcurlnext.md)
   * [🖥️ Instalar Termux](android/instalar-termux.md)
