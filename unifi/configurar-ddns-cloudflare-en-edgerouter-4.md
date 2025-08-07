@@ -1,6 +1,6 @@
 # Configurar DDNS Cloudflare en EdgeRouter 4
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 El cliente que usa el ER-4 es `ddclient`, actualmente no es compatible con la API v4 de Cloudflare, por tanto si intentas configurarlo via web o consola, no va sincronizar la IP con nuestro dominio. \
 \
@@ -11,21 +11,21 @@ Requisitos:\
 
 Entramos en Cloudflare, necesitaremos crear el subdominio y obtener la global api key.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Seleccionamos nuestro dominio y bajamos al final de la página, y pinchamos a la derecha donde pone "**Obtenga el token de la API**"\
 
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pinchamos en "**Ver**" en "**Global API Key**"
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 nos aparecerá esta ventana, nos identificamos con nuestra clave de acceso y después nos mostrara la API KEY, la copiamos y la guardamos, que la vamos a necesitar mas tarde.\
 
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ya con la key, ahora creamos el subdominio, volvemos a la pantalla principal de Cloudflare, y ahora pulsamos en "**DNS / Registros**" en el menu lateral.
 

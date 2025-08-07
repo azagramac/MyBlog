@@ -1,6 +1,6 @@
 # Configurar WireGuard en EdgeRouter 4 / 6P
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Vamos a configurar la VPN de WireGuard en el EdgeRouter 4 (válido para el 6P).
 
@@ -45,7 +45,7 @@ Ahora, descargamos el paquete de wireguard para el EdgeRouter 4 (válido para el
 Antes de nada, todo este tutorial se ha realizado en la versión de firmware **v2.0.9-hotfix.7**.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="128"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="128"><figcaption></figcaption></figure>
 
 Repositorio oficial de WireGuard para EdgeOS: [https://github.com/WireGuard/wireguard-vyatta-ubnt/releases](https://github.com/WireGuard/wireguard-vyatta-ubnt/releases)
 
@@ -71,7 +71,7 @@ wireguard-tools v1.0.20210914 - https://git.zx2c4.com/wireguard-tools/
 
 ### Generar claves
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="128"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt="" width="128"><figcaption></figcaption></figure>
 
 Generamos las clave privada y pública y tambien la preshared-key
 
@@ -234,7 +234,7 @@ En esta captura, vemos como conectado en la red móvil, con la VPN, filtramos la
 * **Operador:** Simyo
 * **VPN:** Conectado
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
