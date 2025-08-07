@@ -39,6 +39,8 @@ Cuando termine, nos mostrara este mensaje
 
 Desconectamos el GPS, y le quitamos las pilas, el proximo arranque del GPS es muy lento, ya que tiene que generar la BBDD.
 
+<figure><img src="../.gitbook/assets/imagen (52).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="warning" %}
 No lo apagues ni retires las pilas en el proceso
 {% endhint %}
