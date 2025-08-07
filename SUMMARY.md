@@ -9,6 +9,7 @@
   * [Overclocking AMD Ryzen 9 5950X](hardware/overclocking-amd-ryzen-9-5950x.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](hardware/unboxing-switch-poe-tp-link-tl-sg1008p.md)
 * [🛰️ Garmin](garmin/README.md)
+  * [Hacer capturas de pantalla](garmin/hacer-capturas-de-pantalla.md)
   * [Actualizar firmware eTrex 30x](garmin/actualizar-firmware-etrex-30x.md)
 * [🐧 Linux](linux/README.md)
   * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
