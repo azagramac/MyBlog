@@ -1,7 +1,6 @@
 # Table of contents
 
-* [🛰️ Garmin](README.md)
-* [🏠 Home](<README (1).md>)
+* [🏠 Home](README.md)
 * [🤖 Android](android/README.md)
   * [LineageOS, PlayIntegrityFix y playcurlNEXT](android/lineageos-playintegrityfix-y-playcurlnext.md)
   * [🖥️ Instalar Termux](android/instalar-termux.md)
@@ -9,6 +8,7 @@
 * [🖥️ Hardware](hardware/README.md)
   * [Overclocking AMD Ryzen 9 5950X](hardware/overclocking-amd-ryzen-9-5950x.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](hardware/unboxing-switch-poe-tp-link-tl-sg1008p.md)
+* [🛰️ Garmin](garmin.md)
 * [🐧 Linux](linux/README.md)
   * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
   * [Cifrar con LUKS](linux/cifrar-con-luks.md)
