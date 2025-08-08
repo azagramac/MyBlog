@@ -6,7 +6,7 @@ Lo primero sera acceder al menú del Garmin, entramos en:&#x20;
 
 `Configuración > Pantalla > Captura de pantalla > Activado`.
 
-<div><figure><img src="../.gitbook/assets/55 (1).bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/62.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/71.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/51.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/75 (1).bmp" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/55 (1).bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/62 (1).bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/71.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/51 (1).bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/75 (1) (1).bmp" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 El modo se desactiva cuando apagues el GPS
