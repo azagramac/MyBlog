@@ -6,13 +6,8 @@
 
 <div><figure><img src="../.gitbook/assets/75.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/80.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/111.bmp" alt=""><figcaption></figcaption></figure></div>
 
-Mapas OSM (_España peninsula, Islas Canarias e Islas Baleares_) actualizados cada semana:&#x20;
+Mapas OSM (_España peninsula, Islas Canarias e Islas Baleares_) actualizados cada semana:
 
-<figure>
-  <a href="https://github.com/azagramac/OSMforGarmin" target="_blank" rel="noopener">
-    <img src="../.gitbook/assets/image (161).png" alt="Github" width="92">
-  </a>
-  <figcaption></figcaption>
-</figure>
+<p align="center"><a href="https://github.com/azagramac/OSMforGarmin" class="button primary" data-icon="github-alt">Github</a></p>
 
 <div><figure><img src="../.gitbook/assets/157.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/179.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/337 (1).bmp" alt=""><figcaption></figcaption></figure></div>
