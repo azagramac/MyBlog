@@ -5,7 +5,7 @@
 El cliente que usa el ER-4 es `ddclient`, actualmente no es compatible con la API v4 de Cloudflare, por tanto si intentas configurarlo via web o consola, no va sincronizar la IP con nuestro dominio. \
 \
 Requisitos:\
-\- EdgeRouter 4 (valido EdgeRouter 6P) con firmware: `v2.0.9-hotfix.7`\
+\- EdgeRouter 4 (valido EdgeRouter 6P) con firmware: `v2.0.9-hotfix.7` y `v3.0.0`\
 \- Dominio con Cloudflare\
 
 
@@ -72,20 +72,39 @@ Si nos fijamos le estamos diciendo en la parte `server`, que use la v4 del clien
 
 Comprobar el estado de sincronización:
 
-```bash
-show dns dynamic status
-```
+<pre class="language-bash"><code class="lang-bash"><strong>show dns dynamic status
+</strong></code></pre>
 
 y nos devolverá si ha ido todo bien algo asi:
 
 ```sh
 interface    : pppoe0
-ip address   : YOUR_PUBLIC_IP_ADDRESS
-host-name    : SUBDOMAIN.DOMAIN.COM
+ip address   : xxx.xxx.xxx.xxx
+host-name    : your.domain.com
 last update  : Fri Dec 27 18:01:23 2024
 update-status: good
 ```
 
+Forzar actualización:&#x20;
 
+```sh
+update dns dynamic interface pppoe0          
+```
+
+output:
+
+```sh
+interface    : pppoe0 
+[ Status will be updated within 60 seconds ]
+```
+
+```
+ show dns dynamic status
+interface    : pppoe0
+ip address   : xxx.xxx.xxx.xxx
+host-name    : your.domain.com
+last update  : Wed Aug 27 15:08:22 2025
+update-status: good
+```
 
 Si nos volvemos a cloudlfare, veremos que ahora aparece nuestra IP pública en nuestro registro de DNS. 🎉
