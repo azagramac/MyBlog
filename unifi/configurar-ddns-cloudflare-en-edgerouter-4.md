@@ -53,7 +53,9 @@ Ya tenemos nuestra Global API key y nuestro subdominio creado, ahora nos vamos a
 
 Abrimos un terminal y entramos a el por SSH.&#x20;
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt="v2.0.9-hotfix.7"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (162).png" alt="v3.0.0"><figcaption></figcaption></figure>
 
 Ahora es copiar, cambia los datos por los tuyos y pegalos en el terminal. Cambia el interface por el que corresponda en tu caso, en el mio es el `pppoe0`.&#x20;
 
