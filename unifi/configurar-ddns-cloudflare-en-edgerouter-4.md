@@ -72,7 +72,7 @@ Si nos fijamos le estamos diciendo en la parte `server`, que use la v4 del clien
 
 Comprobar el estado de sincronización:
 
-<pre class="language-bash"><code class="lang-bash"><strong>show dns dynamic status
+<pre class="language-sh"><code class="lang-sh"><strong>show dns dynamic status
 </strong></code></pre>
 
 y nos devolverá si ha ido todo bien algo asi:
@@ -98,8 +98,8 @@ interface    : pppoe0
 [ Status will be updated within 60 seconds ]
 ```
 
-```
- show dns dynamic status
+```sh
+$ show dns dynamic status
 interface    : pppoe0
 ip address   : xxx.xxx.xxx.xxx
 host-name    : your.domain.com
