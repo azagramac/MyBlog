@@ -11,7 +11,7 @@ Lo primero, tenemos que crear un USB o CD, con CloneZilla, nos descargamos la IS
 
 Ya teniendo el USB/CD creado con CloneZilla, arrancamos el equipo con el.
 
-<figure><img src="../.gitbook/assets/imagen (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Configuramos el idioma y el idioma del teclado
 
@@ -21,15 +21,15 @@ Configuramos el idioma y el idioma del teclado
 
 Comenzamos
 
-<figure><img src="../.gitbook/assets/imagen (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (2) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Elegiremos la primera opción "**device-image**", ya que vamos a clonar nuestro disco a una imagen
 
-<figure><img src="../.gitbook/assets/imagen (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Aquí, como vamos a clonar el disco a nuestro NAS, elegiremos el tipo de conexion, en mi caso "**samba\_server**", si prefieres hacerlo a un disco externo por USB, elije la primera opción.&#x20;
 
-<figure><img src="../.gitbook/assets/imagen (4) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (4) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Configuramos el metodo de conexion de red de la maquina donde tenemos el disco que queremos clonar.
 

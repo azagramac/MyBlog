@@ -4,7 +4,7 @@ icon: android
 
 # LineageOS, PlayIntegrityFix y playcurlNEXT
 
-<figure><img src="../.gitbook/assets/imagen.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Preparativos:
 
@@ -28,7 +28,7 @@ Nada mas abrir la primera vez Magisk nos pedirá actualizar y reiniciar.&#x20;
 
 Después de reiniciar habilitamos Zygisk, en la App de Magisk, entramos en Ajustes y marcamos Zygisk y reiniciamos de nuevo.
 
-<figure><img src="../.gitbook/assets/imagen (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Ahora podemos marcar también la lista de denegación y seleccionar las apps, recomendable apps de banca, wallet, cla@vePin, Waylet, chatgpt si lo tenemos... y sobre todo los servicios de google.
 
@@ -38,13 +38,13 @@ Ahora podemos marcar también la lista de denegación y seleccionar las apps, re
 
 Y así tendríamos que tenerlo.&#x20;
 
-<figure><img src="../.gitbook/assets/imagen (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Para instalar los módulos, descargamos los ficheros .zip mencionados anteriormente, y le damos a "Instalar desde almacenamiento" en la pestaña de Módulos dentro de Magisk, seleccionamos el fichero y posteriormente reiniciamos el dispositivo.&#x20;
 
 Los módulos instalados, (_Shamiko y Systemless Hosts aparecen deshabilitados, ya que no funcionan o al menos no me han funcionado en LinegeOS 22.1_)
 
-<figure><img src="../.gitbook/assets/imagen (4).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (4) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Y podemos verificar que todo esta ok con la App "[SafetyNet | Integrity Checker](https://play.google.com/store/apps/details?id=com.flinkapps.safteynet)" y/o "[Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck)"
 
