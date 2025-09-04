@@ -93,6 +93,7 @@
   * [OpenShift en VM](kubernetes/openshift-en-vm.md)
   * [OpenShift en modo Datacenter en una VM local](kubernetes/openshift-en-modo-datacenter-en-una-vm-local.md)
 * [🐳 Docker](docker/README.md)
+  * [Jellyfin for NAS Synology](docker/jellyfin-for-nas-synology.md)
   * [HomeBridge en Docker](docker/homebridge-en-docker.md)
   * [Comprobar vulnerabilidades de imagenes docker](docker/comprobar-vulnerabilidades-de-imagenes-docker.md)
   * [Sign docker images with Cosign](docker/sign-docker-images-with-cosign.md)
