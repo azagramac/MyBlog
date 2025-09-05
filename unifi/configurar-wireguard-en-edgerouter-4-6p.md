@@ -2,7 +2,11 @@
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Vamos a configurar la VPN de WireGuard en el EdgeRouter 4 (válido para el 6P).
+Vamos a configurar la VPN de WireGuard en el EdgeRouter 4 / EdgeRouter 6P
+
+Testado en firmware v2.0.9-hotfix.7, en la v3.0.0 ya incluye wireguar de forma nativa (sigue siendo el mismo paquete y version instalado, pero se ha integrado en el navegador web, los comandos son los mismos)
+
+
 
 Primero de todo, nos conectamos por terminal al router
 
@@ -264,6 +268,75 @@ En esta captura, vemos como conectado en la red móvil, con la VPN, filtramos la
 * **VPN:** Conectado
 
 <figure><img src="../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+
+Si queremos ver desde el router el estado de los peers
+
+```bash
+$ sudo wg show
+interface: wg0
+  public key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  private key: (hidden)
+  listening port: 51820
+
+peer: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  preshared key: (hidden)
+  endpoint: xxx.xxx.xxx.xxx:48735
+  allowed ips: 10.1.1.2/32
+  latest handshake: 28 minutes, 15 seconds ago
+  transfer: 742.85 MiB received, 988.86 MiB sent
+  persistent keepalive: every 25 seconds
+
+peer: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  preshared key: (hidden)
+  endpoint: xxx.xxx.xxx.xxx:51820
+  allowed ips: 10.1.1.3/32
+  transfer: 0 B received, 44.08 KiB sent
+  persistent keepalive: every 25 seconds
+
+peer: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  preshared key: (hidden)
+  endpoint: xxx.xxx.xxx.xxx:51820
+  allowed ips: 10.1.1.4/32
+  transfer: 0 B received, 44.37 KiB sent
+  persistent keepalive: every 25 seconds
+```
+
+
+
+y para ver una lista de los comandos ejecutados:
+
+```bash
+$ show configuration commands | grep wireguard
+set interfaces wireguard wg0 address 10.1.1.1/24
+set interfaces wireguard wg0 description WireGuard
+set interfaces wireguard wg0 listen-port 51820
+set interfaces wireguard wg0 mtu 1420
+set interfaces wireguard wg0 peer {{ peer2 pub key }} allowed-ips 10.1.1.3/32
+set interfaces wireguard wg0 peer {{ peer2 pub key }} description 'MacBook Pro'
+set interfaces wireguard wg0 peer {{ peer2 pub key }} endpoint 'xxxxxxxxxxxxxxxxxxxx:51820'
+set interfaces wireguard wg0 peer {{ peer2 pub key }} persistent-keepalive 25
+set interfaces wireguard wg0 peer {{ peer2 pub key }} preshared-key /config/auth/wireguard.psk
+set interfaces wireguard wg0 peer {{ peer3 pub key }} allowed-ips 10.1.1.4/32
+set interfaces wireguard wg0 peer {{ peer3 pub key }} description 'NothingPhone'
+set interfaces wireguard wg0 peer {{ peer3 pub key }} endpoint 'xxxxxxxxxxxxxxxxxxxx:51820'
+set interfaces wireguard wg0 peer {{ peer3 pub key }} persistent-keepalive 25
+set interfaces wireguard wg0 peer {{ peer3 pub key }} preshared-key /config/auth/wireguard.psk
+set interfaces wireguard wg0 peer {{ peer1 pub key }} allowed-ips 10.1.1.2/32
+set interfaces wireguard wg0 peer {{ peer1 pub key }} description 'OnePlus 8T'
+set interfaces wireguard wg0 peer {{ peer1 pub key }} endpoint 'xxxxxxxxxxxxxxxxxxxx:51820'
+set interfaces wireguard wg0 peer {{ peer1 pub key }} persistent-keepalive 25
+set interfaces wireguard wg0 peer {{ peer1 pub key }} preshared-key /config/auth/wireguard.psk
+set interfaces wireguard wg0 private-key /config/auth/wireguard.key
+set interfaces wireguard wg0 route-allowed-ips false
+
+$ show interfaces wireguard
+Codes: S - State, L - Link, u - Up, D - Down, A - Admin Down
+Interface    IP Address                        S/L  Description                 
+---------    ----------                        ---  -----------                 
+wg0          10.1.1.1/24                      u/u  WireGuard
+```
 
 
 
