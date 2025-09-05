@@ -92,22 +92,24 @@ total 12
 
 
 
-### Definir reglas
+### Configuracion parte servidor.&#x20;
 
-Ahora definiremos las reglas.
+Ahora definiremos las reglas del firewall.
 
 ```sh
 configure
-set firewall name WAN_LOCAL rule 20 description 'Allow WireGuard'
-set firewall name WAN_LOCAL rule 20 action accept
-set firewall name WAN_LOCAL rule 20 protocol udp
-set firewall name WAN_LOCAL rule 20 destination port 51820
+set firewall name WAN_LOCAL rule 30 description 'Allow WireGuard'
+set firewall name WAN_LOCAL rule 30 action accept
+set firewall name WAN_LOCAL rule 30 protocol udp
+set firewall name WAN_LOCAL rule 30 destination port 51820
 commit ;save
 ```
 
-El puerto `51820`, es por defecto, pero mejor utiliza otro.&#x20;
+{% hint style="success" %}
+El puerto `51820`, es por defecto, pero por seguridad mejor utiliza otro.&#x20;
+{% endhint %}
 
-### Configurar Interface
+### Configurar Interface `wg0`
 
 ```sh
 configure
@@ -119,53 +121,76 @@ set interfaces wireguard wg0 route-allowed-ips false
 commit ;save
 ```
 
-En `address`, introduce la IP que quieras usar como servidor de wireguard, y asegurate de seleccionar el puerto que has definido en las reglas en el paso anterior.&#x20;
+{% hint style="warning" %}
+En `address`, introduce la IP que quieras usar como servidor de wireguard, y asegurate de seleccionar el puerto que has definido en el paso anterior en `destination port`.
+{% endhint %}
 
-Te habrás fijado que la opción `route-allowed-ips` está en false, es porque vamos a establecer acceso a la LAN.&#x20;
+{% hint style="info" %}
+Te habrás fijado que la opción `route-allowed-ips` está en `false`, es porque vamos a establecer acceso a la LAN.&#x20;
+{% endhint %}
 
 
 
-### Configuración de peers
+### Configuración de peers, tantos como necesites.
 
-Ya tenemos la parte de la red configurada, ahora toca generar los clientes.&#x20;
+Ya tenemos la parte servidor configurado, ahora toca generar los clientes (peers).&#x20;
+
+
 
 Generamos la clave privada y pública de nuestra peer, (aquí podemos generar tantas como queramos.)
 
-```sh
-wg genkey | tee /home/ubnt/wireguard/peer.key | wg pubkey > /home/ubnt/wireguard/peer.pub
+```bash
+wg genkey | tee /home/ubnt/wireguard/peer1.key | wg pubkey > /home/ubnt/wireguard/peer.pub
 ```
 
 
 
-Necesitaremos la clave privada (`peer.key`) que usaremos luego para configurar nuestra App.&#x20;
+Si queremos generar mas, tan solo cambiamos el 1 por un 2 por ejemplo y listo:
+
+```bash
+wg genkey | tee /home/ubnt/wireguard/peer2.key | wg pubkey > /home/ubnt/wireguard/peer2.pub
+```
+
+
+
+Necesitaremos la clave privada (`peerX.key`) que usaremos luego para configurar nuestra App.&#x20;
 
 Hacemos un cat a nuestra clave pública de nuestra peer
 
-```sh
-cat /home/ubnt/wireguard/peer.pub
+```bash
+cat /home/ubnt/wireguard/peerX.pub
 ```
 
 y copiamos nuestra clave.&#x20;
 
+
+
 Ahora configuraremos nuestro peer, adaptarlo a vuestra configuración.&#x20;
 
-```sh
-configure
-set interfaces wireguard wg0 peer {your peer pub key} description "Android"
-set interfaces wireguard wg0 peer {your peer pub key} allowed-ips 192.168.1.0/24
-set interfaces wireguard wg0 peer {your peer pub key} endpoint {your_sub_domain.domain.com}:51820
-set interfaces wireguard wg0 peer {your peer pub key} persistent-keepalive 15
-set interfaces wireguard wg0 peer {your peer pub key} preshared-key /config/auth/wireguard.psk
+<pre class="language-sh"><code class="lang-sh"><strong>configure
+</strong>set interfaces wireguard wg0 peer {{ peer1 pub key }} description "Android"
+set interfaces wireguard wg0 peer {{ peer1 pub key }} allowed-ips 10.1.1.2/32
+set interfaces wireguard wg0 peer {{ peer1 pub key }} endpoint {{ your_sub_domain.domain.com }}:51820
+set interfaces wireguard wg0 peer {{ peer1 pub key }} persistent-keepalive 25
+set interfaces wireguard wg0 peer {{ peer1 pub key }} preshared-key /config/auth/wireguard.psk
 commit ;save
-```
+</code></pre>
 
-En `allowed-ips`, le indicamos el rango de ips permitido a ese peer, podemos poner el comodin `0.0.0.0/0` o un rango específico, cambiar el rango si fuera necesario.&#x20;
+{% hint style="warning" %}
+WireGuard usa `allowed-ips` también como **tabla de enrutamiento, n**o puede haber dos peers con la **misma red exacta** en `allowed-ips`.
 
-Debereis indicar también vuestro endpoint para poder acceder remotamente a vuestra red y el puerto definido en la regla
+Si lo haces (ejemplo: ambos tienen `0.0.0.0/0` y `10.1.1.0/24`), WireGuard no sabe a qué peer enviar ese tráfico → normalmente se asigna al **último peer configurado**, y el otro queda “aislado”.
+{% endhint %}
+
+En el cliente, ya le asignas las redes a las cuales quieres tener acceso, si son VLANs, recuerda que debes configurarlas previamente en el router.
 
 {% hint style="info" %}
-Realizaremos este paso tantas veces como peers tengamos que generar.&#x20;
+`endpoint {{ your_sub_domain.domain.com }}:51820`\
+Aqui pon el mismo puerto que estableciste antes en la parte servidor.&#x20;
 {% endhint %}
+
+\
+Realizaremos estos pasos, tantas veces como peers queramos poner, recuerda siempre poner una pub key diferente a cada peer y la IP, que no tengan varios peers, misma IP.&#x20;
 
 
 
@@ -173,26 +198,30 @@ Entramos en el interfaz web del router, y veremos nuestro nuevo interfaz.&#x20;
 
 <figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
-### Configuración para MacOS / Linux y Win
+###
+
+### Configuración para cliente WireGuard
 
 
 
-Creamos un fihcero de texto que guardaremos como `peer.conf`
+Creamos un fichero de texto que guardaremos como `peer.conf`
 
 ```yaml
 [Interface]
-Address = {IPv4 del rango definido en "Configurar interface"}
-DNS = 1.1.1.1,1.0.0.1 (o la IP del host donde tengamos AdGuardHome / PiHole)
-ListenPort = {Puerto definido en "Configurar interface"}
-PrivateKey = {Pegar contenido de /home/ubnt/wireguard/peer.key}
+Address = {{ IP definido antes para el peer }}
+DNS = 1.1.1.1,1.0.0.1     # Si tienes un AdGuard Home o PiHole, puedes poner su IP
+ListenPort = 51820        # Puerto que hayas definido en la parte servidor
+PrivateKey = {{ clave /home/ubnt/wireguard/peer.key }}
 
 [Peer]
-AllowedIPs = 192.168.1.0/24
-Endpoint = {domain.com}:{port}
-PersistentKeepalive = 15
-PreSharedKey = {Pegar contenido de /config/auth/wireguard.psk}
-PublicKey = {Pegar contenido de /config/auth/wireguard.pub}
+AllowedIPs = 0.0.0.0/0, 192.168.1.0/24, 172.16.1.0/24    # Rangos de IP que quieres acceder
+Endpoint = {{ your_sub_domain.domain.com }}:51820
+PersistentKeepalive = 25
+PreSharedKey = {{ clave /config/auth/wireguard.psk }}
+PublicKey = {{ clave /config/auth/wireguard.pub }}
 ```
+
+###
 
 ### Configurar cliente App WireGuard
 
@@ -239,8 +268,6 @@ En esta captura, vemos como conectado en la red móvil, con la VPN, filtramos la
 
 
 A disfrutar! 😊
-
-₿`1K7BU83LW1LXZN2DKWRLRWJA51HDPFYZWM`
 
 [^1]: DNS sobre TLS, o DoT, es un estándar para encriptar las consultas de DNS y mantenerlas seguras y privadas. DoT utiliza el mismo protocolo de seguridad, TLS, que usan los sitios web HTTPS para encriptar y autenticar las comunicaciones. (TLS también se conoce como "[ SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/).") DoT añade la encriptación TLS sobre el protocolo de datagrama de usuarios (UDP), que se utiliza para las consultas de DNS. Además, garantiza que las solicitudes y respuestas de DNS no sean manipuladas o falsificadas mediante [ataques en ruta](https://www.cloudflare.com/learning/security/threats/on-path-attack/).
 
