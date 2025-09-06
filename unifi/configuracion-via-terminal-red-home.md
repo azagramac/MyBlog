@@ -15,7 +15,7 @@ Hardware:
 * EdgeRouter 6P, firmware v2.0.9-hotfix.7
 * EdgeSwitch 8-150, firmware 1.11.1-lite
 
-![](<../.gitbook/assets/imagen (43).png>)  ![](<../.gitbook/assets/imagen (44).png>)
+![](<../.gitbook/assets/imagen (44).png>) ![](../.gitbook/assets/PXL_20250906_095727029.MV.jpg)
 
 
 
