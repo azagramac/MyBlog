@@ -21,9 +21,7 @@ Hardware:
 
 Parámetros vía consola en **EdgeRouter**:
 
-```
-// Some code
-```
+
 
 ```bash
 set firewall all-ping enable
@@ -284,8 +282,6 @@ Le damos permisos de ejecución, y lo ejecutamos directamente desde el router, y
 
 
 <figure><img src="../.gitbook/assets/imagen (3).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Parámetros vía consola en **EdgeSwitch**:
 
