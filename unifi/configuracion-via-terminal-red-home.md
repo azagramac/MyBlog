@@ -6,9 +6,9 @@ description: >-
 
 # Configuración vía terminal, red Home
 
-<figure><img src="../.gitbook/assets/imagen.png" alt="EdgeRouter 6 PoE"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (2).png" alt="EdgeRouter 6 PoE"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/imagen (1).png" alt="EdgeSwitch 8 PoE"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (1) (1).png" alt="EdgeSwitch 8 PoE"><figcaption></figcaption></figure>
 
 Hardware:
 
@@ -357,4 +357,4 @@ exit
 write memory
 ```
 
-<figure><img src="../.gitbook/assets/imagen (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (2) (1).png" alt=""><figcaption></figcaption></figure>

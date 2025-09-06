@@ -1,10 +1,12 @@
 # Configurar WireGuard en EdgeRouter 4 / 6P
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (1).png" alt=""><figcaption></figcaption></figure>
 
-Vamos a configurar la VPN de WireGuard en el EdgeRouter 4 / EdgeRouter 6P
+Vamos a configurar la VPN de WireGuard en el EdgeRouter 6P /  EdgeRouter 4
 
-Testado en firmware v2.0.9-hotfix.7, en la v3.0.0 ya incluye wireguar de forma nativa (sigue siendo el mismo paquete y version instalado, pero se ha integrado en el navegador web, los comandos son los mismos)
+{% hint style="info" %}
+Realizado en firmware **v2.0.9-hotfix.7,** en la nueva version v3.0.0 incluye de serie wireguard, los comandos son los mismos.
+{% endhint %}
 
 
 
@@ -44,10 +46,6 @@ mkdir wireguard && cd wireguard
 ### Descargar e instalar wireguard
 
 Ahora, descargamos el paquete de wireguard para el EdgeRouter 4 (válido para el 6P, también hay otros modelos disponibles)
-
-{% hint style="info" %}
-Antes de nada, todo este tutorial se ha realizado en la versión de firmware **v2.0.9-hotfix.7**.
-{% endhint %}
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="128"><figcaption></figcaption></figure>
 

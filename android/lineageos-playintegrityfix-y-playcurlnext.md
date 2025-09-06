@@ -28,7 +28,7 @@ Nada mas abrir la primera vez Magisk nos pedirá actualizar y reiniciar.&#x20;
 
 Después de reiniciar habilitamos Zygisk, en la App de Magisk, entramos en Ajustes y marcamos Zygisk y reiniciamos de nuevo.
 
-<figure><img src="../.gitbook/assets/imagen (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Ahora podemos marcar también la lista de denegación y seleccionar las apps, recomendable apps de banca, wallet, cla@vePin, Waylet, chatgpt si lo tenemos... y sobre todo los servicios de google.
 
