@@ -64,8 +64,13 @@ Ahora debemos descargarnos un fichero y copiarlo en `/lib/firmware/brcm`
 wget https://gist.githubusercontent.com/MikeRatcliffe/9614c16a8ea09731a9d5e91685bd8c80/raw/38180b6a0ce552e1a3a2826ffea2bf1f52d05e9f/brcmfmac43602-pcie.txt
 ```
 
-\
-y lo copiamos
+Editamos el fichero con un editor de texto y sustituimos la linea
+
+```console
+macaddr=xx:xx:xx:xx:xx:xx
+```
+
+con la MAC de tu wifi, guardamos el fichero ya editado, y lo copiamos a
 
 ```sh
 sudo cp -rf brcmfmac43602-pcie.txt /lib/firmware/brcm/
