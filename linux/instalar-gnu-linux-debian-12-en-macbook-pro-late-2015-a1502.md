@@ -150,13 +150,12 @@ y reiniciamos
 
 <figure><img src="../.gitbook/assets/Captura desde 2023-08-27 09-49-05.png" alt=""><figcaption></figcaption></figure>
 
-\
+<br>
 
+cámara iSight
 
-camara iSight
-
-{% hint style="danger" %}
-No he conseguido que funcione normalmente y menos con Cheese, si lo consigues... avisa!
+{% hint style="info" %}
+Que funcione o no la camara es casi una loteria
 {% endhint %}
 
 ```sh
@@ -164,12 +163,60 @@ git clone https://github.com/patjak/facetimehd-firmware.git && cd facetimehd-fir
 ```
 
 ```sh
+#!/bin/bash
+# SPDX-License-Identifier: GPL-2.0-only
+# Script para instalar cámara FaceTime HD en MacBook Pro A1502
+
+set -e
+
+echo "🚀 Instalando cámara FaceTime HD"
+
+# 1️⃣ Instalar dependencias necesarias
+echo "📦 Instalando paquetes necesarios..."
+sudo apt update
+sudo apt install -y git build-essential linux-headers-$(uname -r) curl xz-utils cpio v4l-utils dkms
+
+# 2️⃣ Descargar e instalar firmware
+echo "💾 Descargando y extrayendo firmware FaceTimeHD..."
+TMP_DIR=$(mktemp -d)
+cd "$TMP_DIR"
+
+git clone https://github.com/patjak/facetimehd-firmware.git
+cd facetimehd-firmware
+
+sudo ./facetimehd-firmware-install.sh
+
+echo "✅ Firmware instalado correctamente."
+
+# 3️⃣ Compilar e instalar driver bcwc_pcie
+echo "🔧 Clonando y compilando driver bcwc_pcie..."
+cd "$TMP_DIR"
+git clone https://github.com/patjak/bcwc_pcie.git
+cd bcwc_pcie
+
 make
 sudo make install
-sudo ls /lib/firmware/facetimehd/firmware.bin
 
+# 4️⃣ Cargar módulo del kernel
+echo "🛠️ Cargando módulo del kernel..."
 sudo depmod
 sudo modprobe facetimehd
+
+# 5️⃣ Comprobar que la cámara se detecta
+echo "🔎 Comprobando la cámara..."
+if v4l2-ctl --list-devices | grep -i facetime; then
+    echo "🎉 Cámara FaceTime HD detectada correctamente!"
+    echo "Dispositivo disponible en /dev/video*"
+else
+    echo "⚠️ La cámara no se detecta. Verifica los logs con 'dmesg | grep -i facetimehd'"
+fi
+
+# 6️⃣ Limpieza
+echo "🧹 Limpiando archivos temporales..."
+rm -rf "$TMP_DIR"
+
+echo "✅ Instalación completada. Reinicia el sistema."
+
 ```
 
-y reiniciamos, en Cheese no funciona, da error de que no encuentra la camara, he conseguido que funcione con mplayer, pero no es util si pretendes hacer videollamadas con Teams, Telegram o Meet por ejemplo.&#x20;
+Despues del reinicio, probar alguna aplicacion, Cheese, o Telegram mismamente para ver si es detectada y funcional.
