@@ -14,6 +14,7 @@
   * [Mi configuración](garmin/mi-configuracion.md)
 * [🔑 Yubikey](yubikey/README.md)
   * [Preparar env en Debian 13](yubikey/preparar-env-en-debian-13.md)
+  * [Generar claves GPG en la Yubikey](yubikey/generar-claves-gpg-en-la-yubikey.md)
 * [🐧 Linux](linux/README.md)
   * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
   * [Cifrar con LUKS](linux/cifrar-con-luks.md)
