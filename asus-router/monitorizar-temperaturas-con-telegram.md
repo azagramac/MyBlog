@@ -16,8 +16,7 @@ Entramos en Administration / System, y nos vamos al final de la pagina, en Servi
 
 
 
-Ahora creamos un fichero de nombre `telegram.env`, y lo guardaremos donde queramos, este fichero contiene el token y chatID de nuestro Telegram, si no sabes cuales son tu token y chatID, los puedes obtener de estas cuentas de telegram:\
-
+Ahora creamos un fichero de nombre `telegram.env`, y lo guardaremos donde queramos, este fichero contiene el token y chatID de nuestro Telegram, si no sabes cuales son tu token y chatID, los puedes obtener de estas cuentas de telegram:<br>
 
 {% embed url="https://t.me/BotFather" %}
 TOKEN

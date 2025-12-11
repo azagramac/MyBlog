@@ -21,7 +21,7 @@ Esta bien, pero... y porque no integrarlo dentro de la consola y dejamos el puer
 
 Lo primero de todo, necesitamos el receptor de 8bitdo, y desmontarlo.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Para abrirlo necesitaremos mucha paciencia si no queremos romper la carcasa, tiene 4 muescas que debemos meter un pincho e ir sacándolo lentamente.&#x20;
 

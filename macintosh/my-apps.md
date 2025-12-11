@@ -51,4 +51,4 @@ ADB y Fastboot
 * [VLC](https://www.videolan.org/vlc/#download)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads) y su Extension Pack
 * [Visual Studio Code](https://code.visualstudio.com)
-* [WireGuard VPN](https://apps.apple.com/es/app/wireguard/id1451685025?mt=12)\
+* [WireGuard VPN](https://apps.apple.com/es/app/wireguard/id1451685025?mt=12)<br>

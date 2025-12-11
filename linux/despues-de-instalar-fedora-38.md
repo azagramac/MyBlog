@@ -11,8 +11,7 @@ Ya tenemos el sistema instalado, lo primero es actualizar los posibles paquetes.
 sudo dnf update -y
 ```
 
-Si hemos actualizado paquetes y kernel, que seguramente así sea, reiniciamos. \
-
+Si hemos actualizado paquetes y kernel, que seguramente así sea, reiniciamos. <br>
 
 Instalamos las herramientas de desarrollo
 

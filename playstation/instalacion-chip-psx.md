@@ -14,8 +14,7 @@ Localizamos el área de la placa donde vamos a colocar el chip
 
 <figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
-**Puntos a soldar**\
-
+**Puntos a soldar**<br>
 
 * Instalación\
   [modchip\_12c508a.hex](https://raw.githubusercontent.com/AzagraMac/PSX-modchip/master/modchip_12c508a.hex)

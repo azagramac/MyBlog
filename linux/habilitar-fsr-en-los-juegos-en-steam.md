@@ -54,13 +54,11 @@ Seleccionamos un juego y le damos a propiedades.
 
 <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-En la ventana que se nos abre, en "Compatiblidad" seleccionamos el "GE-Proton" en mi caso es la version 8.16\
-
+En la ventana que se nos abre, en "Compatiblidad" seleccionamos el "GE-Proton" en mi caso es la version 8.16<br>
 
 <figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
-en la pestaña "General" nos desplazamos al final y vemos un campo para meter parametros. \
-
+en la pestaña "General" nos desplazamos al final y vemos un campo para meter parametros. <br>
 
 <figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 

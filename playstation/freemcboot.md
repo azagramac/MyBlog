@@ -126,8 +126,7 @@ OSDSYS_menu_y = 175
 OSDSYS_enter_x = 175
 ```
 
-Estas lineas, que no contienen valor algunos, son las que añaden la versión en amarillo, el nombre de freemcboot, etc... \
-
+Estas lineas, que no contienen valor algunos, son las que añaden la versión en amarillo, el nombre de freemcboot, etc... <br>
 
 Así seria por defecto. \
 Vemos el titulo de "Free MCBoot", la versión \[Version xxxxxx], vemos unas flechas que parpadean en ambos lados de las opciones, ademas de los botones en cada extremo de la pantalla.

@@ -6,8 +6,7 @@
 
 * Router Asus con Firmware Merlin ([ver dispositivos compatibles](https://github.com/RMerl/asuswrt-merlin.ng/wiki/Supported-Devices))
 * USB conectado con al menos 4Gb libres en formato Ext4 (recomendable 8Gb, 2Gb para swap)
-* [Swap habilitada](habilitar-swap.md)\
-
+* [Swap habilitada](habilitar-swap.md)<br>
 
 <figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 

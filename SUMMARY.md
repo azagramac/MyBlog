@@ -12,6 +12,8 @@
   * [Actualizar firmware eTrex 30x](garmin/actualizar-firmware-etrex-30x.md)
   * [Hacer capturas de pantalla](garmin/hacer-capturas-de-pantalla.md)
   * [Mi configuración](garmin/mi-configuracion.md)
+* [🔑 Yubikey](yubikey/README.md)
+  * [Preparar env en Debian 13](yubikey/preparar-env-en-debian-13.md)
 * [🐧 Linux](linux/README.md)
   * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
   * [Cifrar con LUKS](linux/cifrar-con-luks.md)

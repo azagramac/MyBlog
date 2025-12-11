@@ -26,8 +26,7 @@ Lo primero es resetar los valores de fabrica si no lo hemos realizado.
 set-default
 ```
 
-Y reiniciara, cuando termine, volvemos acceder de nuevo y seguimos en el paso siguiente.\
-
+Y reiniciara, cuando termine, volvemos acceder de nuevo y seguimos en el paso siguiente.<br>
 
 Una vez reiniciado, con usuario root, habilitamos el modo configuración
 

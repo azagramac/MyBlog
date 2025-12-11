@@ -1,7 +1,6 @@
 # OpenShift en modo Datacenter en una VM local
 
-La instalación de un cluster de openshift, no es compleja, pero si entretenida, tendremos que tener recursos de hardware suficientes para poder montarlo en nuestro equipo en una VM que vamos a crear. Mencionar que solo tienes 60 días de uso desde que la creas, la uses o no, 60 dias maximo. \
-
+La instalación de un cluster de openshift, no es compleja, pero si entretenida, tendremos que tener recursos de hardware suficientes para poder montarlo en nuestro equipo en una VM que vamos a crear. Mencionar que solo tienes 60 días de uso desde que la creas, la uses o no, 60 dias maximo. <br>
 
 <figure><img src="../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 

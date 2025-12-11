@@ -8,8 +8,7 @@ Para desplegar un cluster de kubernetes y tambien para resetearlo en caso necesa
 Lo primero sera obtener y configurar el entorno donde vamos a usar kubespray, para ello nos descargamos desde el repo oficial [https://github.com/kubernetes-sigs/kubespray/releases](https://github.com/kubernetes-sigs/kubespray/releases)
 
 \
-Con el kubespray ya instalado en la maquina desde donde desplegaremos el cluster, no tiene porque ser en el propio cluster!!! Lo que si tienen que tener es visibilidad entre maquinas, para ello deberás tener en el /etc/hosts las IPs de las maquinas que compongan el cluster y las claves ssh compartidas entre si, incluida la maquina que usaras para desplegar todo con kubespray. \
-
+Con el kubespray ya instalado en la maquina desde donde desplegaremos el cluster, no tiene porque ser en el propio cluster!!! Lo que si tienen que tener es visibilidad entre maquinas, para ello deberás tener en el /etc/hosts las IPs de las maquinas que compongan el cluster y las claves ssh compartidas entre si, incluida la maquina que usaras para desplegar todo con kubespray. <br>
 
 #### Configurar Kubespray
 
