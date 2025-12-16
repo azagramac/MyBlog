@@ -82,7 +82,7 @@ Llegados a este punto, Debian 13, reconoce perfectamente la tarjeta de sonido So
 Se puede apreciar que:
 
 * PipeWire la está usando como `alsa_output.pci-0000_06_00.0.analog-stereo`
-* Actualmente está en **s32le 2ch 48000Hz** (32-bit, 48 kHz), **no en 192 kHz**
+* Actualmente está en **s32le 2ch 48000Hz** (32-bit, 48 kHz), **no en 192 kHz** ⚠️
 
 {% hint style="info" %}
 Debian 13, PipeWire usa `wireplumber` como session manager
@@ -90,7 +90,7 @@ Debian 13, PipeWire usa `wireplumber` como session manager
 
 #### Configuración de PipeWire
 
-**S**u función es **definir las propiedades globales del motor de audio**, en concreto **el reloj por defecto** que PipeWire utilizará al crear nuevos nodos.
+Su función es **definir las propiedades globales del motor de audio**, en concreto **el reloj por defecto** que PipeWire utilizará al crear nuevos nodos.
 
 ```bash
 mkdir -p ~/.config/pipewire/pipewire.conf.d
@@ -114,7 +114,7 @@ Esto fuerza que PipeWire permita hasta 192 kHz y **desactiva resampling automát
 
 #### Configuración de WirePlumber
 
-**S**u función es **definir políticas** para cómo WirePlumber debe gestionar **una tarjeta de sonido concreta.**
+Su función es **definir políticas** para cómo WirePlumber debe gestionar **una tarjeta de sonido concreta.**
 
 ```bash
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d
