@@ -129,6 +129,24 @@ context.modules = [
 ]
 ```
 
+```bash
+vim ~/.asoundrc
+```
+
+contenido:
+
+```bash
+pcm.!default {
+    type hw
+    card 0
+}
+
+ctl.!default {
+    type hw
+    card 0
+}
+```
+
 {% hint style="info" %}
 Esto fuerza que PipeWire permita hasta 192 kHz y **desactiva resampling automático**.
 {% endhint %}
@@ -208,8 +226,8 @@ $ pactl list short sinks
     alsa_output.pci-0000_0d_00.1.hdmi-stereo PipeWire s32le 2ch 48000Hz SUSPENDED
 ```
 
-* Analog-stereo (Sound Blaster Z) → 192 kHz ✅
-* HDMI (GPU) → 48 kHz ❌
+* Analog-stereo (Sound Blaster Z) → 192 kHz ✅ 🔊
+* HDMI (GPU) → 48 kHz ❌ _(en mi caso, no uso la salida de sonido por HDMI de la GPU)_
 
 Esto es **normal** y esperado: el override solo apuntaba a **hw:0 / analog-stereo**, por eso PipeWire fuerza 192 kHz en esa tarjeta. La salida HDMI (hw:1) no tiene configuración especial, así que se queda en 48 kHz, que es la frecuencia por defecto de PipeWire para sinks no configurados.
 
