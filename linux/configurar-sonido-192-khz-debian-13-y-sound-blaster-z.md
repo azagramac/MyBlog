@@ -14,7 +14,7 @@ Lo copiamos a:
 sudo cp -rf ctefx-desktop.bin /usr/lib/firmware/
 ```
 
-**Instalamos el paquete**
+**Instalamos el paquete no libre del firmware**
 
 ```bash
 sudo apt install -y firmware-linux-nonfree
@@ -22,7 +22,9 @@ sudo apt install -y firmware-linux-nonfree
 
 
 
-**Verificamos que el sistema reconoce nuestra tarjeta de sonido**
+#### Verificamos el hardware
+
+* El sistema debe reconocer nuestra tarjeta de sonido
 
 ```bash
 aplay -l
@@ -41,7 +43,8 @@ card 0: Creative [HDA Creative], device 1: CA0132 Digital [CA0132 Digital]
   Subdevice #0: subdevice #0
 ```
 
-y
+\
+Confirmar que PipeWire detecta correctamente la tarjeta
 
 ```bash
 pw-cli list-objects | grep -i 'sound blaster'
@@ -56,7 +59,10 @@ $ pw-cli list-objects | grep -i 'sound blaster'
  		node.description = "CA0132 Sound Core3D [Sound Blaster Recon3D / Z-Series / Sound BlasterX AE-5 Plus] (SB1570 SB Audigy Fx) Estéreo analógico"
 ```
 
-Comprobamos su estado:
+\
+Muestra los sinks PipeWire activos
+
+* Inicialmente puede aparecer a 48 kHz (default)
 
 ```bash
 pactl list short sinks
@@ -66,84 +72,37 @@ output:
 
 ```bash
 $ pactl list short sinks
-	  alsa_output.pci-0000_07_00.0.analog-stereo	PipeWire	s32le 2ch 48000Hz	SUSPENDED
+	  alsa_output.pci-0000_06_00.0.analog-stereo	PipeWire	s32le 2ch 48000Hz	SUSPENDED
 	  alsa_output.pci-0000_0d_00.1.hdmi-stereo	PipeWire	s32le 2ch 48000Hz	SUSPENDED
 ```
-
-
 
 Llegados a este punto, Debian 13, reconoce perfectamente la tarjeta de sonido Sound Blaster Z.\
 ✅ 🎉
 
 Se puede apreciar que:
 
-* PipeWire la está usando como **alsa\_output.pci-0000\_07\_00.0.analog-stereo**
-* Actualmente está en **s32le 2ch 48000Hz** (32-bit, 48 kHz), **no en 24/192 kHz**
-
-
+* PipeWire la está usando como `alsa_output.pci-0000_06_00.0.analog-stereo`
+* Actualmente está en **s32le 2ch 48000Hz** (32-bit, 48 kHz), **no en 192 kHz**
 
 {% hint style="info" %}
 Debian 13, PipeWire usa `wireplumber` como session manager
 {% endhint %}
 
-#### **Configurar PipeWire para 24/192 kHz**
+#### Configuración de PipeWire
+
+**S**u función es **definir las propiedades globales del motor de audio**, en concreto **el reloj por defecto** que PipeWire utilizará al crear nuevos nodos.
 
 ```bash
 mkdir -p ~/.config/pipewire/pipewire.conf.d
-vim ~/.config/pipewire/pipewire.conf.d/override.conf
+vim ~/.config/pipewire/pipewire.conf.d/90-clock-rate.conf
 ```
 
 contenido:
 
 ```bash
-context.exec = [
-    { path = "/usr/bin/pipewire" args = [] }
-]
-
-default.clock.rate          = 192000
-default.clock.allowed-rates = [ 44100, 48000, 88200, 96000, 176400, 192000 ]
-resample-method             = "none"
-```
-
-<pre class="language-bash"><code class="lang-bash"><strong>vim ~/.config/pipewire/alsa-monitor.conf
-</strong></code></pre>
-
-contenido:
-
-```bash
-context.modules = [
-    { name = libpipewire-module-alsa-card
-      args = {
-          card.name = "hw:0"
-          device.names = [ "analog-stereo" ]
-          ignore-channels = false
-          channels.min = 2
-          channels.max = 2
-          # Forzar 24-bit / 192kHz
-          default.clock.rate = 192000
-          default.clock.quantum = 1024
-          default.clock.quantum-min = 32
-          default.clock.quantum-max = 8192
-      }
-    }
-]
-```
-
-```bash
-vim ~/.asoundrc
-```
-
-contenido:
-
-```bash
-pcm.!default {
-    type hw
-    card 0
-}
-
-ctl.!default {
-    type hw
-    card 0
+context.properties = {
+    default.clock.rate = 192000
+    default.clock.allowed-rates = [ 44100 48000 96000 192000 ]
 }
 ```
 
@@ -153,20 +112,13 @@ Esto fuerza que PipeWire permita hasta 192 kHz y **desactiva resampling automát
 
 
 
-Reinicia PipeWire y WirePlumber:
+#### Configuración de WirePlumber
 
-```bash
-systemctl --user restart pipewire pipewire-pulse wireplumber
-```
-
-#### **Crear override de WirePlumber (ALSA)**
-
-PipeWire **no se configura directamente** desde `pipewire.conf` para ALSA por tarjeta concreta.\
-En Debian 13, **la política la controla WirePlumber**, así que el override correcto es **WirePlumber → ALSA monitor**
+**S**u función es **definir políticas** para cómo WirePlumber debe gestionar **una tarjeta de sonido concreta.**
 
 ```bash
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d
-vim ~/.config/wireplumber/wireplumber.conf.d/99-sbz-192khz.conf
+vim ~/.config/wireplumber/wireplumber.conf.d/60-soundblaster-192khz.conf
 ```
 
 contenido:
@@ -176,10 +128,9 @@ monitor.alsa.rules = [
   {
     matches = [
       {
-        device.name = "alsa_card.pci-0000_07_00.0"
+        device.name = "alsa_card.pci-0000_06_00.0"
       }
     ]
-
     actions = {
       update-props = {
         audio.format = "S32LE"
@@ -192,13 +143,12 @@ monitor.alsa.rules = [
     }
   }
 ]
-
 ```
 
 *   `device.name` coincide **exactamente** con:
 
     ```bash
-    alsa_output.pci-0000_07_00.0.analog-stereo
+    alsa_output.pci-0000_06_00.0.analog-stereo
     ```
 * Se fuerza:
   * **S32LE** (formato que _sí_ soporta el CA0132)
@@ -207,12 +157,15 @@ monitor.alsa.rules = [
 * Se evita suspensión del sink
 * No hay resampling interno si la app usa 192 kHz
 
+#### Reinicio de servicios
+
 ```bash
-systemctl --user restart wireplumber
-systemctl --user restart pipewire pipewire-pulse
+systemctl --user restart pipewire pipewire-pulse wireplumber
 ```
 
-Verificamos:
+
+
+#### Verificación final
 
 ```bash
 pactl list short sinks
@@ -222,16 +175,20 @@ output:
 
 ```bash
 $ pactl list short sinks
-    alsa_output.pci-0000_07_00.0.analog-stereo PipeWire s32le 2ch 192000Hz SUSPENDED
+    alsa_output.pci-0000_06_00.0.analog-stereo PipeWire s32le 2ch 192000Hz SUSPENDED
     alsa_output.pci-0000_0d_00.1.hdmi-stereo PipeWire s32le 2ch 48000Hz SUSPENDED
 ```
 
-* Analog-stereo (Sound Blaster Z) → 192 kHz ✅ 🔊
-* HDMI (GPU) → 48 kHz ❌ _(en mi caso, no uso la salida de sonido por HDMI de la GPU)_
+* Analog-stereo (Sound Blaster Z) → **192 kHz** ✅ 🔊
+* HDMI (GPU) → 48 kHz ❌
 
 Esto es **normal** y esperado: el override solo apuntaba a **hw:0 / analog-stereo**, por eso PipeWire fuerza 192 kHz en esa tarjeta. La salida HDMI (hw:1) no tiene configuración especial, así que se queda en 48 kHz, que es la frecuencia por defecto de PipeWire para sinks no configurados.
 
+
+
 #### Ver formatos soportados por el DAC
+
+* Confirma que ALSA soporta realmente **192 kHz** y **S32\_LE**
 
 ```bash
 aplay -D hw:0,0 --dump-hw-params /dev/zero
