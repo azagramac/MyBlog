@@ -101,7 +101,7 @@ contenido:
 
 ```bash
 context.properties = {
-    default.clock.rate = 192000
+    default.clock.rate          = 192000
     default.clock.allowed-rates = [ 44100 48000 96000 192000 ]
 }
 ```
@@ -110,7 +110,15 @@ context.properties = {
 Esto fuerza que PipeWire permita hasta 192 kHz y **desactiva resampling automático**.
 {% endhint %}
 
+Si soporta tu tarjeta es compatible con **24bit**, añadiriamos el formato `S24LE`, [siempre que lo permita.](configurar-sonido-192-khz-debian-13-y-sound-blaster-z.md#ver-formatos-soportados-por-el-dac)
 
+```bash
+context.properties = {
+    default.clock.rate          = 192000
+    default.clock.allowed-rates = [ 44100 48000 96000 192000 ]
+    default.audio.format        = "S24LE"
+}
+```
 
 #### Configuración de WirePlumber
 
