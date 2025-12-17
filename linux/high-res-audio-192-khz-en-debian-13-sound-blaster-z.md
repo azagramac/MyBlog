@@ -1,4 +1,4 @@
-# Configurar sonido 192 kHz Debian 13 y Sound Blaster Z
+# High-Res Audio 192 kHz en Debian 13: Sound Blaster Z
 
 <figure><img src="../.gitbook/assets/image (171).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -110,7 +110,7 @@ context.properties = {
 Esto fuerza que PipeWire permita hasta 192 kHz y **desactiva resampling automático**.
 {% endhint %}
 
-Si soporta tu tarjeta es compatible con **24bit**, añadiriamos el formato `S24LE`, [siempre que lo permita.](configurar-sonido-192-khz-debian-13-y-sound-blaster-z.md#ver-formatos-soportados-por-el-dac)
+Si tu tarjeta es [compatible](high-res-audio-192-khz-en-debian-13-sound-blaster-z.md#ver-formatos-soportados-por-el-dac) con **24bit**,añadiremos el formato `S24LE`
 
 ```bash
 context.properties = {

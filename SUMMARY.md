@@ -21,7 +21,7 @@
   * [Habilitar FSR en los juegos en Steam](linux/habilitar-fsr-en-los-juegos-en-steam.md)
   * [Información del /etc/fstab](linux/informacion-del-etc-fstab.md)
   * [Instalar Debian cifrado](linux/instalar-debian-cifrado.md)
-  * [Configurar sonido 192 kHz Debian 13 y Sound Blaster Z](linux/configurar-sonido-192-khz-debian-13-y-sound-blaster-z.md)
+  * [High-Res Audio 192 kHz en Debian 13: Sound Blaster Z](linux/high-res-audio-192-khz-en-debian-13-sound-blaster-z.md)
   * [Después de Instalar Debian 12](linux/despues-de-instalar-debian-12.md)
   * [Después de instalar Fedora 38](linux/despues-de-instalar-fedora-38.md)
   * [Instalar fuentes OTF y TTF en Linux](linux/instalar-fuentes-otf-y-ttf-en-linux.md)
