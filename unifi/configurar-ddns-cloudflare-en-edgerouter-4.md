@@ -1,6 +1,6 @@
 # Configurar DDNS Cloudflare en EdgeRouter 4
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 El cliente que usa el ER-4 es `ddclient`, actualmente no es compatible con la API v4 de Cloudflare, por tanto si intentas configurarlo via web o consola, no va sincronizar la IP con nuestro dominio. \
 \
@@ -10,11 +10,11 @@ Requisitos:\
 
 Entramos en Cloudflare, necesitaremos crear el subdominio y obtener la global api key.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Seleccionamos nuestro dominio y bajamos al final de la página, y pinchamos a la derecha donde pone "**Obtenga el token de la API**"<br>
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pinchamos en "**Ver**" en "**Global API Key**"
 
