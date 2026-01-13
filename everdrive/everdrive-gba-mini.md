@@ -2,8 +2,9 @@
 
 <figure><img src="../.gitbook/assets/image (172).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Latest firmware: [https://krikzz.com/pub/support/everdrive-gba/original-series/OS/](https://krikzz.com/pub/support/everdrive-gba/original-series/OS/)\
-Store: [https://krikzz.com/our-products/cartridges/everdrive-gba-mini.html](https://krikzz.com/our-products/cartridges/everdrive-gba-mini.html)
+Firmware: [![Firmware EverDrive GBA v1.17](https://img.shields.io/badge/EverDrive%20GBA%20Firmware-v1.17-blue.svg)](https://krikzz.com/pub/support/everdrive-gba/original-series/OS/)
+
+{% embed url="https://krikzz.com/our-products/cartridges/everdrive-gba-mini.html" %}
 
 
 
