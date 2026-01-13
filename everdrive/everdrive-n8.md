@@ -33,8 +33,8 @@ Store: [https://krikzz.com/our-products/legacy/edn8-72pin.html](https://krikzz.c
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/DSC00934.JPG" alt="PCB Everdrive N8 v1.4N"><figcaption></figcaption></figure>
