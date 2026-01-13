@@ -10,7 +10,7 @@
 
 **Specs:**
 
-* Powerful Cyclone II FPGA.
+* [Cyclone II FPGA](https://www.mouser.es/new/altera/altera-cycloneii/?srsltid=AfmBOoqerDC9ZLWSmyc1MbtEppzMGLW2cfQkXHLLB9QlzteKxu7AYU8f)
 * 2 x 512Kbyte SRAM for PRG and CHR data.
 * 128Kbyte battery backed memory. It write save data to micro SD.
 * Max II CPLD to handle FPGA reconfiguration, BIOS and SD interfaces.
