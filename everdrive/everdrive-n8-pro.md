@@ -30,12 +30,13 @@
 * Instant ROM loading.
 * USB port for development and system update without removing micro SD card.
 * Improved audio mixing circuit with op amp.
+* Expansion audio, [NES systems require modification to support this feature.](https://github.com/azagramac/mods-nes/tree/master/AudioExpansionMod)
 * Dedicated button, which is used for swap FDS disk side or as alternate method to call Save State menu.
 * Built-in NSF player with expansion chips support (VRC6, VRC7, Sunsoft-5b, Namco-163).
 * Battery voltage monitoring. Battery can be replaced in time if it going dry.
 * Wide range of supported mappers.
 * NES2.0 partial support.
-* Game Genie cheats support.
+* [Game Genie cheats support.](https://gamegenie.com/cheats/gamegenie/nes/index.html)
 
 <br>
 
