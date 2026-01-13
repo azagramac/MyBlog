@@ -98,3 +98,5 @@ Pruebas, se enlaza perfectamente con el mando, en este caso es un NES30 también
 Ya solo queda cerrar y disfrutar, si tienes 2 receptores de 8bitdo, puedes colocar uno en cada puerto.&#x20;
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
