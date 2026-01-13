@@ -10,16 +10,16 @@ Hay varias formas de anular el chip, la mas común y mas bestia, cortar la patil
 
 <figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption><p>Dejando al aire la patilla</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (99).png" alt="" width="375"><figcaption><p>Soldando cable a GND, de la patilla 4 a 13</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (99).png" alt="" width="375"><figcaption><p>Soldando un cable, del pin 4 al pin 13</p></figcaption></figure>
 
 la otra es retirar el chip... \
-pero la menos conocida es ademas la reversible, el chip lo dejamos tal cual sin tocar, si tenemos buena mano con el soldador, no necesitamos ni desmontar completamente la consola.&#x20;
+pero la menos conocida es además la reversible, el chip lo dejamos tal cual sin tocar, si tenemos buena mano con el soldador, no necesitamos ni desmontar completamente la consola.&#x20;
 
-Solamente necesitamos un soldador de unos 15/45W, estaño, flux y 2 cables.
+Solamente necesitamos un soldador de unos 30/45W, estaño, flux y 2 cables.
 
 <figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Sin nombre.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption><p>Vista con la consola montada.</p></figcaption></figure>
 
