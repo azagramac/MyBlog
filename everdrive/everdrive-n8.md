@@ -2,8 +2,9 @@
 
 <figure><img src="../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Latest firmware: [https://krikzz.com/pub/support/everdrive-n8/original-series/OS/](https://krikzz.com/pub/support/everdrive-n8/original-series/OS/)\
-Store: [https://krikzz.com/our-products/legacy/edn8-72pin.html](https://krikzz.com/our-products/legacy/edn8-72pin.html)
+Firmware: [![Firmware EverDrive N8 v1.26](https://img.shields.io/badge/EverDrive%20N8%20Firmware-v1.26-blue.svg)](https://krikzz.com/pub/support/everdrive-n8/original-series/OS/)
+
+{% embed url="https://krikzz.com/our-products/legacy/edn8-72pin.html" %}
 
 
 
