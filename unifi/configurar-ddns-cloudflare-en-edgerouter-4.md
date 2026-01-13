@@ -10,7 +10,7 @@ Requisitos:\
 
 Entramos en Cloudflare, necesitaremos crear el subdominio y obtener la global api key.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Seleccionamos nuestro dominio y bajamos al final de la página, y pinchamos a la derecha donde pone "**Obtenga el token de la API**"<br>
 

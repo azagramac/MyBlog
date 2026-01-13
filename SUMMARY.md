@@ -61,6 +61,7 @@
 * [💾 EverDrive](everdrive/README.md)
   * [EverDrive N8](everdrive/everdrive-n8.md)
   * [EverDrive GBA Mini](everdrive/everdrive-gba-mini.md)
+  * [EverDrive N8 Pro](everdrive/everdrive-n8-pro.md)
 * [🎮 PlayStation](playstation/README.md)
   * [Review Cable SCART RGB C-SYNC](playstation/review-cable-scart-rgb-c-sync.md)
   * [FreeMCBoot](playstation/freemcboot.md)
