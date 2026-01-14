@@ -1,6 +1,12 @@
 # Región Free, sin cortar el CIC
 
-Sistema de autentificación de Nintendo, llamado [10NES](https://es.wikipedia.org/wiki/10NES), desarrollado para verificar los juegos y los periféricos originales.
+Sistema de autentificación de Nintendo, llamado [10NES](https://es.wikipedia.org/wiki/10NES), desarrollado para verificar los juegos y los periféricos originales.\
+\
+En la NES, el **CIC** (10NES) funciona como un sistema de protección que asegura que solo se puedan ejecutar cartuchos compatibles con la región de la consola. Si se introduce un cartucho de una región diferente a la de la consola, el **LED de encendido parpadea**, indicando que el juego **no es compatible**. Este parpadeo no significa que el CIC haya autenticado el juego; simplemente señala que **el juego debe coincidir con la región de la consola** para poder ejecutarse correctamente.
+
+{% hint style="info" %}
+Introducir un juego de una región diferente a la de la consola, causa que el LED encendido de la consola parpadea y muestra pantalla gris en la TV.
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
