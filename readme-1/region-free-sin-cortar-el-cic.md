@@ -18,7 +18,7 @@ Hay varias formas de anular el chip, la mas común y mas bestia, cortar la patil
 
 <figure><img src="../.gitbook/assets/image (99).png" alt="" width="375"><figcaption><p>Soldando un cable, del pin 4 al pin 13</p></figcaption></figure>
 
-la otra es retirar el chip... en placas como OpenTendo o SMTendo no llevan el CIC.\
+la otra es retirar el chip... en placas como [OpenTendo](https://github.com/Redherring32/OpenTendo) o [SMTendo](https://github.com/zaxour/OpenTendo-SMTendo) no llevan el CIC.\
 \
 Pero la menos conocida, es además la reversible, el chip lo dejamos tal cual sin tocar, desmontalos la consola para acceder a la placa base y tan solo necesitamos soldar 2 cables como se aprecian en las fotos que adjunto.
 
