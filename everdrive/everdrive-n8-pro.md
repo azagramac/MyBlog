@@ -2,7 +2,7 @@
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-[![EverDrive N8 Pro Firmware v25.0107](https://img.shields.io/badge/EverDrive%20N8%20Pro%20Firmware%20\(.efu\)-v25.0107-blue.svg)](https://krikzz.com/pub/support/everdrive-n8/pro-series/firmware/)
+[![EverDrive N8 Pro Firmware v25.1123](https://img.shields.io/badge/EverDrive%20N8%20Pro%20Firmware%20\(.efu\)-v25.11237-blue.svg)](https://krikzz.com/pub/support/everdrive-n8/pro-series/firmware/)
 
 [![EverDrive N8 Pro OS EDN8-V2.15](https://img.shields.io/badge/EverDrive%20N8%20Pro%20OS%20\(EDN8\)-V2.15-green.svg)](https://krikzz.com/pub/support/everdrive-n8/pro-series/firmware/)
 
