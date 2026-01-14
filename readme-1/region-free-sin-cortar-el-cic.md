@@ -18,20 +18,21 @@ Hay varias formas de anular el chip, la mas común y mas bestia, cortar la patil
 
 <figure><img src="../.gitbook/assets/image (99).png" alt="" width="375"><figcaption><p>Soldando un cable, del pin 4 al pin 13</p></figcaption></figure>
 
-la otra es retirar el chip... \
-pero la menos conocida es además la reversible, el chip lo dejamos tal cual sin tocar, si tenemos buena mano con el soldador, no necesitamos ni desmontar completamente la consola.&#x20;
+la otra es retirar el chip... en placas como OpenTendo o SMTendo no llevan el CIC.\
+\
+Pero la menos conocida, es además la reversible, el chip lo dejamos tal cual sin tocar, desmontalos la consola para acceder a la placa base y tan solo necesitamos soldar 2 cables como se aprecian en las fotos que adjunto.
 
-Solamente necesitamos un soldador de unos 30/45W, estaño, flux y 2 cables.
+Solamente necesitamos un soldador de unos 30/45W, estaño, flux para facilitar la soldadura y 2 cables.
 
 <figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Sin nombre.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Sin nombre.png" alt="Puntos a soldar"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption><p>Vista con la consola montada.</p></figcaption></figure>
 
-Solamente eso, nada mas! \
+Solamente eso, nada mas. \
 \
-Ya podremos cargar juegos de otras regiones sin que el CIC nos de problemas, ademas es reversible por si decidimos volver al estado original la consola. \
+Ya podremos cargar juegos de otras regiones ejemplo juego NTSC en consola PAL o vicecersa, sin que el CIC nos de problemas, ademas es reversible por si decidimos volver al estado original la consola solo hay que quitar esos 2 cables y la consola queda intacta.\
 \
 Se recomienda limpia los contactos de la consola y cartucho con alcohol isopropilico.&#x20;
 
