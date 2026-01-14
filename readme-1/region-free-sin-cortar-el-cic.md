@@ -29,8 +29,13 @@ Solamente necesitamos un soldador de unos 30/45W, estaño, flux y 2 cables.
 
 <figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption><p>Vista con la consola montada.</p></figcaption></figure>
 
-Solamente eso, nada mas! Ya podremos cargar juegos de otras regiones o mandos, sin que el CIC nos de problemas.&#x20;
+Solamente eso, nada mas! \
+\
+Ya podremos cargar juegos de otras regiones sin que el CIC nos de problemas, ademas es reversible por si decidimos volver al estado original la consola. \
+\
+Se recomienda limpia los contactos de la consola y cartucho con alcohol isopropilico.&#x20;
 
 {% hint style="info" %}
 Si tu consola es PAL (50Hz), los juegos en NTSC irán igualmente a 50Hz, no a 60Hz, y viceversa.&#x20;
 {% endhint %}
+
