@@ -29,7 +29,9 @@ A nivel técnico:
 
 La CPU de la NES está basada en el [**MOS Technology 6502**](https://es.wikipedia.org/wiki/MOS_6502) de 8-bit que trabaja a **1.78 MHz** en sistemas NTSC o **1.66 MHz** en sistemas PAL.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (189).png" alt="2A03 vs 6502"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image.png" alt="6502" width="375"><figcaption></figcaption></figure>
 
 El **MOS 6502** es un **microprocesador de 8 bits** lanzado en 1975, famoso por su **simplicidad, bajo coste y eficiencia**.
 
