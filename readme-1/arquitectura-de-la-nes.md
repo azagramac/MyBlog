@@ -19,10 +19,10 @@ la **NES utiliza un cristal de cuarzo** para generar el reloj principal, y **var
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-| Región | Frecuencia        | Función                                                          |   |
-| ------ | ----------------- | ---------------------------------------------------------------- | - |
-| NTSC   | **21.47727 MHz**  | Reloj para PPU y CPU/3.579545 MHz derivado para CPU/APU          |   |
-| PAL    | **26.601712 MHz** | Reloj, derivado a 4.43361875 MHz para PPU y 1.662607 MHz CPU/APU |   |
+| Región | Frecuencia        | Función                                                          |
+| ------ | ----------------- | ---------------------------------------------------------------- |
+| NTSC   | **21.47727 MHz**  | Reloj para PPU y CPU/3.579545 MHz derivado para CPU/APU          |
+| PAL    | **26.601712 MHz** | Reloj, derivado a 4.43361875 MHz para PPU y 1.662607 MHz CPU/APU |
 
 \
 **Derivación de reloj para la CPU**
