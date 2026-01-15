@@ -11,11 +11,11 @@ Conectamos por USB el GPS al ordenador y esperamos a que el ordenador lo reconoz
 \
 Abrimos el programa Garmin Express
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Nos reconocera el GPS, y nos mostrara si tenemos una version de software nueva.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Si pinchamos en "**Ver detalles**" podemos ver la lista de nuevas versiones
 

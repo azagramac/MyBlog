@@ -2,7 +2,7 @@
 
 En linux disponemos de unas herramientas para sacar partido a las llave Yubikey. <br>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **📦 Instalación de paquetes:**
 

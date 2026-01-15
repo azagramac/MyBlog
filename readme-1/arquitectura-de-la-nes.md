@@ -29,7 +29,51 @@ A nivel técnico:
 
 La CPU de la NES está basada en el [**MOS Technology 6502**](https://es.wikipedia.org/wiki/MOS_6502) de 8-bit que trabaja a **1.78 MHz** en sistemas NTSC o **1.66 MHz** en sistemas PAL.
 
+<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
 
+El **MOS 6502** es un **microprocesador de 8 bits** lanzado en 1975, famoso por su **simplicidad, bajo coste y eficiencia**.
+
+A nivel técnico breve:
+
+* **Arquitectura:** 8 bits de datos, 16 bits de direccionamiento (hasta 64 KB de memoria).
+* **Registros:** Acumulador (A), dos registros índice (X, Y), stack pointer (S), program counter (PC) y status (P).
+* **Modo de direccionamiento:** Soporta múltiples modos (inmediato, absoluto, indirecto, relativo…).
+* **Ciclo de reloj:** Generalmente 1–7 ciclos por instrucción, sin pipeline complejo ni caché.
+* **Uso histórico:** Base de CPUs en consolas como NES (2A03), Atari 2600, Commodore 64 y Apple I/II.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+La CPU de la NES, no es un 6502 puro, es una adaptación para la NES, que incluye ademas **APU** (Audio Processing Unit).
+
+| Característica         | MOS 6502 | Ricoh 2A03/2A07      |
+| ---------------------- | -------- | -------------------- |
+| Modo decimal "BCD"     | ✔️       | ❌                    |
+| Instrucciones ilegales | ✔️       | ⚠️ Parcial           |
+| Clock fijo             | ✔️       | ❌ (derivado del PPU) |
+| APU integrada          | ❌        | ✔️                   |
+| Uso standalone         | ✔️       | ❌                    |
+
+La CPU de la NES se le ha eliminado el modo **Binary-Coded Decimal** (BCD) incluido originalmente en el 6502.\
+\
+Algunas características que diferencian de un 6502
+
+* El **flag D (Decimal)** existe
+* Las instrucciones `SED` y `CLD` **funcionan**
+* Pero el hardware **BCD** está físicamente eliminado
+
+\
+El `BCD` permite la codificación de cada dígito decimal de un número como un binario separado de 4 bits. El 6502 usa palabras de 8 bits – lo que significa que cada palabra almacena dos dígitos decimales.
+
+Como curiosidad, el número decimal `24` se representa como:
+
+* Binario: `00110010 00110100`
+* BCD: `0010 0100`
+
+{% hint style="info" %}
+En **BCD (Binary-Coded Decimal)** cada dígito decimal se codifica por separado en 4 bits.
+{% endhint %}
+
+&#x20;
 
 la **NES utiliza un cristal de cuarzo** para generar el reloj principal, y **varía según la región** (NTSC o PAL). A nivel técnico, esto afecta **CPU, PPU y APU**, porque todos derivan su reloj de ese cristal.
 
@@ -90,38 +134,7 @@ Las implicaciones sólo se aplican cuando la consola tiene la modificación de r
 [Como hacer el mod de region free](region-free-sin-cortar-el-cic.md)
 {% endhint %}
 
-\
-No son un 6502 puro, es una adaptación para la NES, que incluye ademas **APU** (Audio Processing Unit).
 
-| Característica         | MOS 6502 | Ricoh 2A03/2A07      |
-| ---------------------- | -------- | -------------------- |
-| Modo decimal "BCD"     | ✔️       | ❌                    |
-| Instrucciones ilegales | ✔️       | ⚠️ Parcial           |
-| Clock fijo             | ✔️       | ❌ (derivado del PPU) |
-| APU integrada          | ❌        | ✔️                   |
-| Uso standalone         | ✔️       | ❌                    |
-
-La CPU de la NES se le ha eliminado el modo **Binary-Coded Decimal** (BCD) incluido originalmente en el 6502.\
-\
-Algunas características que diferencian de un 6502
-
-* El **flag D (Decimal)** existe
-* Las instrucciones `SED` y `CLD` **funcionan**
-* Pero el hardware **BCD** está físicamente eliminado
-
-\
-El `BCD` permite la codificación de cada dígito decimal de un número como un binario separado de 4 bits. El 6502 usa palabras de 8 bits – lo que significa que cada palabra almacena dos dígitos decimales.
-
-Como curiosidad, el número decimal `24` se representa como:
-
-* Binario: `00110010 00110100`
-* BCD: `0010 0100`
-
-{% hint style="info" %}
-En **BCD (Binary-Coded Decimal)** cada dígito decimal se codifica por separado en 4 bits.
-{% endhint %}
-
-&#x20;
 
 **Bus de direcciones**
 
@@ -179,7 +192,7 @@ Diagrama
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 [Ver foto en alta reolucion](https://upload.wikimedia.org/wikipedia/commons/5/5a/Nintendo-NES-Mk1-Motherboard-Top.jpg)
 
@@ -349,7 +362,7 @@ A nivel técnico:
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 En construcción
