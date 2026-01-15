@@ -55,6 +55,7 @@
   * [Solucionar el parpadeo de Netflix en Safari a pantalla completa](macintosh/solucionar-el-parpadeo-de-netflix-en-safari-a-pantalla-completa.md)
 * [🪟 Windows](windows.md)
 * [🕹️ Nintendo NES](readme-1/README.md)
+  * [Arquitectura de la NES](readme-1/arquitectura-de-la-nes.md)
   * [8bitdo DIY en mando original](readme-1/8bitdo-diy-en-mando-original.md)
   * [Bluetooth interno con 8bitdo](readme-1/bluetooth-interno-con-8bitdo.md)
   * [Región Free, sin cortar el CIC](readme-1/region-free-sin-cortar-el-cic.md)
