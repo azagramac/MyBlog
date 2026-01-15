@@ -2,9 +2,37 @@
 
 <figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
-#### &#x20;**Especificaciones:**
+#### <br>
 
+La **Nintendo Entertainment System (NES)** es una **consola de videojuegos de 8 bits** lanzada por Nintendo en 1983 (Japón) y 1985 (EE. UU.).
 
+La producción de la NES (Nintendo Entertainment System) finalizó oficialmente en distintos años según la región:
+
+* **Japón (Famicom):** la Famicom dejó de producirse en **1995**.
+* **Estados Unidos / Europa (NES):** la NES se fabricó hasta **1995 en EE. UU.**, aunque en Europa algunas unidades se vendieron hasta **1997**.
+
+A nivel técnico:
+
+* **CPU:** Ricoh 2A03 (NTSC) / 2A07 (PAL), derivado del MOS 6502, con APU integrada.
+* **PPU:** Picture Processing Unit, coprocesador de vídeo que genera gráficos de **background y sprites**, usando tiles y paletas, totalmente independiente de la CPU.
+* **Memoria RAM interna:** 2 KB (WRAM) para la CPU.
+* **VRAM:** 2 KB de memoria para NameTables, usada por la PPU; el resto del patrón gráfico reside en CHR-ROM/RAM del cartucho.
+* **APU:** Audio Processing Unit integrada en la CPU, 5 canales de sonido (2×pulse, 1×triangle, 1×noise, 1×DMC).
+* **Lockout chip (CIC):** evita el uso de cartuchos no autorizados y controla compatibilidad regional.<br>
+
+Oficialmente, se **lanzaron 714 títulos para la NES/Famicom** a nivel mundial, aunque el número exacto varía ligeramente según la fuente y si se cuentan lanzamientos exclusivos por región:
+
+| Región                                                           | Juegos lanzados |
+| ---------------------------------------------------------------- | --------------- |
+| ![🇯🇵](https://web.telegram.org/a/img-apple-64/1f1ef-1f1f5.png) | 674             |
+| ![🇺🇲](https://web.telegram.org/a/img-apple-64/1f1fa-1f1f2.png) | 491             |
+| ![🇪🇺](https://web.telegram.org/a/img-apple-64/1f1ea-1f1fa.png) | 391             |
+
+{% hint style="info" %}
+Muchos títulos se solapan entre regiones, y algunos se relanzaron o renombraron. Los números anteriores cuentan solo lanzamientos oficiales de Nintendo y sus licenciatarios.
+{% endhint %}
+
+#### **Especificaciones:**
 
 | CPU            | Región | Consola       | Freq.        |
 | -------------- | ------ | ------------- | ------------ |
