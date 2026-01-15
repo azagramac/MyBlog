@@ -20,19 +20,7 @@ A nivel técnico:
 * **APU:** Audio Processing Unit integrada en la CPU, 5 canales de sonido (2×pulse, 1×triangle, 1×noise, 1×DMC).
 * **Lockout chip (CIC):** evita el uso de cartuchos no autorizados y controla compatibilidad regional.<br>
 
-Oficialmente, se **lanzaron 714 títulos para la NES/Famicom** a nivel mundial, aunque el número exacto varía ligeramente según la fuente y si se cuentan lanzamientos exclusivos por región:
-
-| Región                                                           | Juegos lanzados |
-| ---------------------------------------------------------------- | --------------- |
-| ![🇯🇵](https://web.telegram.org/a/img-apple-64/1f1ef-1f1f5.png) | 674             |
-| ![🇺🇲](https://web.telegram.org/a/img-apple-64/1f1fa-1f1f2.png) | 491             |
-| ![🇪🇺](https://web.telegram.org/a/img-apple-64/1f1ea-1f1fa.png) | 391             |
-
-{% hint style="info" %}
-Muchos títulos se solapan entre regiones, y algunos se relanzaron o renombraron. Los números anteriores cuentan solo lanzamientos oficiales de Nintendo y sus licenciatarios.
-{% endhint %}
-
-#### **Especificaciones:**
+#### **Especificaciones técnicas:**
 
 | CPU            | Región | Consola       | Freq.        |
 | -------------- | ------ | ------------- | ------------ |
