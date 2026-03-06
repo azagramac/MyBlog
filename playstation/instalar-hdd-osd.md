@@ -17,7 +17,9 @@ coverY: 0
 
 **Requisitos Software:**
 
-* HDD-OSD 1.00J - [Descarga](https://archive.org/details/hddosd-100j-update-110u-48bit-atadp)
+* [HDD-OSD 1.00J](https://archive.org/details/hddosd-100j-update-110u-48bit-atadp)
+* [wLaunchELF ISR](https://github.com/israpps/wLaunchELF_ISR/releases)
+* [Open PS2 Loader](https://github.com/ps2homebrew/Open-PS2-Loader/releases)
 
 
 
@@ -32,15 +34,16 @@ Mi hardware es:
   ![](<../.gitbook/assets/image (194).png>)<br>
 
 \
-Tenemos 2 .img RAW para grabar en el HDD, \
-`HDDOSD_100J_ATADP_DTL-H_FIX_48BIT_APPS.IMG - 83e5f2b624b18d28c2c912663c48c370`\
-`HDDOSD_100J_ATADP_DTL-H_FIX_48BIT.IMG - 952410e5a31b9ceb3a998b2d59735cfb`\
+Tenemos 2 .img RAW para grabar en el HDD:
+
+`HDDOSD_100J_ATADP_DTL-H_FIX_48BIT_APPS.IMG` - md5: `83e5f2b624b18d28c2c912663c48c370`\
+`HDDOSD_100J_ATADP_DTL-H_FIX_48BIT.IMG` - md5: `952410e5a31b9ceb3a998b2d59735cfb`\
 \
 con apps que incluye unas versiones algo obsoletas de uLaunchELF y OPL, o sin apps, limpio completamente, solo el hdd-osd formateado, sin aplicaciones, me gusta más esta segunda opción, para dejarlo a tu gusto, requiere de un método como [FreeMCBoot](freemcboot.md) para cargar el uLaunchELF inicialmente y crear las particiones:&#x20;
 
-* `PP.ULE` Partición para el uLaunchELF, config y ejecutable .kelf, tamaño 128Mb
-* `PP.OPL` Partición para el OPL, config y ejecutable .kelf, tamaño 128Mb
-* `+OPL`, la partición "+OPL" la crea el OPL la primera vez que se inicia, en caso contrario, crearla a mano, max 2Gb, nunca expandir.
+* `PP.ULE` Partición para el uLaunchELF, config y ejecutable .kelf, tamaño 128Mb.
+* `PP.OPL` Partición para el OPL, config y ejecutable .kelf, tamaño 128Mb.
+* `+OPL` la partición "+OPL" la crea el OPL la primera vez que se inicia, en caso contrario, crearla a mano, max 2Gb.
 * `__.POPS` Partición para los juegos de PSX en formato .VCD
 
 {% hint style="info" %}
@@ -49,7 +52,6 @@ El orden es importante para que el OPL cargue más rápido, de lo contrario tard
 Asimismo la partición `__.POPS` para el emulador de PSX debe crearse justo después de haber creado la partición `+OPL`, y por último empezar a instalar los juegos de PS2 con HDL-Batch-installer.
 {% endhint %}
 
-Elegiremos cualquiera de las 2, pero no instalaremos las 2.\
 \
 Conectamos nuestro HDD o SSD al ordenador, bien por cable SATA o USB en una caja (IDE/SATA), tenemos que conocer la letra del dispositivo, `/dev/sdb` por ejemplo.&#x20;
 
@@ -57,7 +59,6 @@ Conectamos nuestro HDD o SSD al ordenador, bien por cable SATA o USB en una caja
 sudo dd if=HDDOSD_100J_ATADP_DTL-H_FIX_48BIT.IMG of=/dev/sdb bs=1M status=progress conv=fsync
 ```
 
-Tarda poco, no es muy grande, y el tamaño del bloque es de 1Mb, podemos subirlo a 4Mb para ganar velocidad, pero no lo veo necesario. \
 \
 Una vez terminado, ya hemos acabado de momento con el HDD, lo conectamos al adaptador de red de la PS2 y lo metemos en la consola, asegúrate que queda bien conectado, no es necesario atornillar aun los 2 tornillos, además se pasan enseguida las roscas del lado de la consola, para restaurar la rosca tienes que desmontar la consola, quitar el chasis...&#x20;
 
