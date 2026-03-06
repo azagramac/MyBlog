@@ -64,6 +64,7 @@
   * [EverDrive GBA Mini](everdrive/everdrive-gba-mini.md)
   * [EverDrive N8 Pro](everdrive/everdrive-n8-pro.md)
 * [🎮 PlayStation](playstation/README.md)
+  * [Instalar HDD-OSD](playstation/instalar-hdd-osd.md)
   * [Review Cable SCART RGB C-SYNC](playstation/review-cable-scart-rgb-c-sync.md)
   * [FreeMCBoot](playstation/freemcboot.md)
   * [Instalación chip PSX, PU-20](playstation/instalacion-chip-psx.md)
