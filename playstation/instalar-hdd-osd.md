@@ -17,7 +17,7 @@ coverY: 0
 
 **Requisitos Software:**
 
-* HDD-OSD 1.00J - Descarga
+* HDD-OSD 1.00J - [Descarga](https://archive.org/details/hddosd-100j-update-110u-48bit-atadp)
 
 
 
@@ -36,10 +36,21 @@ Tenemos 2 .img RAW para grabar en el HDD, \
 `HDDOSD_100J_ATADP_DTL-H_FIX_48BIT_APPS.IMG - 83e5f2b624b18d28c2c912663c48c370`\
 `HDDOSD_100J_ATADP_DTL-H_FIX_48BIT.IMG - 952410e5a31b9ceb3a998b2d59735cfb`\
 \
-con apps que incluye unas versiones algo obsoletas de uLaunchELF y OPL, o sin apps, limpio completamente, solo el hdd-osd formateado, sin aplicaciones, me gusta más esta segunda opción, para dejarlo a tu gusto, requiere de un método como [FreeMCBoot](freemcboot.md) para cargar el uLaunchELF inicialmente y crear la partición `PP.ULE` y `PP.OPL`\
-\
-Elegiremos cualquiera de las 2, pero no instalaremos las 2.
+con apps que incluye unas versiones algo obsoletas de uLaunchELF y OPL, o sin apps, limpio completamente, solo el hdd-osd formateado, sin aplicaciones, me gusta más esta segunda opción, para dejarlo a tu gusto, requiere de un método como [FreeMCBoot](freemcboot.md) para cargar el uLaunchELF inicialmente y crear las particiones:&#x20;
 
+* `PP.ULE` Partición para el uLaunchELF, config y ejecutable .kelf, tamaño 128Mb
+* `PP.OPL` Partición para el OPL, config y ejecutable .kelf, tamaño 128Mb
+* `+OPL`, la partición "+OPL" la crea el OPL la primera vez que se inicia, en caso contrario, crearla a mano, max 2Gb, nunca expandir.
+* `__.POPS` Partición para los juegos de PSX en formato .VCD
+
+{% hint style="info" %}
+El orden es importante para que el OPL cargue más rápido, de lo contrario tardará más en cargarse si hay juegos de PS2 que se instalaron antes de crear la partición `+OPL`.\
+\
+Asimismo la partición `__.POPS` para el emulador de PSX debe crearse justo después de haber creado la partición `+OPL`, y por último empezar a instalar los juegos de PS2 con HDL-Batch-installer.
+{% endhint %}
+
+Elegiremos cualquiera de las 2, pero no instalaremos las 2.\
+\
 Conectamos nuestro HDD o SSD al ordenador, bien por cable SATA o USB en una caja (IDE/SATA), tenemos que conocer la letra del dispositivo, `/dev/sdb` por ejemplo.&#x20;
 
 ```bash
