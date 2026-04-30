@@ -31,7 +31,7 @@ La CPU de la NES está basada en el [**MOS Technology 6502**](https://es.wikiped
 
 <figure><img src="../.gitbook/assets/image (189).png" alt="2A03 vs 6502"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image.png" alt="6502" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt="6502" width="375"><figcaption></figcaption></figure>
 
 El **MOS 6502** es un **microprocesador de 8 bits** lanzado en 1975, famoso por su **simplicidad, bajo coste y eficiencia**.
 
@@ -43,7 +43,7 @@ A nivel técnico breve:
 * **Ciclo de reloj:** Generalmente 1–7 ciclos por instrucción, sin pipeline complejo ni caché.
 * **Uso histórico:** Base de CPUs en consolas como NES (2A03), Atari 2600, Commodore 64 y Apple I/II.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 La CPU de la NES, no es un 6502 puro, es una adaptación para la NES, que incluye ademas **APU** (Audio Processing Unit).
 
@@ -79,7 +79,7 @@ En **BCD (Binary-Coded Decimal)** cada dígito decimal se codifica por separado 
 
 la **NES utiliza un cristal de cuarzo** para generar el reloj principal, y **varía según la región** (NTSC o PAL). A nivel técnico, esto afecta **CPU, PPU y APU**, porque todos derivan su reloj de ese cristal.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Región | Frecuencia        | Función                                                          |
 | ------ | ----------------- | ---------------------------------------------------------------- |
@@ -195,7 +195,7 @@ Diagrama
 
 
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 [Ver foto en alta reolucion](https://upload.wikimedia.org/wikipedia/commons/5/5a/Nintendo-NES-Mk1-Motherboard-Top.jpg)
 
@@ -363,9 +363,9 @@ A nivel técnico:
 * Funciona como **autenticador de cartuchos**: la consola solo arranca si detecta un cartucho con un **CIC compatible**.
 * Cada región tenía **versiones distintas** (NTSC, PAL, JAP).
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 En construcción

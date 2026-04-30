@@ -1,6 +1,6 @@
 # EverDrive N8 Pro
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 [![EverDrive N8 Pro Firmware v25.1123](https://img.shields.io/badge/EverDrive%20N8%20Pro%20Firmware%20\(.efu\)-v25.11237-blue.svg)](https://krikzz.com/pub/support/everdrive-n8/pro-series/firmware/)
 

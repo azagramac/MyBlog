@@ -1,6 +1,6 @@
 # EverDrive N8
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 [![Firmware EverDrive N8 v1.26](https://img.shields.io/badge/EverDrive%20N8%20Firmware-v1.26-blue.svg)](https://krikzz.com/pub/support/everdrive-n8/original-series/OS/)
 
@@ -32,10 +32,10 @@
 * Supports micro SD cards up to 32GB.
 * Quick loading (4-8 seconds approx).
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/DSC00934.JPG" alt="PCB Everdrive N8 v1.4N"><figcaption></figcaption></figure>
