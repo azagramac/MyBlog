@@ -1,5 +1,7 @@
 # NeoGeo AES+
 
+<figure><img src="../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+
 ### 🎮 KEY FEATURES — NEOGEO AES+
 
 #### 📦 Contenidos
