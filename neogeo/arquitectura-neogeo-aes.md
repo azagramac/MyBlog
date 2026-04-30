@@ -66,7 +66,7 @@
 
 ***
 
-### 📺 6. Salida de vídeo (corregido)
+#### 📺 6. Salida de vídeo (corregido)
 
 * 🧷 **Salida principal: RGB analógico (RGBS)**
   * Señal RGB + sincronía compuesta (Sync on Composite / CSYNC según cableado)
