@@ -2,6 +2,7 @@
 
 * [🏠 Home](README.md)
 * [🤖 Android](android/README.md)
+  * [Habilitar VoLTE y VoWiFi OnePlus 8T](android/habilitar-volte-y-vowifi-oneplus-8t.md)
   * [LineageOS, PlayIntegrityFix y playcurlNEXT](android/lineageos-playintegrityfix-y-playcurlnext.md)
   * [🖥️ Instalar Termux](android/instalar-termux.md)
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
