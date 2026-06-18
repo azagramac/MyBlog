@@ -9,39 +9,35 @@ Material necesario:
 * Flux
 * Cableado
 
-
-
-[8bitdo](https://www.8bitdo.com/retro-receiver-nes/) tiene un receptor para conectar y listo a la consola NES a uno de sus puertos.&#x20;
+[8bitdo](https://www.8bitdo.com/retro-receiver-nes/) tiene un receptor para conectar y listo a la consola NES a uno de sus puertos.
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Esta bien, pero... y porque no integrarlo dentro de la consola y dejamos el puerto libre?
 
-
-
-Lo primero de todo, necesitamos el receptor de 8bitdo, y desmontarlo.&#x20;
+Lo primero de todo, necesitamos el receptor de 8bitdo, y desmontarlo.
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Para abrirlo necesitaremos mucha paciencia si no queremos romper la carcasa, tiene 4 muescas que debemos meter un pincho e ir sacándolo lentamente.&#x20;
+Para abrirlo necesitaremos mucha paciencia si no queremos romper la carcasa, tiene 4 muescas que debemos meter un pincho e ir sacándolo lentamente.
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Cuesta, pero sale. Lo importante es tirar recto, no doblarlo, porque nos podemos cargar la pequeña PCB que tiene.&#x20;
+Cuesta, pero sale. Lo importante es tirar recto, no doblarlo, porque nos podemos cargar la pequeña PCB que tiene.
 
-Una vez sin la carcasa, abrirmos los laterales.&#x20;
+Una vez sin la carcasa, abrirmos los laterales.
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Vistas de la placa de cerca.&#x20;
+Vistas de la placa de cerca.
 
 <figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
-Ya tenemos la PCB del receptor bluetooth, seria recomendable antes de instalarlo en la NES, actualizar el firmware desde la web de 8bitdo podemos descargarnos el software para actualizar el firmware.&#x20;
+Ya tenemos la PCB del receptor bluetooth, seria recomendable antes de instalarlo en la NES, actualizar el firmware desde la web de 8bitdo podemos descargarnos el software para actualizar el firmware.
 
 {% embed url="https://support.8bitdo.com/firmware-updater.html" %}
 
@@ -51,7 +47,7 @@ Desmontaje de la consola.
 
 <figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Retiramos los 6 tornillos</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Vista del chasis metalico, tiene 7 tornillos a su alrededor </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Vista del chasis metalico, tiene 7 tornillos a su alrededor</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Vista de la bandeja del cartucho</p></figcaption></figure>
 
@@ -61,9 +57,7 @@ Desmontaje de la consola.
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>Vista de la placa base</p></figcaption></figure>
 
-
-
-Ahora nos ponemos con la parte baja de la carcasa.&#x20;
+Ahora nos ponemos con la parte baja de la carcasa.
 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>Retiramos los 2 tornillos del frontal de los puertos</p></figcaption></figure>
 
@@ -72,8 +66,6 @@ Ahora nos ponemos con la parte baja de la carcasa.&#x20;
 <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p>Tornillo de la consola.<br>Idz a Drch.<br>Carcasa, chasis, bandeja, modulo RF y frontal de los puertos</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p>Sacamos los puertos y su cableado</p></figcaption></figure>
-
-
 
 Ahora debemos identificar los pines de la NES.
 
@@ -87,15 +79,15 @@ Puntos donde debemos soldar la PCB de 8bitdo
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>PCB de 8bitdo ya soldada a la PCB de la consola</p></figcaption></figure>
 
-Ubicación donde lo puedes colocar, esto ya es al gusto de cada uno.&#x20;
+Ubicación donde lo puedes colocar, esto ya es al gusto de cada uno.
 
 <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
-Pruebas, se enlaza perfectamente con el mando, en este caso es un NES30 también de 8bitdo, pero puedes usar cualquier otro mando compatible.&#x20;
+Pruebas, se enlaza perfectamente con el mando, en este caso es un NES30 también de 8bitdo, pero puedes usar cualquier otro mando compatible.
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
-Ya solo queda cerrar y disfrutar, si tienes 2 receptores de 8bitdo, puedes colocar uno en cada puerto.&#x20;
+Ya solo queda cerrar y disfrutar, si tienes 2 receptores de 8bitdo, puedes colocar uno en cada puerto.
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 

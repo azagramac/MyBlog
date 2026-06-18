@@ -5,7 +5,7 @@ hidden: true
 
 # OpenShift en VM
 
-La instalación de un cluster de openshift, no es compleja, pero si entretenida, tendremos que tener recursos de hardware suficientes para poder montarlo en nuestro equipo en una VM que vamos a crear. Mencionar que solo tienes 60 días de uso desde que la creas, la uses o no, 60 dias maximo. \
+La instalación de un cluster de openshift, no es compleja, pero si entretenida, tendremos que tener recursos de hardware suficientes para poder montarlo en nuestro equipo en una VM que vamos a crear. Mencionar que solo tienes 60 días de uso desde que la creas, la uses o no, 60 dias maximo.\
 \
 Iniciar sesión en [https://console.redhat.com/](https://console.redhat.com/)
 
@@ -29,13 +29,11 @@ Como el cluster que vamos a crear, va ser en nuestro entorno local, seleccionare
 
 Ahora solo queda rellenar el formulario.
 
-<figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Muy importante la versión de Openshift que quieras desplegar
 {% endhint %}
-
-
 
 Para este ejemplo, se va desplegar el cluster de tipo "**Single node**", rellenamos y pulsamos "Next"
 
@@ -45,14 +43,12 @@ Para este ejemplo, se va desplegar el cluster de tipo "**Single node**", rellena
 Un clúster de un solo nodo "Single Node" en OpenShift consta de un solo nodo o host que está configurado para ejecutar cargas de trabajo.
 {% endhint %}
 
-
-
 Ahora marcamos los operadores que necesitemos y pulsamos "Next", para este ejemplo se va usar "[Logical Volume Manager Storage](https://docs.redhat.com/es/documentation/red_hat_enterprise_linux/8/html-single/configuring_and_managing_logical_volumes/index)".
 
 <figure><img src="../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 Ahora vamos a generar la ISO con la que usaremos para instalar nuestro cluster.\
-aquí solo debemos pulsar en "**Add host**" para que nos aparezca el asistente.&#x20;
+aquí solo debemos pulsar en "**Add host**" para que nos aparezca el asistente.
 
 <figure><img src="../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,10 +62,10 @@ Tendremos 3 opciones para generar la ISO.
 
 Seleccionamos "**Full Image**"
 
-Podremos aprovechar para copiar la clave pública SSH para poder conectarnos mas fácilmente a la maquina vía SSH, para ello deberemos generar una clave pública SSH.&#x20;
+Podremos aprovechar para copiar la clave pública SSH para poder conectarnos mas fácilmente a la maquina vía SSH, para ello deberemos generar una clave pública SSH.
 
 \
-Para generar la clave si no la tenemos, escribimos en el terminal, aquí generamos una clave de tipo RSA de 4096 bits.&#x20;
+Para generar la clave si no la tenemos, escribimos en el terminal, aquí generamos una clave de tipo RSA de 4096 bits.
 
 ```sh
 ssh-keygen -t rsa -b 4096
@@ -91,9 +87,9 @@ y copiamos la clave pública que pegaremos en el formulario.
 cat /home/$USER/.ssh/id_rsa_openshift.pub
 ```
 
-Una vez tenemos rellenado los campos, pulsamos en "**Generate Discovery ISO**".&#x20;
+Una vez tenemos rellenado los campos, pulsamos en "**Generate Discovery ISO**".
 
-Ahora podemos descargar la ISO, bien copiando el link que nos ofrece, o vía wget, una vez tenemos la iso descargada en local, podemos pulsar en "Close".&#x20;
+Ahora podemos descargar la ISO, bien copiando el link que nos ofrece, o vía wget, una vez tenemos la iso descargada en local, podemos pulsar en "Close".
 
 <figure><img src="../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
@@ -101,22 +97,22 @@ Ejemplo con wget
 
 <figure><img src="../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
-Ya tenemos nuestra ISO de OpenShift. ahora tenemos que montar la máquina donde lo vamos a desplegar.&#x20;
+Ya tenemos nuestra ISO de OpenShift. ahora tenemos que montar la máquina donde lo vamos a desplegar.
 
 Requisitos minimos:
 
 * CPU: minimo 8 cores (recomendable 10)
 * RAM: minimo 16Gb
-* Disco: 2 discos, uno de 100Gb para el OS, y otro mínimo de 100Gb para el cluster.&#x20;
+* Disco: 2 discos, uno de 100Gb para el OS, y otro mínimo de 100Gb para el cluster.
 * Red: al menos un interface de red
 
 **Creamos nuestra VM, para el ejemplo usamos VirtualBox**
 
-Rellenamos los campos y le indicamos la ISO que vamos a usar.&#x20;
+Rellenamos los campos y le indicamos la ISO que vamos a usar.
 
 <figure><img src="../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
-Especificamos el hardware que vamos a destinar, en este ejemplo 24Gb de RAM y 10 cores.&#x20;
+Especificamos el hardware que vamos a destinar, en este ejemplo 24Gb de RAM y 10 cores.
 
 {% hint style="info" %}
 Nunca apures a la hora de reservar hardware en una VM, ya que el host necesita recursos, recomendable no sobrepasar el 75% del hardware disponible.
@@ -128,7 +124,7 @@ Ahora vamos a tocar algunos ajustes.
 
 <figure><img src="../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
-Tenemos que añadir otro disco a nuestra VM y cambiar el tipo de red.&#x20;
+Tenemos que añadir otro disco a nuestra VM y cambiar el tipo de red.
 
 Añadiremos otro disco.
 
@@ -142,13 +138,13 @@ y cambiamos el tipo de red y guardamos los cambios.
 
 <figure><img src="../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
-y ya tenemos la VM preparada, le damos a Iniciar.&#x20;
+y ya tenemos la VM preparada, le damos a Iniciar.
 
 <figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
-De momento, el terminal o ventana de nuestra VM lo podemos ignorar, nos vamos al dashboard de RedHat, y vemos que ya nos aparece nuestro cluster, pero hay que instalarlo.&#x20;
+De momento, el terminal o ventana de nuestra VM lo podemos ignorar, nos vamos al dashboard de RedHat, y vemos que ya nos aparece nuestro cluster, pero hay que instalarlo.
 
 En caso de que no aparezca, revisa la red de la VM, seguramente no tenga salida a internet.
 
@@ -158,7 +154,7 @@ Aqui solo pulsamos en "Next"
 
 <figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
-Aqui podemos revisar la red, y configurar algunos parametros.&#x20;
+Aqui podemos revisar la red, y configurar algunos parametros.
 
 <figure><img src="../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
 
@@ -170,7 +166,7 @@ Aquí veremos un resumen, revisamos todo bien. Si esta todo correcto, ahora si, 
 
 <figure><img src="../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 Y comienza la instalación...
 
@@ -184,22 +180,22 @@ Cuando lleve un 60% aprox, reiniciara la maquina, acuérdate de retirar la ISO p
 
 <figure><img src="../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
-Cuando reiniciemos la VM sin la ISO de arranque, continuará la instalación automáticamente.&#x20;
+Cuando reiniciemos la VM sin la ISO de arranque, continuará la instalación automáticamente.
 
 La instalación dura unos 30 minutos aprox, depende del hardware que tengas, los recursos destinados a la VM.
 
 <figure><img src="../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
-Detalle de la VM, no la toques, el proceso es completamente automático.&#x20;
+Detalle de la VM, no la toques, el proceso es completamente automático.
 
-<figure><img src="../.gitbook/assets/Captura desde 2024-12-02 18-21-29.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
 
 Instalación completada. ✅ _(aunque el proceso final requiere algo mas de tiempo)_.\
-Tendremos disponible para descargar el fichero KUBECONFIG para poder conectarnos a nuestro cluster via terminal con [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) y tendremos el endpoint generado para acceder vía web.&#x20;
+Tendremos disponible para descargar el fichero KUBECONFIG para poder conectarnos a nuestro cluster via terminal con [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) y tendremos el endpoint generado para acceder vía web.
 
 <figure><img src="../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
 
-Despues de reiniciar la VM al finalizar la instalación, podremos acceder al endopoint. <br>
+Despues de reiniciar la VM al finalizar la instalación, podremos acceder al endopoint.<br>
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
@@ -207,4 +203,4 @@ Despues de reiniciar la VM al finalizar la instalación, podremos acceder al end
 
 <figure><img src="../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
 
-Bye bye&#x20;
+Bye bye

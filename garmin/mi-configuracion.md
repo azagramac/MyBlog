@@ -10,4 +10,4 @@ Mapas OSM (_España peninsula, Islas Canarias e Islas Baleares_) actualizados ca
 
 <p align="center"><a href="https://github.com/azagramac/OSMforGarmin" class="button primary" data-icon="github-alt">Github</a></p>
 
-<div><figure><img src="../.gitbook/assets/157.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/179.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/337 (1).bmp" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/157.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/179.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/337.bmp" alt=""><figcaption></figcaption></figure></div>

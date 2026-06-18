@@ -1,12 +1,10 @@
 # Hacer capturas de pantalla
 
-
-
-Lo primero sera acceder al menú del Garmin, entramos en:&#x20;
+Lo primero sera acceder al menú del Garmin, entramos en:
 
 `Configuración > Pantalla > Captura de pantalla > Activado`.
 
-<div><figure><img src="../.gitbook/assets/55 (1).bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/62 (1).bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/71.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/51 (1).bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/75 (1) (1).bmp" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/55.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/62.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/71.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/51.bmp" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/75 (1) (1).bmp" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 El modo se desactiva cuando apagues el GPS
@@ -15,8 +13,6 @@ El modo se desactiva cuando apagues el GPS
 Para hacer una captura de pantalla, nos situamos en la pantalla que queremos capturar, y solo hay que pulsar una vez el botón de encendido/light.
 
 <figure><img src="../.gitbook/assets/imagen (51).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Las capturas de pantalla se guardan en la memoria interna del GPS en formato BMP
 

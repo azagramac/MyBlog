@@ -2,21 +2,17 @@
 
 <figure><img src="../.gitbook/assets/imagen (50).png" alt=""><figcaption></figcaption></figure>
 
-Jellyfin desplegado en un contenedor en NAS Synology (DS423+) con DSM 7.2 y aceleración por hardware habilitada.&#x20;
+Jellyfin desplegado en un contenedor en NAS Synology (DS423+) con DSM 7.2 y aceleración por hardware habilitada.
 
-Lo primero es instalar el modulo en el NAS si no lo tenemos.&#x20;
+Lo primero es instalar el modulo en el NAS si no lo tenemos.
 
-Entramos en "Centro de paquetes" y buscamos "Container manager" o "docker" y lo instalamos.&#x20;
+Entramos en "Centro de paquetes" y buscamos "Container manager" o "docker" y lo instalamos.
 
 <figure><img src="../.gitbook/assets/imagen (53).png" alt=""><figcaption></figcaption></figure>
 
+Abrimos Container manager y seleccionamos "**Proyecto**"
 
-
-Abrimos Container manager y seleccionamos  "**Proyecto**"
-
-<figure><img src="../.gitbook/assets/imagen (55).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/imagen (54).png" alt=""><figcaption></figcaption></figure>
 
 Pegamos el código de docker-compose
 
@@ -68,7 +64,7 @@ networks:
 Ajusta `volumes` para que monte las unidades que corresponda y el `mem_limit: 10240m`, en este ejemplo son 10Gb de ram, tengo 18Gb en el NAS, ajústalo a tu hardware y el `user` que corresponda en tu caso.
 {% endhint %}
 
-Una vez creado descargara la imagen y levantara el contenedor.&#x20;
+Una vez creado descargara la imagen y levantara el contenedor.
 
 <figure><img src="../.gitbook/assets/imagen (56).png" alt=""><figcaption></figcaption></figure>
 
@@ -98,8 +94,6 @@ Podemos ver su estado.
 
 <figure><img src="../.gitbook/assets/imagen (57).png" alt=""><figcaption></figcaption></figure>
 
-
-
 Entramos en el interfaz web de jellyfin `http://IP-NAS:8096/web/#/dashboard/playback/transcoding`
 
 Entramos en "**Panel de control**"
@@ -126,13 +120,11 @@ Marcamos en "**Activar decodificación por hardware para**"
 * ✅ HEVC RExt 8/10bit
 * ❌ HEVC RExt 12bit
 
-
-
 ✅ Preferir decodificadores de hardware DXVA o VA-API nativos del sistema operativo
 
 #### Opciones de codificación por hardware
 
-* ✅ Activar codificación por hardware&#x20;
+* ✅ Activar codificación por hardware
 * ❌ Habilitar el codificador hardware H.264 de bajo consumo de Intel
 * ❌ Habilitar el codificador hardware HEVC de bajo consumo de Intel
 
@@ -142,9 +134,7 @@ Marcamos en "**Activar decodificación por hardware para**"
 * ❌ Permitir encodificación en formato AV1
 
 {% hint style="danger" %}
-No marques ninguna opción de AV1 ya que en contenido con 4K HEVC por ejemplo, dará problemas de reproducción&#x20;
+No marques ninguna opción de AV1 ya que en contenido con 4K HEVC por ejemplo, dará problemas de reproducción
 {% endhint %}
-
-
 
 Bajamos al final de la pagina y le damos a "**Guardar**", reiniciaremos el contenedor desde "**Container manager**"

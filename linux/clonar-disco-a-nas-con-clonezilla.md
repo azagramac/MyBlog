@@ -15,9 +15,7 @@ Ya teniendo el USB/CD creado con CloneZilla, arrancamos el equipo con el.
 
 Configuramos el idioma y el idioma del teclado
 
-![](../.gitbook/assets/PXL_20230820_012533450.jpg)![](../.gitbook/assets/PXL_20230820_012544007.jpg)![](<../.gitbook/assets/PXL_20230820_012606327 (1).jpg>)![](<../.gitbook/assets/PXL_20230820_012617152 (1).jpg>)
-
-
+![](../.gitbook/assets/PXL_20230820_012533450.jpg) ![](../.gitbook/assets/PXL_20230820_012544007.jpg) ![](../.gitbook/assets/PXL_20230820_012606327.jpg) ![](../.gitbook/assets/PXL_20230820_012617152.jpg)
 
 Comenzamos
 
@@ -27,7 +25,7 @@ Elegiremos la primera opción "**device-image**", ya que vamos a clonar nuestro 
 
 <figure><img src="../.gitbook/assets/imagen (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Aquí, como vamos a clonar el disco a nuestro NAS, elegiremos el tipo de conexion, en mi caso "**samba\_server**", si prefieres hacerlo a un disco externo por USB, elije la primera opción.&#x20;
+Aquí, como vamos a clonar el disco a nuestro NAS, elegiremos el tipo de conexion, en mi caso "**samba\_server**", si prefieres hacerlo a un disco externo por USB, elije la primera opción.
 
 <figure><img src="../.gitbook/assets/imagen (4) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -37,27 +35,21 @@ Configuramos el metodo de conexion de red de la maquina donde tenemos el disco q
 
 Y aquí, configuramos la IP de nuestro NAS, la ruta donde vamos a guardar la imagen y el protocolo samba que vamos a usar. (si no lo conoces, déjalo en auto)
 
-![](<../.gitbook/assets/imagen (6) (1).png>)![](<../.gitbook/assets/imagen (7) (1).png>)![](<../.gitbook/assets/imagen (8) (1).png>)
+![](<../.gitbook/assets/imagen (6) (1).png>) ![](<../.gitbook/assets/imagen (7) (1).png>) ![](<../.gitbook/assets/imagen (8) (1).png>)
 
-
-
-La parte de seguridad por defecto en auto. Después nos pedirá nuestra password del NAS para montar el volumen.&#x20;
+La parte de seguridad por defecto en auto. Después nos pedirá nuestra password del NAS para montar el volumen.
 
 ![](<../.gitbook/assets/imagen (9) (1).png>) ![](<../.gitbook/assets/imagen (10) (1).png>)
 
-
-
-La siguiente opción, déjalo por defecto.&#x20;
+La siguiente opción, déjalo por defecto.
 
 <div align="center"><figure><img src="../.gitbook/assets/imagen (11).png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-
 
 {% hint style="info" %}
 En caso de tener que restaurar, es este punto donde cambia para poder restaurar nuestra imagen a disco.
 {% endhint %}
 
-Aquí le indicamos que queremos clonar, si queremos hacer una copia del disco, completamente elegiremos la primera opción "**savedisk**", si por el contrario queremos guardar las particiones, elegiremos la segunda opción "**saveparts**", en caso de tener que restaurar un disco, realizaremos los pasos anteriores hasta el momento, y aquí seleccionaríamos "**restoredisk**" o "**restoreparts**" según hayamos elegido en el momento de clonar. \
+Aquí le indicamos que queremos clonar, si queremos hacer una copia del disco, completamente elegiremos la primera opción "**savedisk**", si por el contrario queremos guardar las particiones, elegiremos la segunda opción "**saveparts**", en caso de tener que restaurar un disco, realizaremos los pasos anteriores hasta el momento, y aquí seleccionaríamos "**restoredisk**" o "**restoreparts**" según hayamos elegido en el momento de clonar.\
 \
 En este caso, "**savedisk**" ya que queremos hacer una clonación completa del disco
 
@@ -68,11 +60,11 @@ Aquí le indicamos el nombre de la imagen que vamos a crear a partir de nuestro 
 
 <figure><img src="../.gitbook/assets/imagen (13).png" alt="" width="563"><figcaption></figcaption></figure>
 
-En este punto, nos lista los discos disponibles que tenemos en nuestro equipo, seleccionamos el que vamos a clonar a una imagen.&#x20;
+En este punto, nos lista los discos disponibles que tenemos en nuestro equipo, seleccionamos el que vamos a clonar a una imagen.
 
 <figure><img src="../.gitbook/assets/imagen (14).png" alt="" width="563"><figcaption></figcaption></figure>
 
-El metodo de compresión de la imagen, lo dejaremos en `-z1p`.&#x20;
+El metodo de compresión de la imagen, lo dejaremos en `-z1p`.
 
 <figure><img src="../.gitbook/assets/imagen (15).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -80,7 +72,7 @@ Aquí, si hemos realizado un `fsck` antes de la clonación no hace falta, en cas
 
 <figure><img src="../.gitbook/assets/imagen (16).png" alt="" width="563"><figcaption></figcaption></figure>
 
-En esta parte, seleccionamos que SI, queremos una imagen que podamos restaurar en caso necesario, si no de que queremos la imagen? Esto comprueba que la imagen creada es valida para restaurarla, si al crearla diera error, nos tocaría volver a crearla de nuevo.&#x20;
+En esta parte, seleccionamos que SI, queremos una imagen que podamos restaurar en caso necesario, si no de que queremos la imagen? Esto comprueba que la imagen creada es valida para restaurarla, si al crearla diera error, nos tocaría volver a crearla de nuevo.
 
 <figure><img src="../.gitbook/assets/imagen (17).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -92,7 +84,7 @@ Si disco esta cifrado con LUKS, no cifres la imagen, ya que da problemas a la ho
 
 <figure><img src="../.gitbook/assets/imagen (18).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Esta parte es que quieres que haga el sistema cuando acabe de crear la imagen, lo dejamos por defecto.&#x20;
+Esta parte es que quieres que haga el sistema cuando acabe de crear la imagen, lo dejamos por defecto.
 
 <figure><img src="../.gitbook/assets/imagen (19).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -100,15 +92,15 @@ Y listo! Hace una comprobacion y nos saca un informe como este y nos pregunta qu
 
 <figure><img src="../.gitbook/assets/imagen (20).png" alt=""><figcaption></figcaption></figure>
 
-y comienza a clonar... Aqui dependiendo de la velocidad de lectura de tu disco a clonar, tu red, tu velocidad del NAS, tardara mas o menos, en mi caso unos 7 minutos aprox en clonar un SSD de 1Tb al NAS por red gigabit, ten en cuenta que no clona los espacios vacíos, solo clona la parte de datos y ademas la comprime, en mi caso la suma total de todas las particiones rondaba los 90GB y comprimidos apenas eran 6Gb el tamaño final de la imagen.&#x20;
+y comienza a clonar... Aqui dependiendo de la velocidad de lectura de tu disco a clonar, tu red, tu velocidad del NAS, tardara mas o menos, en mi caso unos 7 minutos aprox en clonar un SSD de 1Tb al NAS por red gigabit, ten en cuenta que no clona los espacios vacíos, solo clona la parte de datos y ademas la comprime, en mi caso la suma total de todas las particiones rondaba los 90GB y comprimidos apenas eran 6Gb el tamaño final de la imagen.
 
 <figure><img src="../.gitbook/assets/imagen (21).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Cuando termine, verificara que las imagenes son restaurables, si no ha dado ningun error, nos mostrara una ventana asi.&#x20;
+Cuando termine, verificara que las imagenes son restaurables, si no ha dado ningun error, nos mostrara una ventana asi.
 
 <figure><img src="../.gitbook/assets/imagen (22).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Y listo!&#x20;
+Y listo!
 
 <figure><img src="../.gitbook/assets/imagen (23).png" alt="" width="563"><figcaption></figcaption></figure>
 

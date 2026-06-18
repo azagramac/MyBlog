@@ -10,13 +10,13 @@ Introducir un juego de una región diferente a la de la consola, causa que el LE
 
 <figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
-Hay varias formas de anular el chip, la mas común y mas bestia, cortar la patilla 4 del chip, bien dejándolo al aire o soldando un cable GND.&#x20;
+Hay varias formas de anular el chip, la mas común y mas bestia, cortar la patilla 4 del chip, bien dejándolo al aire o soldando un cable GND.
 
 <figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption><p>Identificación de la patilla 4</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption><p>Dejando al aire la patilla</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (99).png" alt="" width="375"><figcaption><p>Soldando un cable, del pin 4 al pin 13</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (98).png" alt="" width="375"><figcaption><p>Soldando un cable, del pin 4 al pin 13</p></figcaption></figure>
 
 la otra es retirar el chip... en placas como [OpenTendo](https://github.com/Redherring32/OpenTendo) o [SMTendo](https://github.com/zaxour/OpenTendo-SMTendo) no llevan el CIC.\
 \
@@ -24,19 +24,18 @@ Pero la menos conocida, es además la reversible, el chip lo dejamos tal cual si
 
 Solamente necesitamos un soldador de unos 30/45W, estaño, flux para facilitar la soldadura y 2 cables.
 
-<figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Sin nombre.png" alt="Puntos a soldar"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption><p>Vista con la consola montada.</p></figcaption></figure>
 
-Solamente eso, nada mas. \
+Solamente eso, nada mas.\
 \
 Ya podremos cargar juegos de otras regiones ejemplo juego NTSC en consola PAL o vicecersa, sin que el CIC nos de problemas, ademas es reversible por si decidimos volver al estado original la consola solo hay que quitar esos 2 cables y la consola queda intacta.\
 \
-Se recomienda limpia los contactos de la consola y cartucho con alcohol isopropilico.&#x20;
+Se recomienda limpia los contactos de la consola y cartucho con alcohol isopropilico.
 
 {% hint style="info" %}
-Si tu consola es PAL (50Hz), los juegos en NTSC irán igualmente a 50Hz, no a 60Hz, y viceversa.&#x20;
+Si tu consola es PAL (50Hz), los juegos en NTSC irán igualmente a 50Hz, no a 60Hz, y viceversa.
 {% endhint %}
-

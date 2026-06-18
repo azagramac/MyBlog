@@ -6,7 +6,7 @@ Entorno:\
 
 Entramos en nuestro UniFi Controller, y nos vamos a "Settings", en el menu lateral, una vez dentro, nos dirigimos al menu "Advanced Features", y en la parte derecha de la pantalla, "Advanced Gateway Settings"
 
-![](../.gitbook/assets/img_openPorts1.png)
+![](../.gitbook/assets/img_unifiDdns.png)
 
 Una vez dentro, veremos varias opciones, click en "Create New Dynamic DNS"
 

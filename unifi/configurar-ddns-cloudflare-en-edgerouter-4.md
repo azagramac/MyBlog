@@ -2,13 +2,13 @@
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-El cliente que usa el ER-4 es `ddclient`, actualmente no es compatible con la API v4 de Cloudflare, por tanto si intentas configurarlo via web o consola, no va sincronizar la IP con nuestro dominio. \
+El cliente que usa el ER-4 es `ddclient`, actualmente no es compatible con la API v4 de Cloudflare, por tanto si intentas configurarlo via web o consola, no va sincronizar la IP con nuestro dominio.\
 \
 Requisitos:\
 \- EdgeRouter 4 (valido EdgeRouter 6P) con firmware: `v2.0.9-hotfix.7` y `v3.0.0`\
 \- Dominio con Cloudflare<br>
 
-Entramos en Cloudflare, necesitaremos crear el subdominio y obtener la global api key.&#x20;
+Entramos en Cloudflare, necesitaremos crear el subdominio y obtener la global api key.
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -22,7 +22,7 @@ Pinchamos en "**Ver**" en "**Global API Key**"
 
 nos aparecerá esta ventana, nos identificamos con nuestra clave de acceso y después nos mostrara la API KEY, la copiamos y la guardamos, que la vamos a necesitar mas tarde.<br>
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ya con la key, ahora creamos el subdominio, volvemos a la pantalla principal de Cloudflare, y ahora pulsamos en "**DNS / Registros**" en el menu lateral.
 
@@ -32,7 +32,7 @@ Veremos una pantalla como esta
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-Pinchamos en "**Agregar registro**" y rellenamos los campos y guardamos. \
+Pinchamos en "**Agregar registro**" y rellenamos los campos y guardamos.\
 \
 **Tipo:** A\
 **Nombre:** el que queramos, solo nombre, ese va ser el nombre de nuestro subdominio `{subdomino}.{nuestro_dominio.com}`\
@@ -46,15 +46,15 @@ Ejemplo:
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-Ya tenemos nuestra Global API key y nuestro subdominio creado, ahora nos vamos al router.&#x20;
+Ya tenemos nuestra Global API key y nuestro subdominio creado, ahora nos vamos al router.
 
-Abrimos un terminal y entramos a el por SSH.&#x20;
+Abrimos un terminal y entramos a el por SSH.
 
 <figure><img src="../.gitbook/assets/image (13).png" alt="v2.0.9-hotfix.7"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (162).png" alt="v3.0.0"><figcaption></figcaption></figure>
 
-Ahora es copiar, cambia los datos por los tuyos y pegalos en el terminal. Cambia el interface por el que corresponda en tu caso, en el mio es el `pppoe0`.&#x20;
+Ahora es copiar, cambia los datos por los tuyos y pegalos en el terminal. Cambia el interface por el que corresponda en tu caso, en el mio es el `pppoe0`.
 
 ```sh
 configure
@@ -67,7 +67,7 @@ set service dns dynamic interface pppoe0 service custom-cloudflare options "zone
 commit ; save
 ```
 
-Si nos fijamos le estamos diciendo en la parte `server`, que use la v4 del cliente de cloudflare. Y en `options`, le pasamos unos parámetros adicionales.&#x20;
+Si nos fijamos le estamos diciendo en la parte `server`, que use la v4 del cliente de cloudflare. Y en `options`, le pasamos unos parámetros adicionales.
 
 Comprobar el estado de sincronización:
 
@@ -84,7 +84,7 @@ last update  : Fri Dec 27 18:01:23 2024
 update-status: good
 ```
 
-Forzar actualización:&#x20;
+Forzar actualización:
 
 ```sh
 update dns dynamic interface pppoe0          

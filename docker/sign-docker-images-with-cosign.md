@@ -176,7 +176,7 @@ Enter verification code:
 \
 It generates a URL, to log in with our credentials
 
-<figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 and returns a verification token that must be copied to the terminal
 

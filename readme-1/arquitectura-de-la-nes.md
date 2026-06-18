@@ -75,8 +75,6 @@ Como curiosidad, el número decimal `24` se representa como:
 En **BCD (Binary-Coded Decimal)** cada dígito decimal se codifica por separado en 4 bits.
 {% endhint %}
 
-&#x20;
-
 la **NES utiliza un cristal de cuarzo** para generar el reloj principal, y **varía según la región** (NTSC o PAL). A nivel técnico, esto afecta **CPU, PPU y APU**, porque todos derivan su reloj de ese cristal.
 
 <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
@@ -95,8 +93,6 @@ la **NES utiliza un cristal de cuarzo** para generar el reloj principal, y **var
   * Derivado del cristal maestro / 16
 
 Esto significa que **juegos NTSC en PAL se ejecutan más lentos** (\~7 %), y la música suena más grave si no se adapta.
-
-
 
 **Derivación de reloj para la PPU**
 
@@ -119,24 +115,20 @@ Convertir ciclos → frecuencia (Hz)
 
 <figure><img src="../.gitbook/assets/image (5).png" alt="" width="491"><figcaption></figcaption></figure>
 
-
-
 **Implicaciones**
 
 1. **Compatibilidad de software**
-   * Juegos NTSC corren más lento en PAL si no hay conversión.&#x20;
+   * Juegos NTSC corren más lento en PAL si no hay conversión.
 2. **Audio**
    * La frecuencia de la APU cambia con el reloj, afectando música y efectos.
 3. **Timing exacto**
    * Juegos que dependen de ciclo a ciclo (sprites, scroll, glitches) se ven afectados por la frecuencia del cristal.
 
 {% hint style="warning" %}
-Las implicaciones sólo se aplican cuando la consola tiene la modificación de region free para poder jugar a juegos NTSC en consolas PAL o viceversa, en consolas sin modificación, no afecta. ya que no es posible ejecutar un juego NTSC en consola PAL o viceversa. \
+Las implicaciones sólo se aplican cuando la consola tiene la modificación de region free para poder jugar a juegos NTSC en consolas PAL o viceversa, en consolas sin modificación, no afecta. ya que no es posible ejecutar un juego NTSC en consola PAL o viceversa.\
 \
 [Como hacer el mod de region free](region-free-sin-cortar-el-cic.md)
 {% endhint %}
-
-
 
 **Bus de direcciones**
 
@@ -150,8 +142,6 @@ $2000–$2007  PPU registers
 $4000–$4017  APU + I/O
 $4020–$FFFF  Cartucho
 ```
-
-
 
 **Pinouts:**
 
@@ -193,8 +183,6 @@ Diagrama
 
 <figure><img src="../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 [Ver foto en alta reolucion](https://upload.wikimedia.org/wikipedia/commons/5/5a/Nintendo-NES-Mk1-Motherboard-Top.jpg)
@@ -212,14 +200,12 @@ La **PPU** (Picture Processing Unit) de la NES es el **chip de vídeo** encargad
 La CPU **no dibuja píxeles**:\
 solo **configura registros**, y la PPU hace el renderizado **por hardware**, línea a línea, **sin framebuffer**.
 
-<figure><img src="../.gitbook/assets/image (188).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (187).png" alt="" width="563"><figcaption></figcaption></figure>
 
 | PPU            | Región | Clock        | Frame rate | Scanlines |
 | -------------- | ------ | ------------ | ---------- | --------- |
 | **Ricoh 2C02** | NTSC   | 5.369318 MHz | 60Hz       | 262       |
 | **Ricoh 2C07** | PAL    | 5.320342 MHz | 50Hz       | 312       |
-
-
 
 Espacio de direcciones PPU (14 bits)
 
@@ -232,8 +218,6 @@ $0000–$3FFF (PPU address space)
 {% hint style="info" %}
 La CPU NO accede directamente a VRAM, todo pasa por la **PPU** (2C02 NTSC / 2C07 PAL)
 {% endhint %}
-
-
 
 **Registros PPU (lado CPU):**
 
@@ -254,8 +238,6 @@ La CPU NO accede directamente a VRAM, todo pasa por la **PPU** (2C02 NTSC / 2C07
 * Acceso a VRAM solo seguro en VBlank o con render apagado.
 {% endhint %}
 
-
-
 En la NES, **VRAM** se refiere **exclusivamente** a la **memoria de NameTables** usada por la PPU.
 
 * **Tamaño real**: **2 KB de SRAM**
@@ -269,20 +251,16 @@ En la NES, **VRAM** se refiere **exclusivamente** a la **memoria de NameTables**
 CHR-ROM/RAM no es VRAM
 {% endhint %}
 
-
-
-#### **Memoria WRAM:**  <a href="#memoria" id="memoria"></a>
+#### **Memoria WRAM:** <a href="#memoria" id="memoria"></a>
 
 Tanto el Ricoh 2A03 y el MOS 6502 contienen un **bus de datos de 8 bits** y un **bus de direcciones de 16 bits**, lo que les permitía acceder hasta a **64KB de memoria**. Entonces, ¿cómo llenó Nintendo ese espacio de memoria?
 
-Por un lado, la tarjeta madre contiene un chip que otorga **2 KB de RAM estática** (SRAM) \
+Por un lado, la tarjeta madre contiene un chip que otorga **2 KB de RAM estática** (SRAM)\
 Nintendo llama esta área «**Work RAM**» (WRAM) y puede usarse para almacenar:
 
 * Variables para manejar el estado del juego y/o para buscar información.
 * La «pila», la cual temporalmente guarda los valores de registros mientras que el procesador ejecuta subrutinas.
 * Un «área de búfer» para que el procesador pueda copiar datos grandes entre dos ubicaciones.
-
-
 
 **Comparación entre WRAM vs VRAM:**
 
@@ -320,7 +298,7 @@ Nintendo llama esta área «**Work RAM**» (WRAM) y puede usarse para almacenar:
 | PPUADDR   | $2006 |
 | PPUDATA   | $2007 |
 
-#### &#x20;**APU:**&#x20;
+#### **APU:**
 
 La **APU (Audio Processing Unit)** de la NES es el **chip de sonido integrado en la CPU 2A03/2A07** que genera todo el audio de la consola.
 
@@ -331,8 +309,6 @@ A nivel técnico:
 * La CPU controla la APU a través de **registros mapeados (**`$4000–$4017`**)**.
 * El **frame counter** sincroniza la actualización de todos los canales, y el DMC puede **robar ciclos a la CPU** durante la reproducción de samples.
 * La salida final se mezcla mediante un **circuito analógico interno**, produciendo la característica distorsión y volumen no lineal de la NES.
-
-
 
 **Registros APU / I/O (CPU-mapeados)**
 
@@ -352,11 +328,7 @@ A nivel técnico:
 * `$4017` define timing de la APU, crítico para música.
 {% endhint %}
 
-
-
 #### Lockout
-
-
 
 * Es un **chip de 10 pines** dentro de la NES (2C02 / 2C07 CPU no incluido).
 * Su nombre oficial: **CIC (Nintendo “Checking Integrated Circuit”)**.

@@ -16,7 +16,7 @@ Preparativos:
 Pruebas realizadas con las versiones de los paquetes indicadas.
 {% endhint %}
 
-Después de instalar LineageOS en el dispositivo (OnePlus 8T en mi caso) siguiendo la [guía](https://wiki.lineageos.org/devices/kebab/install/#unlocking-the-bootloader) oficial, sin reiniciar después de instalar la rom, instalamos las [Google Apps](https://github.com/MindTheGapps/15.0.0-arm64/releases/tag/MindTheGapps-15.0.0-arm64-20250214_082511) (opcional) y el modulo [Magisk](https://github.com/topjohnwu/Magisk/releases) (renombramos el fichero .apk a .zip) y lo instalamos normalmente como la rom y las gapps.&#x20;
+Después de instalar LineageOS en el dispositivo (OnePlus 8T en mi caso) siguiendo la [guía](https://wiki.lineageos.org/devices/kebab/install/#unlocking-the-bootloader) oficial, sin reiniciar después de instalar la rom, instalamos las [Google Apps](https://github.com/MindTheGapps/15.0.0-arm64/releases/tag/MindTheGapps-15.0.0-arm64-20250214_082511) (opcional) y el modulo [Magisk](https://github.com/topjohnwu/Magisk/releases) (renombramos el fichero .apk a .zip) y lo instalamos normalmente como la rom y las gapps.
 
 ```shell
 adb -d sideload filename.zip
@@ -24,7 +24,7 @@ adb -d sideload filename.zip
 
 <figure><img src="../.gitbook/assets/imagen (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Nada mas abrir la primera vez Magisk nos pedirá actualizar y reiniciar.&#x20;
+Nada mas abrir la primera vez Magisk nos pedirá actualizar y reiniciar.
 
 Después de reiniciar habilitamos Zygisk, en la App de Magisk, entramos en Ajustes y marcamos Zygisk y reiniciamos de nuevo.
 
@@ -36,11 +36,11 @@ Ahora podemos marcar también la lista de denegación y seleccionar las apps, re
 * `com.google.android.unstable`
 * `com.google.android.gms:snet`
 
-Y así tendríamos que tenerlo.&#x20;
+Y así tendríamos que tenerlo.
 
 <figure><img src="../.gitbook/assets/imagen (3) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Para instalar los módulos, descargamos los ficheros .zip mencionados anteriormente, y le damos a "Instalar desde almacenamiento" en la pestaña de Módulos dentro de Magisk, seleccionamos el fichero y posteriormente reiniciamos el dispositivo.&#x20;
+Para instalar los módulos, descargamos los ficheros .zip mencionados anteriormente, y le damos a "Instalar desde almacenamiento" en la pestaña de Módulos dentro de Magisk, seleccionamos el fichero y posteriormente reiniciamos el dispositivo.
 
 Los módulos instalados, (_Shamiko y Systemless Hosts aparecen deshabilitados, ya que no funcionan o al menos no me han funcionado en LinegeOS 22.1_)
 
@@ -48,7 +48,7 @@ Los módulos instalados, (_Shamiko y Systemless Hosts aparecen deshabilitados, y
 
 Y podemos verificar que todo esta ok con la App "[SafetyNet | Integrity Checker](https://play.google.com/store/apps/details?id=com.flinkapps.safteynet)" y/o "[Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck)"
 
-<figure><img src="../.gitbook/assets/imagen (9).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (8).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 Si te marcara error en MEETS\_STRONG\_INTEGRITY esta reportado en [https://github.com/chiteroman/PlayIntegrityFix/issues/579](https://github.com/chiteroman/PlayIntegrityFix/issues/579)

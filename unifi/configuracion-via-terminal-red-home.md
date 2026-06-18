@@ -8,20 +8,16 @@ description: >-
 
 <figure><img src="../.gitbook/assets/imagen (2).png" alt="EdgeRouter 6 PoE"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/imagen (1) (1).png" alt="EdgeSwitch 8 PoE"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/imagen (3).png" alt="EdgeSwitch 8 PoE"><figcaption></figcaption></figure>
 
 Hardware:
 
 * EdgeRouter 6P, firmware v2.0.9-hotfix.7
 * EdgeSwitch 8-150, firmware 1.11.1-lite
 
-![](<../.gitbook/assets/imagen (44).png>) ![](../.gitbook/assets/PXL_20250906_095727029.MV.jpg)
-
-
+![](<../.gitbook/assets/imagen (41).png>) ![](../.gitbook/assets/PXL_20250906_095727029.MV.jpg)
 
 Parámetros vía consola en **EdgeRouter**:
-
-
 
 ```bash
 set firewall all-ping enable
@@ -274,12 +270,8 @@ exit
 
 Le damos permisos de ejecución, y lo ejecutamos directamente desde el router, y esperamos a que termine, el tiempo dependerá de la lista que tengamos de parámetros de configuración.
 
-
-
 * Información de [Hardware offloading](https://help.uisp.com/hc/en-us/articles/22591077433879-EdgeRouter-Hardware-Offloading)
 * Habilitar [DDNS Cloudflare](configurar-ddns-cloudflare-en-edgerouter-4.md)
-
-
 
 <figure><img src="../.gitbook/assets/imagen (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -316,8 +308,6 @@ Password: ***********************
 (edgeswitch-8) # show running-config
 </code></pre>
 
-
-
 **Habilitar UISP** (requiere suscripción desde el 1 Julio 2025)
 
 {% embed url="https://eu.store.ui.com/eu/en/category/wired-hosting/collections/uisp-cloud-hosting/products/uisp-cloud-hosting-pro?variant=uisp-cloud-hosting-pro" %}
@@ -331,8 +321,6 @@ exit
 write memory confirm
 exit
 ```
-
-
 
 **Habilitar LLDP**
 

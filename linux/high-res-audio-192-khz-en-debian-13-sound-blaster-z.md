@@ -1,6 +1,6 @@
 # High-Res Audio 192 kHz en Debian 13: Sound Blaster Z
 
-<figure><img src="../.gitbook/assets/image (171).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (170).png" alt="" width="375"><figcaption></figcaption></figure>
 
 \
 Lo primero es instalar el firmware
@@ -19,8 +19,6 @@ sudo cp -rf ctefx-desktop.bin /usr/lib/firmware/
 ```bash
 sudo apt install -y firmware-linux-nonfree
 ```
-
-
 
 #### Verificamos el hardware
 
@@ -171,8 +169,6 @@ monitor.alsa.rules = [
 systemctl --user restart pipewire pipewire-pulse wireplumber
 ```
 
-
-
 #### Verificación final
 
 ```bash
@@ -191,8 +187,6 @@ $ pactl list short sinks
 * HDMI (GPU) → 48 kHz ❌
 
 Esto es **normal** y esperado: el override solo apuntaba a **hw:0 / analog-stereo**, por eso PipeWire fuerza 192 kHz en esa tarjeta. La salida HDMI (hw:1) no tiene configuración especial, así que se queda en 48 kHz, que es la frecuencia por defecto de PipeWire para sinks no configurados.
-
-
 
 #### Ver formatos soportados por el DAC
 

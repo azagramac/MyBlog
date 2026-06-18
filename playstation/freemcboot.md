@@ -1,12 +1,8 @@
 # FreeMCBoot
 
-<figure><img src="../.gitbook/assets/imagen (38).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/imagen (27).png" alt=""><figcaption></figcaption></figure>
 
 Free McBoot es un exploit que reemplaza el menú principal de tu PS2 sin tener que modificarla físicamente y permite usar homebrews, se instala en la Memory Card (oficial a ser posible)
-
-
 
 Lista de versiones del FMCB incluidas en el .7z:
 
@@ -19,8 +15,8 @@ Lista de versiones del FMCB incluidas en el .7z:
 
 📦[Descargar FMCB v1.966](https://mega.nz/file/1BoHnDRZ#xWOI2RTTzgJTYDQB96gapxA1G-aX_3ooN-MIo5Nllug)
 
-Es posible añadir mas opciones al menú, para ello debemos editar el fichero \
-`SYS-CONF/FREEMCB.CNF` y nos encontraremos con esto.&#x20;
+Es posible añadir mas opciones al menú, para ello debemos editar el fichero\
+`SYS-CONF/FREEMCB.CNF` y nos encontraremos con esto.
 
 ```shell
 # ----------------------------------------
@@ -94,7 +90,7 @@ path2_OSDSYS_ITEM_2 = mass:/PS2/BOOT/OPNPS2LD.ELF
 
 Hay varias opciones que cambian el comportamiento de la consola al iniciarla o al iniciar un juego.
 
-fastboot, por defecto en 1, al cambiarla a 0, hacemos que la consola cargue normalmente la animación de inicio, si la dejáramos en 1, el arranque es mas rápido al no cargar la animación.&#x20;
+fastboot, por defecto en 1, al cambiarla a 0, hacemos que la consola cargue normalmente la animación de inicio, si la dejáramos en 1, el arranque es mas rápido al no cargar la animación.
 
 ```sh
 FastBoot = 0
@@ -107,7 +103,7 @@ OSDSYS_Skip_Logo = 0
 OSDSYS_Skip_Disc = 0
 ```
 
-Estas opciones son las que debemos modificar si queremos colocar los textos en pantalla del menú principal.&#x20;
+Estas opciones son las que debemos modificar si queremos colocar los textos en pantalla del menú principal.
 
 el primer parámetro, le decimos que no queremos scroll definiendo el valor a 0 (por defecto 1), los siguientes parámetros son coordenadas. por defecto las coordenadas son:
 
@@ -117,7 +113,7 @@ OSDSYS_menu_y = 110
 OSDSYS_enter_x = 30
 ```
 
-Al dejarlo así, tenemos los textos de las opciones y sin scroll, mas OEM.&#x20;
+Al dejarlo así, tenemos los textos de las opciones y sin scroll, mas OEM.
 
 ```sh
 OSDSYS_scroll_menu = 0
@@ -126,9 +122,9 @@ OSDSYS_menu_y = 175
 OSDSYS_enter_x = 175
 ```
 
-Estas lineas, que no contienen valor algunos, son las que añaden la versión en amarillo, el nombre de freemcboot, etc... <br>
+Estas lineas, que no contienen valor algunos, son las que añaden la versión en amarillo, el nombre de freemcboot, etc...<br>
 
-Así seria por defecto. \
+Así seria por defecto.\
 Vemos el titulo de "Free MCBoot", la versión \[Version xxxxxx], vemos unas flechas que parpadean en ambos lados de las opciones, ademas de los botones en cada extremo de la pantalla.
 
 <figure><img src="../.gitbook/assets/imagen (29).png" alt=""><figcaption></figcaption></figure>
@@ -138,7 +134,7 @@ OSDSYS_menu_top_delimiter = y-99FreeMcBoot              c0[r0.80Version %VER%
 OSDSYS_menu_bottom_delimiter = c0r0.60y+99Use o006/o007 to browse listy-00r0.00
 ```
 
-y así un menú limpio, como es la consola originalmente pero añadiendo nuevas opciones sin romper la estética original.&#x20;
+y así un menú limpio, como es la consola originalmente pero añadiendo nuevas opciones sin romper la estética original.
 
 <figure><img src="../.gitbook/assets/imagen (34).png" alt=""><figcaption><p>OSD</p></figcaption></figure>
 
@@ -147,7 +143,7 @@ OSDSYS_menu_top_delimiter =
 OSDSYS_menu_bottom_delimiter =
 ```
 
-En esta parte definimos las opciones que se mostraran en el OSD de la consola.&#x20;
+En esta parte definimos las opciones que se mostraran en el OSD de la consola.
 
 ```
 name_OSDSYS_ITEM_1 = Explorador de archivos
@@ -162,6 +158,6 @@ path2_OSDSYS_ITEM_2 = mass:/PS2/BOOT/OPNPS2LD.ELF
 \
 **mass**, es el almacenamiento externo por USB conectado a la consola, el formato de archivos por defecto debe ser FAT32, aunque hay un uLauncheELF modificado que aceptar ExtFAT.
 
-Tenemos otras variables como **hdd0:**&#x70;artición , ejemplo **hdd0:\_\_sysconf**, en este caso le decimos que busque en el HDD instalado si lo tenemos en la partición \_\_sysconf el .elf a cargar.&#x20;
+Tenemos otras variables como **hdd0:**&#x70;artición , ejemplo **hdd0:\_\_sysconf**, en este caso le decimos que busque en el HDD instalado si lo tenemos en la partición \_\_sysconf el .elf a cargar.
 
 También **cdfs**, que seria la unidad DVD de la consola y **host** seria buscar en la red
