@@ -8,6 +8,7 @@
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
 * [🧪 Arduino](arduino/README.md)
   * [Unboxing Arduino GIGA R1](arduino/unboxing-arduino-giga-r1.md)
+  * [Grabar EPROM](arduino/grabar-eprom.md)
   * [Minar DuinoCoin desde tu router OpenWRT](arduino/minar-duinocoin-desde-tu-router-openwrt.md)
 * [🖥️ Hardware](hardware/README.md)
   * [Overclocking AMD Ryzen 9 5950X](hardware/overclocking-amd-ryzen-9-5950x.md)
