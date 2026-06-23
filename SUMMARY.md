@@ -9,7 +9,7 @@
 * [🧪 Arduino](arduino/README.md)
   * [Unboxing Arduino GIGA R1](arduino/unboxing-arduino-giga-r1.md)
   * [Grabar EPROM](arduino/grabar-eprom.md)
-  * [Minar DuinoCoin desde tu router OpenWRT](arduino/minar-duinocoin-desde-tu-router-openwrt.md)
+  * [Upgrade Firmware WiFi Arduino GIGA](arduino/upgrade-firmware-wifi-arduino-giga.md)
 * [🖥️ Hardware](hardware/README.md)
   * [Overclocking AMD Ryzen 9 5950X](hardware/overclocking-amd-ryzen-9-5950x.md)
   * [Unboxing Switch POE TP-Link TL-SG1008P](hardware/unboxing-switch-poe-tp-link-tl-sg1008p.md)
