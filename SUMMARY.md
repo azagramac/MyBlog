@@ -7,6 +7,7 @@
   * [🖥️ Instalar Termux](android/instalar-termux.md)
   * [📦 Optimizar paquetes después de instalar ROM](android/optimizar-paquetes-despues-de-instalar-rom.md)
 * [🧪 Arduino](arduino/README.md)
+  * [Error LIBUSB\_ERROR\_ACCESS](arduino/error-libusb_error_access.md)
   * [Unboxing Arduino GIGA R1](arduino/unboxing-arduino-giga-r1.md)
   * [Grabar EPROM](arduino/grabar-eprom.md)
   * [Upgrade Firmware WiFi Arduino GIGA](arduino/upgrade-firmware-wifi-arduino-giga.md)
