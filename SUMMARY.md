@@ -66,6 +66,7 @@
 * [🕹️ NeoGeo](neogeo/README.md)
   * [Arquitectura NeoGeo AES](neogeo/arquitectura-neogeo-aes.md)
   * [NeoGeo AES+](neogeo/neogeo-aes+.md)
+  * [Review 161 en 1 AES](neogeo/review-161-en-1-aes.md)
 * [🕹️ Nintendo NES](readme-1/README.md)
   * [Arquitectura de la NES](readme-1/arquitectura-de-la-nes.md)
   * [8bitdo DIY en mando original](readme-1/8bitdo-diy-en-mando-original.md)
