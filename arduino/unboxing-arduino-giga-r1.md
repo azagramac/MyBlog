@@ -6,7 +6,7 @@ icon: box-open
 
 <figure><img src="../.gitbook/assets/imagen (76).png" alt=""><figcaption></figcaption></figure>
 
-![](../.gitbook/assets/giga-r1.svg)Specs
+**Specs**
 
 | Board                     | Description                                             |
 | ------------------------- | ------------------------------------------------------- |
