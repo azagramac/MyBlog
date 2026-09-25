@@ -25,7 +25,7 @@ Antes de nada, instalamos el core de la placa Arduino GIGA R1 en Arduino IDE, y 
 <figure><img src="../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 En Arduino IDE:\
-&#xNAN;_**File > Examples > STM32H747\_System > WiFiFirmwareUpdater**_
+_**File > Examples > STM32H747\_System > WiFiFirmwareUpdater**_
 
 <figure><img src="../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
