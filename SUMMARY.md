@@ -22,6 +22,7 @@
   * [Preparar env en Debian 13](yubikey/preparar-env-en-debian-13.md)
   * [Generar claves GPG en la Yubikey](yubikey/generar-claves-gpg-en-la-yubikey.md)
 * [🐧 Linux](linux/README.md)
+  * [Secure Boot en Debian 13 con kernel personalizado](linux/secure-boot-en-debian-13-con-kernel-personalizado.md)
   * [Cobblemon, Minecraft con Pokemons](linux/cobblemon-minecraft-con-pokemons.md)
   * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
   * [Cifrar con LUKS](linux/cifrar-con-luks.md)
