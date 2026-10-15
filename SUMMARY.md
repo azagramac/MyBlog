@@ -22,7 +22,7 @@
   * [Preparar env en Debian 13](yubikey/preparar-env-en-debian-13.md)
   * [Generar claves GPG en la Yubikey](yubikey/generar-claves-gpg-en-la-yubikey.md)
 * [🐧 Linux](linux/README.md)
-  * [Compilación del kernel con soporte de firma](linux/compilacion-del-kernel-con-soporte-de-firma.md)
+  * [Secure Boot: Generación de MOK, compilación de kernel y firma de módulos](linux/secure-boot-generacion-de-mok-compilacion-de-kernel-y-firma-de-modulos.md)
   * [Secure Boot en Debian 13 con kernel personalizado](linux/secure-boot-en-debian-13-con-kernel-personalizado.md)
   * [Cobblemon, Minecraft con Pokemons](linux/cobblemon-minecraft-con-pokemons.md)
   * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
