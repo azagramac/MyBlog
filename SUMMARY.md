@@ -53,6 +53,7 @@
   * [Solucion al error amdgpu: powerplay](linux/solucion-al-error-amdgpu-powerplay.md)
   * [dmesg: Error al leer el búfer del kernel](linux/dmesg-error-al-leer-el-bufer-del-kernel.md)
   * [CIDR, mascaras de subred](linux/cidr-mascaras-de-subred.md)
+* [💻 Lenovo Thinkpad T440p](lenovo-thinkpad-t440p.md)
 * [💻 Macintosh](macintosh/README.md)
   * [My Apps](macintosh/my-apps.md)
   * [Configurar shell bash por defecto](macintosh/configurar-shell-bash-por-defecto.md)
