@@ -55,6 +55,7 @@
   * [CIDR, mascaras de subred](linux/cidr-mascaras-de-subred.md)
 * [💻 Lenovo Thinkpad T440p](lenovo-thinkpad-t440p/README.md)
   * [Lenovo ThinkPad T440p con Tianocore EDK 2](lenovo-thinkpad-t440p/lenovo-thinkpad-t440p-con-tianocore-edk-2.md)
+  * [Personalización y optimización con Linux](lenovo-thinkpad-t440p/personalizacion-y-optimizacion-con-linux.md)
 * [💻 Macintosh](macintosh/README.md)
   * [My Apps](macintosh/my-apps.md)
   * [Configurar shell bash por defecto](macintosh/configurar-shell-bash-por-defecto.md)
