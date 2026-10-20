@@ -6,7 +6,7 @@
 
 Reducir ligeramente la tensión solicitada por la CPU del Lenovo ThinkPad T440p mediante `intel-undervolt`, manteniendo las frecuencias y el rendimiento originales siempre que el sistema permanezca estable.
 
-La configuración documentada aplica un offset de aproximadamente **−9,77 mV a CPU Core**. Los demás dominios permanecen a 0 mV.
+La configuración documentada aplica un offset de aproximadamente **−70.31 mV a CPU Core**.&#x20;
 
 ### 1. Requisitos
 
@@ -58,14 +58,16 @@ Ajustes relevantes:
 
 ```bash
 enable yes
-undervolt 0 'CPU' -10
-undervolt 1 'GPU' 0
-undervolt 2 'CPU Cache' 0
+undervolt 0 'CPU' -70
+undervolt 1 'GPU' -20
+undervolt 2 'CPU Cache' -70
 undervolt 3 'System Agent' 0
 undervolt 4 'Analog I/O' 0
 ```
 
-Conservar el resto de las opciones generadas por la herramienta.
+{% hint style="info" %}
+No se recomienda subir mas de -20 la GPU, es muy sensible, quizá a -25 seria el limite max. En cuanto a la CPU/CPU Cache, mantener los mismos valores, empezar en -60 mV, aplicar y probar, e ir subiendo de 5 en 5.
+{% endhint %}
 
 ### 6. Aplicar y comprobar
 
@@ -74,13 +76,13 @@ sudo intel-undervolt apply
 sudo intel-undervolt read
 ```
 
-Resultado esperado para CPU Core:
+Resultado esperado para CPU Core / CPU Cache:
 
 ```bash
-CPU (0): -9.77 mV
+CPU (0): -70.31 mV
 ```
 
-Los demás dominios deben continuar en 0 mV, el valor -9.77 mV puede variar ligeramente.
+
 
 ### 7. Habilitar la aplicación automática
 
@@ -114,11 +116,11 @@ systemctl is-enabled intel-undervolt.service
 systemctl status intel-undervolt.service --no-pager
 ```
 
-El offset de CPU Core debe continuar en aproximadamente −9,77 mV. El servicio debe estar habilitado para el arranque.
+El offset de CPU Core debe continuar en aproximadamente −70.31 mV. El servicio debe estar habilitado para el arranque.
 
 ### 9. Pruebas de estabilidad del undervolt
 
-Después de configurar el offset de CPU Core a −9,77 mV, es necesario comprobar la estabilidad del procesador bajo carga. Un undervolt demasiado agresivo puede provocar errores de cálculo, bloqueos o reinicios inesperados, incluso cuando el sistema parece funcionar correctamente en reposo.
+Después de configurar el offset de CPU Core a 70.31 mV, es necesario comprobar la estabilidad del procesador bajo carga. Un undervolt demasiado agresivo puede provocar errores de cálculo, bloqueos o reinicios inesperados, incluso cuando el sistema parece funcionar correctamente en reposo.
 
 En este equipo se utiliza `stress-ng` para someter los ocho hilos lógicos del Intel Core i7-4700MQ a una prueba de carga durante 10 minutos.
 
@@ -194,7 +196,7 @@ Observar especialmente:
 
 Para salir de `watch`, pulsar `Ctrl + C`.
 
-En las pruebas realizadas inicialmente en este ThinkPad T440p, la temperatura máxima observada fue de aproximadamente **83 °C**, con valores sostenidos alrededor de 79–81 °C y una velocidad del ventilador cercana a 3.800 RPM.
+En las pruebas realizadas inicialmente en este ThinkPad T440p, la temperatura máxima observada fue de aproximadamente **79 °C**, con valores sostenidos alrededor de 76–79 °C y una velocidad del ventilador cercana a 3.800 RPM.
 
 Estas cifras son resultados observados en esa prueba concreta, no valores garantizados para todas las condiciones ambientales o cargas de trabajo.
 
@@ -279,15 +281,15 @@ En la primera prueba documentada de este ThinkPad T440p se obtuvieron los siguie
 | Métrica                                          | Resultado             |
 | ------------------------------------------------ | --------------------- |
 | Procesador                                       | Intel Core i7-4700MQ  |
-| Offset de CPU Core                               | −9,77 mV              |
+| Offset de CPU Core                               | −70.31 mV             |
 | Duración                                         | 10 minutos            |
 | Trabajadores de CPU                              | 8                     |
 | Trabajadores fallidos                            | 0                     |
-| Temperatura máxima observada                     | Aproximadamente 83 °C |
+| Temperatura máxima observada                     | Aproximadamente 79 °C |
 | Throttling térmico en los contadores consultados | No registrado         |
 | Errores MCE o hardware en la salida revisada     | No detectados         |
 
-**Conclusión:** el undervolt de −9,77 mV superó la prueba inicial de carga de 10 minutos. Se mantiene este valor sin aumentar el offset hasta completar más pruebas de estabilidad.
+**Conclusión:** el undervolt de −70.31 mV superó la prueba inicial de carga de 10 minutos. Se mantiene este valor sin aumentar el offset hasta completar más pruebas de estabilidad.
 
 
 
