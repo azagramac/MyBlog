@@ -23,6 +23,7 @@
   * [Generar claves GPG en la Yubikey](yubikey/generar-claves-gpg-en-la-yubikey.md)
 * [🐧 Linux](linux/README.md)
   * [Secure Boot: Generación de MOK, compilación de kernel y firma de módulos](linux/secure-boot-generacion-de-mok-compilacion-de-kernel-y-firma-de-modulos.md)
+  * [Instalación de VirtualBox en Debian con Secure Boot (MOK)](linux/instalacion-de-virtualbox-en-debian-con-secure-boot-mok.md)
   * [Secure Boot en Debian 13 con kernel personalizado](linux/secure-boot-en-debian-13-con-kernel-personalizado.md)
   * [Cobblemon, Minecraft con Pokemons](linux/cobblemon-minecraft-con-pokemons.md)
   * [Possible missing firmware /lib/firmware/amdgpu](linux/possible-missing-firmware-lib-firmware-amdgpu.md)
