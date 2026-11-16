@@ -27,10 +27,6 @@ layout:
 
 # 📱 LineageOS - Nothing Phone 2
 
-## 📱 Nothing Phone 2  - LineageOS 23.2 + KernelSU LKM + AVBRoot
-
-
-
 **Dispositivo:** Nothing Phone 2 (Pong)\
 **ROM:** LineageOS 23.2\
 **Root:** KernelSU LKM\
