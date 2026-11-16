@@ -2,6 +2,7 @@
 
 * [🏠 Home](README.md)
 * [🤖 Android](android/README.md)
+  * [📱 LineageOS - Nothing Phone 2](android/lineageos-nothing-phone-2.md)
   * [Habilitar VoLTE y VoWiFi OnePlus 8T](android/habilitar-volte-y-vowifi-oneplus-8t.md)
   * [LineageOS, PlayIntegrityFix y playcurlNEXT](android/lineageos-playintegrityfix-y-playcurlnext.md)
   * [🖥️ Instalar Termux](android/instalar-termux.md)
